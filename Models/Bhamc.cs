@@ -12,7 +12,7 @@ namespace BHAMCApp.Models
         //public uint ID { get; set; }
 
         [Display(Name = "Questionnaire No")]
-        public string QuestionnaireNo { get; set; }
+        public int QuestionnaireNo { get; set; }
 
         [Display(Name = "Number of antenatal care visit")]
         public string AntenatalCare { get; set; }
@@ -639,7 +639,7 @@ namespace BHAMCApp.Models
 
         //Q100 Vaginal secretion (tick where appropriate
         [Display(Name = "1. Normal")]
-        public bool Q100_1_1 { get; set; }
+        public E9 Q100_1_1 { get; set; }
 
         //2.Amount
         [Display(Name = "1. Scarce")]
@@ -699,8 +699,8 @@ namespace BHAMCApp.Models
 
         //[Display(Name = "Created Date")]
         //public DateTime CreatedDate { get; set; }
-    //}
-
+        //}
+    }
 
     public enum E3
     {
@@ -1199,5 +1199,5 @@ namespace BHAMCApp.Models
     }
 
 
-}
+
 }

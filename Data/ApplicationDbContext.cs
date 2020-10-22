@@ -16,6 +16,7 @@ namespace BHAMCApp.Data
     {
 
         private readonly ICurrentUserService currentUserService;
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, ICurrentUserService currentUserService)
             : base(options)
         {
@@ -61,6 +62,8 @@ namespace BHAMCApp.Data
                 item.Property(nameof(entidad.CreatedByUser)).IsModified = false;
             }
         }
+
+        public DbSet<BHAMCApp.Models.Bhamc> Bhamc { get; set; }
     }
     public class ApplicationUser : IdentityUser
     {

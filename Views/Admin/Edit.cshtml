@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-md-12">
 
-        <h4>Edit <span class="font-italic text-primary"> @Model.RoleName</span> Role</h4>
+        <h4 class="text-info"> <cite>@Model.RoleName Role</cite>  </h4>
 
     </div>
 </div>
@@ -23,7 +23,7 @@
 
     <div class="row">
 
-        <div class="col-md-12">
+        <div class="col-md-12 jumbodm text-white">
 
 
             @if (Model.NotMembersToRole.Count() == 0)
@@ -41,10 +41,10 @@
             else
             {
                 <div class="row">
-                    <div class="col-md-6" style="color:black;background-color:burlywood">
-                        <p class="text-secondary">
+                    <div class="col-md-6" >
+                        <p  >
                             Not Members of this
-                            <span style="color:black;"> @Model.RoleName </span>role, Add users to this role
+                            <span class="text-info"> @Model.RoleName </span>role, Add users to this role
                         </p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
 
     <div class="row">
 
-        <div class="col-md-12">
+        <div class="col-md-12  jumbodm text-white">
 
             @if (Model.MemberToRole.Count() == 0)
             {
@@ -89,8 +89,8 @@
             else
             {
                 <div class="row">
-                    <div class="col-md-6" style="color:black;background-color:burlywood">
-                        <p class="text-info">Members of this <span style="color:black;"> @Model.RoleName </span>role, Remove users to this role</p>
+                    <div class="col-md-6">
+                        <p >Members of this <span class="text-info"> @Model.RoleName </span>role, Remove users to this role</p>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@
 
     @*<h6 class="bg-info p-1 text-white">Remove this  @Model.Role.Name role to..</h6>*@
 
-    <button type="submit" class="btn btn-primary">Add/Remove Role</button>
+    <button type="submit" class="btn btn-bh">Add/Remove Role</button>
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
 

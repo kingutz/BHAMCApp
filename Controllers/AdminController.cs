@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BHAMCApp.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace BHAMCApp.Controllers
 {
 	public class AdminController : Controller
@@ -31,7 +33,31 @@ namespace BHAMCApp.Controllers
 
 		public ViewResult Index() => View(_roleManager.Roles);
 
+		public async Task<IActionResult> UserIndex()
+		{
+			var user = new List<UserData>();
 
+			try
+			{
+				var users = await _userManager.Users.ToListAsync();
+				foreach (var item in users)
+				{
+					user.Add(new UserData()
+					{
+						Id = item.Id,
+						Name = item.Name,
+						UserName = item.UserName,
+						Email = item.Email
+					});
+				}
+			}
+			catch (Exception ex)
+			{
+				_logger?.LogError(ex, ex.GetBaseException().Message);
+			}
+
+			return View(user);
+		}
 
 		[HttpGet]
 		public async Task<IActionResult> Edit(string id)
