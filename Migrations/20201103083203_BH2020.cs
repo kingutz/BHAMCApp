@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BHAMCApp.Migrations
 {
-    public partial class TM2020 : Migration
+    public partial class BH2020 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -52,7 +52,7 @@ namespace BHAMCApp.Migrations
                 columns: table => new
                 {
                     ID = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Sqlite:Autoincrement", true),
                     CreatedByUser = table.Column<string>(nullable: true),
                     CreatedDate = table.Column<DateTime>(nullable: false),
                     ModifiedByUser = table.Column<string>(nullable: true),
@@ -68,19 +68,19 @@ namespace BHAMCApp.Migrations
                     InterviewerName = table.Column<string>(nullable: true),
                     InterviewDate = table.Column<DateTime>(nullable: false),
                     Q1 = table.Column<DateTime>(nullable: false),
-                    Q2 = table.Column<long>(nullable: true),
+                    Q2 = table.Column<uint>(nullable: true),
                     Q3 = table.Column<int>(nullable: false),
                     OthersQ3 = table.Column<string>(nullable: true),
                     Q4 = table.Column<int>(nullable: false),
                     OthersQ4 = table.Column<string>(nullable: true),
                     Q5 = table.Column<int>(nullable: false),
                     Q6 = table.Column<int>(nullable: true),
-                    Q7 = table.Column<long>(nullable: true),
+                    Q7 = table.Column<uint>(nullable: true),
                     Q8 = table.Column<int>(nullable: false),
                     Q9 = table.Column<int>(nullable: false),
                     Q10 = table.Column<int>(nullable: false),
                     OthersQ10 = table.Column<string>(nullable: true),
-                    Q11 = table.Column<long>(nullable: true),
+                    Q11 = table.Column<uint>(nullable: true),
                     Q12_1 = table.Column<bool>(nullable: false),
                     Q12_2 = table.Column<bool>(nullable: false),
                     Q12_3 = table.Column<bool>(nullable: false),
@@ -90,7 +90,7 @@ namespace BHAMCApp.Migrations
                     Q12_7 = table.Column<bool>(nullable: false),
                     Q13 = table.Column<int>(nullable: false),
                     OthersQ13 = table.Column<string>(nullable: true),
-                    Q14 = table.Column<long>(nullable: true),
+                    Q14 = table.Column<uint>(nullable: true),
                     Q15 = table.Column<int>(nullable: false),
                     OthersQ15 = table.Column<string>(nullable: true),
                     Q16 = table.Column<int>(nullable: false),
@@ -107,16 +107,16 @@ namespace BHAMCApp.Migrations
                     Q22_4 = table.Column<bool>(nullable: false),
                     OthersQ22_4 = table.Column<string>(nullable: true),
                     Q23 = table.Column<int>(nullable: false),
-                    Q24 = table.Column<long>(nullable: false),
+                    Q24 = table.Column<uint>(nullable: false),
                     Q25 = table.Column<int>(nullable: true),
-                    Q26 = table.Column<long>(nullable: true),
+                    Q26 = table.Column<uint>(nullable: true),
                     Q27 = table.Column<int>(nullable: true),
                     Q28 = table.Column<int>(nullable: true),
-                    Q29 = table.Column<long>(nullable: true),
-                    Q30 = table.Column<long>(nullable: true),
+                    Q29 = table.Column<uint>(nullable: true),
+                    Q30 = table.Column<uint>(nullable: true),
                     Q31 = table.Column<int>(nullable: true),
                     Q32 = table.Column<int>(nullable: true),
-                    Q32_1 = table.Column<long>(nullable: true),
+                    Q32_1 = table.Column<uint>(nullable: true),
                     Q33 = table.Column<int>(nullable: false),
                     Q34 = table.Column<int>(nullable: true),
                     Q35 = table.Column<int>(nullable: true),
@@ -124,10 +124,10 @@ namespace BHAMCApp.Migrations
                     Q36 = table.Column<int>(nullable: true),
                     OthersQ36 = table.Column<string>(nullable: true),
                     Q37 = table.Column<string>(nullable: true),
-                    Q38 = table.Column<long>(nullable: true),
+                    Q38 = table.Column<uint>(nullable: true),
                     Q39 = table.Column<int>(nullable: false),
-                    Q40 = table.Column<long>(nullable: true),
-                    Q41 = table.Column<long>(nullable: true),
+                    Q40 = table.Column<uint>(nullable: true),
+                    Q41 = table.Column<uint>(nullable: true),
                     Q42 = table.Column<int>(nullable: false),
                     Q43_1 = table.Column<bool>(nullable: false),
                     Q43_2 = table.Column<bool>(nullable: false),
@@ -139,10 +139,10 @@ namespace BHAMCApp.Migrations
                     Q45 = table.Column<int>(nullable: true),
                     Q46 = table.Column<int>(nullable: true),
                     Q47 = table.Column<int>(nullable: false),
-                    Q48 = table.Column<long>(nullable: true),
+                    Q48 = table.Column<uint>(nullable: true),
                     Q49 = table.Column<int>(nullable: false),
                     Q50 = table.Column<string>(nullable: true),
-                    Q51 = table.Column<long>(nullable: true),
+                    Q51 = table.Column<uint>(nullable: true),
                     Q52 = table.Column<string>(nullable: true),
                     Q53 = table.Column<int>(nullable: false),
                     Q54 = table.Column<int>(nullable: true),
@@ -185,7 +185,7 @@ namespace BHAMCApp.Migrations
                     Q64_3 = table.Column<bool>(nullable: false),
                     Q64_4 = table.Column<bool>(nullable: false),
                     Q64_5 = table.Column<bool>(nullable: false),
-                    Q65 = table.Column<long>(nullable: true),
+                    Q65 = table.Column<uint>(nullable: true),
                     Q66 = table.Column<int>(nullable: false),
                     Q67 = table.Column<int>(nullable: false),
                     OthersQ67 = table.Column<string>(nullable: true),
@@ -198,7 +198,7 @@ namespace BHAMCApp.Migrations
                     Q70_4 = table.Column<bool>(nullable: false),
                     OthersQ70_4 = table.Column<string>(nullable: true),
                     Q71 = table.Column<int>(nullable: false),
-                    Q71_1 = table.Column<long>(nullable: true),
+                    Q71_1 = table.Column<uint>(nullable: true),
                     Q72 = table.Column<int>(nullable: false),
                     Q73 = table.Column<int>(nullable: false),
                     Q74 = table.Column<int>(nullable: false),
@@ -234,7 +234,7 @@ namespace BHAMCApp.Migrations
                     Q93 = table.Column<int>(nullable: true),
                     Q94 = table.Column<int>(nullable: false),
                     Q95 = table.Column<int>(nullable: false),
-                    Q96 = table.Column<long>(nullable: true),
+                    Q96 = table.Column<uint>(nullable: true),
                     Q97 = table.Column<int>(nullable: false),
                     Q98_1 = table.Column<bool>(nullable: false),
                     Q98_2 = table.Column<bool>(nullable: false),
@@ -248,24 +248,13 @@ namespace BHAMCApp.Migrations
                     Q99_4 = table.Column<bool>(nullable: false),
                     Q99_5 = table.Column<bool>(nullable: false),
                     Q100_1_1 = table.Column<int>(nullable: false),
-                    Q100_2_1 = table.Column<bool>(nullable: false),
-                    Q100_2_2 = table.Column<bool>(nullable: false),
-                    Q100_2_3 = table.Column<bool>(nullable: false),
-                    Q100_3_1 = table.Column<bool>(nullable: false),
-                    Q100_3_2 = table.Column<bool>(nullable: false),
-                    Q100_3_3 = table.Column<bool>(nullable: false),
-                    Q100_3_4 = table.Column<bool>(nullable: false),
-                    Q100_4_1 = table.Column<bool>(nullable: false),
-                    Q100_4_2 = table.Column<bool>(nullable: false),
-                    Q100_4_3 = table.Column<bool>(nullable: false),
-                    Q100_4_4 = table.Column<bool>(nullable: false),
-                    Q100_4_5 = table.Column<bool>(nullable: false),
+                    QEA100 = table.Column<int>(nullable: false),
+                    QEC100 = table.Column<int>(nullable: false),
+                    QECO100 = table.Column<int>(nullable: false),
                     Q100_5_1 = table.Column<int>(nullable: false),
                     Q100_6_1 = table.Column<int>(nullable: false),
-                    Q101_1 = table.Column<bool>(nullable: false),
-                    Q101_2 = table.Column<bool>(nullable: false),
-                    Q101_3 = table.Column<bool>(nullable: false),
-                    Q102 = table.Column<long>(nullable: true),
+                    QECOO100 = table.Column<int>(nullable: false),
+                    Q102 = table.Column<uint>(nullable: true),
                     Q103 = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -278,7 +267,7 @@ namespace BHAMCApp.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Sqlite:Autoincrement", true),
                     RoleId = table.Column<string>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true)
@@ -299,7 +288,7 @@ namespace BHAMCApp.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Sqlite:Autoincrement", true),
                     UserId = table.Column<string>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true)
@@ -388,8 +377,7 @@ namespace BHAMCApp.Migrations
                 name: "RoleNameIndex",
                 table: "AspNetRoles",
                 column: "NormalizedName",
-                unique: true,
-                filter: "[NormalizedName] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserClaims_UserId",
@@ -415,8 +403,7 @@ namespace BHAMCApp.Migrations
                 name: "UserNameIndex",
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
-                unique: true,
-                filter: "[NormalizedUserName] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Bhamc_QuestionnaireNo",

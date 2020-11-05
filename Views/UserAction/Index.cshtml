@@ -1,0 +1,72 @@
+﻿@model IEnumerable<BHAMCApp.Models.Bhamc>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<h4 class="text-info">Bha</h4>*@
+<div>
+    <a class="text-info" asp-action="Create">Users Action</a>
+</div>
+
+
+<div class="container-fluid jumbodm ">
+    <div class="row text-white flex-row flex-nowrap">
+        
+        @*<div class="col-md-1 ">
+            @Html.DisplayNameFor(model => model.ID)
+        </div>*@
+              <div class="col-md-3 ">
+            @Html.DisplayNameFor(model => model.CreatedByUser)
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </div>
+        <div class="col-md-3 ">
+            @Html.DisplayNameFor(model => model.ModifiedByUser)
+        </div>
+        @*<div class="col-md-3 ">
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </div>*@
+        <div class="col-md-1 ">
+            @Html.DisplayNameFor(model => model.Edited)
+        </div>
+
+    </div>
+
+    @foreach (var item in Model)
+    {
+        <div class="row text-info flex-row flex-nowrap">
+
+            @*<div class="col-md-1 ">
+                @Html.DisplayFor(modelItem => item.ID)
+            </div>*@
+                       <div class="col-md-3">
+                @Html.DisplayFor(modelItem => item.CreatedByUser)
+            </div>
+            <div class="col-md-3 ">
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </div>
+            <div class="col-md-3 ">
+                @Html.DisplayFor(modelItem => item.ModifiedByUser)
+            </div>
+            @*<div class="col-md-3 ">
+                @Html.DisplayFor(modelItem => item.ModifiedDate)
+            </div>*@
+            <div class="col-md-1">
+                @Html.DisplayFor(modelItem => item.Edited)
+            </div>
+            <div class="col-md-3 ">
+                <div class="row">
+                    <div class="col-md-3 btn-bh ">
+                        <a class="text-white" asp-action="Details" asp-route-id="@item.ID">View</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+</div>

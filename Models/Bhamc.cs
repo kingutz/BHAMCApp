@@ -79,7 +79,7 @@ namespace BHAMCApp.Models
         [Range(1, 40, ErrorMessage = "check??")]
         public uint? Q7 { get; set; }
 
-        [Display(Name = "Q8. What is the highest level of education attained? ")]
+        [Display(Name = "Q8. What is the highest level of education? ")]
         public E8 Q8 { get; set; }
 
         [Display(Name = "Q9. Had you been employed in work which gave you monthly salary in the past 12 months?")]
@@ -139,7 +139,7 @@ namespace BHAMCApp.Models
         [Display(Name = "Q17. Do you share the toilet with other family?")]
         public E9 Q17 { get; set; }
 
-        [Display(Name = "Q18. Where do you get your water from?")]
+        [Display(Name = "Q18. Where do you get your water?")]
         public E18 Q18 { get; set; }
 
         [Display(Name = "5. Other(specify)")]
@@ -311,7 +311,7 @@ namespace BHAMCApp.Models
         [Display(Name = "Q53. Did your partner come to test for HIV in this clinic or any other place?")]
         public E9 Q53 { get; set; }
 
-        [Display(Name = "Q54. If you were tested positive")]
+        [Display(Name = "Q54. If you tested positive")]
         public E46? Q54 { get; set; }
 
         //.......Q54 If you were tested positive
@@ -329,7 +329,7 @@ namespace BHAMCApp.Models
         [Display(Name = "Write name of the drug")]
         public E9? Q54_4 { get; set; }
 
-        [Display(Name = "Q55. Have you tested for syphilis in this pregnancy?")]
+        [Display(Name = "Q55. Have you tested for syphilis?")]
         public E9 Q55 { get; set; }
 
         [Display(Name = "Q56. Syphilis status?")]
@@ -441,7 +441,7 @@ namespace BHAMCApp.Models
         //[Range(0, 1000, ErrorMessage = "Not applicable!!")]
         //public uint? Q65_1 { get; set; }
 
-        [Display(Name = "Q67. What is your partner’s occupation?")]
+        [Display(Name = "Q67.Partner’s occupation?")]
         public E10 Q67 { get; set; }
         [Display(Name = "5. Others(specify)")]
         public string OthersQ67 { get; set; }
@@ -642,35 +642,41 @@ namespace BHAMCApp.Models
         public E9 Q100_1_1 { get; set; }
 
         //2.Amount
-        [Display(Name = "1. Scarce")]
-        public bool Q100_2_1 { get; set; }
-        [Display(Name = "2. Moderate")]
-        public bool Q100_2_2 { get; set; }
-        [Display(Name = "3. Profuse")]
-        public bool Q100_2_3 { get; set; }
+        //[Display(Name = "1. Scarce")]
+        //public bool Q100_2_1 { get; set; }
+        //[Display(Name = "2. Moderate")]
+        //public bool Q100_2_2 { get; set; }
+        //[Display(Name = "3. Profuse")]
+        //public bool Q100_2_3 { get; set; }
+       
+        [Display(Name = "2. Amount")]
+        public EA100 QEA100 { get; set; }
 
         //3.Colour 
-        [Display(Name = "1. Clear")]
-        public bool Q100_3_1 { get; set; }
-        [Display(Name = "2. White")]
-        public bool Q100_3_2 { get; set; }
-        [Display(Name = "3. Brown")]
-        public bool Q100_3_3 { get; set; }
-        [Display(Name = "4. Cream/yellow")]
-        public bool Q100_3_4 { get; set; }
-
+        //[Display(Name = "1. Clear")]
+        //public bool Q100_3_1 { get; set; }
+        //[Display(Name = "2. White")]
+        //public bool Q100_3_2 { get; set; }
+        //[Display(Name = "3. Brown")]
+        //public bool Q100_3_3 { get; set; }
+        //[Display(Name = "4. Cream/yellow")]
+        //public bool Q100_3_4 { get; set; }
+        [Display(Name = "3.Colour")]
+        public EC100 QEC100 { get; set; }
         //4.Consistency
 
-        [Display(Name = "1. Thick")]
-        public bool Q100_4_1 { get; set; }
-        [Display(Name = "2. Thin")]
-        public bool Q100_4_2 { get; set; }
-        [Display(Name = "3. Foamy")]
-        public bool Q100_4_3 { get; set; }
-        [Display(Name = "4. Curdlike")]
-        public bool Q100_4_4 { get; set; }
-        [Display(Name = "5. Homogenous")]
-        public bool Q100_4_5 { get; set; }
+        //[Display(Name = "1. Thick")]
+        //public bool Q100_4_1 { get; set; }
+        //[Display(Name = "2. Thin")]
+        //public bool Q100_4_2 { get; set; }
+        //[Display(Name = "3. Foamy")]
+        //public bool Q100_4_3 { get; set; }
+        //[Display(Name = "4. Curdlike")]
+        //public bool Q100_4_4 { get; set; }
+        //[Display(Name = "5. Homogenous")]
+        //public bool Q100_4_5 { get; set; }
+        [Display(Name = "4.Consistency")]
+        public ECO100 QECO100 { get; set; }
 
         //5.Coating of vaginal walls
         [Display(Name = "5. Coating of vaginal walls")]
@@ -681,12 +687,15 @@ namespace BHAMCApp.Models
         public E9 Q100_6_1 { get; set; }
 
         //Q101 Sample collected from (tick where appropriate)
-        [Display(Name = "1. Blood")]
-        public bool Q101_1 { get; set; }
-        [Display(Name = "2. Vaginal")]
-        public bool Q101_2 { get; set; }
-        [Display(Name = "3. Urin")]
-        public bool Q101_3 { get; set; }
+        //[Display(Name = "1. Blood")]
+        //public bool Q101_1 { get; set; }
+        //[Display(Name = "2. Vaginal")]
+        //public bool Q101_2 { get; set; }
+        //[Display(Name = "3. Urin")]
+        //public bool Q101_3 { get; set; }
+
+        [Display(Name = "Sample taken")]
+        public ECOO100 QECOO100 { get; set; }
 
         //Vaginal sample          
         [Display(Name = "(pH value")]
@@ -1188,6 +1197,50 @@ namespace BHAMCApp.Models
         CowMilk = 3,
         [Display(Name = "4. Mixed feeding(breast milk and other milk)")]
         OtherMilk = 4
+    }
+    public enum EA100
+    {
+        [Display(Name = "1. Scarce")]
+        Scarce = 1,
+        [Display(Name = "2. Moderate")]
+        Moderate = 2,
+        [Display(Name = "3. Profuse")]
+        Profuse = 3
+        
+    }
+    public enum EC100
+    {
+        [Display(Name = "1. Clear")]
+        Clear = 1,
+        [Display(Name = "2. White")]
+        White = 2,
+        [Display(Name = "3. Brown")]
+        Brown = 3
+
+    }
+    public enum ECO100
+    {
+        [Display(Name = "1. Thick")]
+        Thick = 1,
+        [Display(Name = "2. Thin")]
+        Thin = 2,
+        [Display(Name = "3. Foamy")]
+        Foamy = 3,
+        [Display(Name = "4. Curdlike")]
+        Curdlike = 4
+        
+        
+
+    }
+    public enum ECOO100
+    {
+        [Display(Name = "1. Blood")]
+        Blood = 1,
+        [Display(Name = "2. Vaginal")]
+        Vaginal = 2,
+        [Display(Name = "3. Urin")]
+        Urin = 3
+
     }
     public enum E103
     {

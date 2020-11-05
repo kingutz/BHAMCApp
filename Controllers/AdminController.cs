@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BHAMCApp.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BHAMCApp.Controllers
 {
+	[Authorize(Roles = "admin")]
 	public class AdminController : Controller
 	{
 

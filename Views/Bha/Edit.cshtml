@@ -1196,601 +1196,625 @@
             </div>
         </div>
         @*...........INFANT FEEDING INFORMATION..........*@
-        <div class="row jumbodm">
-            <div class="col-md-12 text-info">
-                <h5>INFANT FEEDING INFORMATION</h5>
-            </div>
-            <div class="col-md-5">
-                <label asp-for="Q80" class="control-label"></label>
-                <select asp-for="Q80" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E9>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q80" class="text-danger"></span>
-            </div>
-            @*<div class="col-md-7">
-                    <p>Q81. If Yes, what kind of counselling did you receive</p>
-                    @Html.DisplayNameFor(model => model.Q81_1) <input asp-for="Q81_1" />
-                    @Html.DisplayNameFor(model => model.Q81_2) <input asp-for="Q81_2" />
-                    @Html.DisplayNameFor(model => model.Q81_3) <input asp-for="Q81_3" />
-                    @Html.DisplayNameFor(model => model.Q81_4) <input asp-for="Q81_4" />
-                    @Html.DisplayNameFor(model => model.Q81_5) <input asp-for="Q81_5" />
-                    @Html.DisplayNameFor(model => model.Q81_6) <input asp-for="Q81_6" />
-
-
-                </div>*@
-            <div class="col-md-6">
-                <p>Q81. If Yes, what kind of counselling did you receive</p>
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="row">
-                            <div class="col-md-6">
-                                @Html.DisplayNameFor(model => model.Q81_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q81_1" />
-                            </div>
-                            <div class="col-md-4">
-                                @Html.DisplayNameFor(model => model.Q81_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q81_2" />
-                            </div>
-                            <div class="col-md-6">
-                                @Html.DisplayNameFor(model => model.Q81_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q81_3" />
-                            </div>
-                            <div class="col-md-4">
-                                @Html.DisplayNameFor(model => model.Q81_4)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q81_4" />
-                            </div>
-                            <div class="col-md-6">
-                                @Html.DisplayNameFor(model => model.Q81_5)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q81_5" />
-                            </div>
-                            <div class="col-md-4">
-                                @Html.DisplayNameFor(model => model.Q81_6)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q81_6" />
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="col-md-7">
-                <p>Q82. Where else have you heard about breast feeding and infant feeding?</p>
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="row">
-                            <div class="col-md-5">
-                                @Html.DisplayNameFor(model => model.Q82_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q82_1" />
-                            </div>
-                            <div class="col-md-5">
-                                @Html.DisplayNameFor(model => model.Q82_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q82_2" />
-                            </div>
-                            <div class="col-md-5">
-                                @Html.DisplayNameFor(model => model.Q82_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q82_3" />
-                            </div>
-                            <div class="col-md-5">
-                                @Html.DisplayNameFor(model => model.Q82_4)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q82_4" />
-                            </div>
-                            <div class="col-md-5">
-                                @Html.DisplayNameFor(model => model.Q82_5)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q82_5" />
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-            <div class="col-md-5">
-                <label asp-for="Q83" class="control-label"></label>
-                <select asp-for="Q83" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E83>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q83" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="Q84" class="control-label"></label>
-                <select asp-for="Q84" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E84>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q84" class="text-danger"></span>
-            </div>
-            <div class="col-md-4">
-                <label asp-for="Q85" class="control-label"></label>
-                <select asp-for="Q85" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E85>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q85" class="text-danger"></span>
-            </div>
-
-            <div class="col-md-5">
-                <label asp-for="Q86" class="control-label"></label>
-                <select asp-for="Q86" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E85>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q86" class="text-danger"></span>
-            </div>
-
-            <div class="col-md-6">
-                <label asp-for="Q87" class="control-label"></label>
-                <select asp-for="Q87" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E87>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q87" class="text-danger"></span>
-            </div>
-
-            <div class="col-md-6">
-                <label asp-for="Q88" class="control-label"></label>
-                <select asp-for="Q88" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E9>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q88" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="Q89" class="control-label"></label>
-                <select asp-for="Q89" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E9>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q89" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="Q90" class="control-label"></label>
-                <select asp-for="Q90" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E90>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q90" class="text-danger"></span>
-            </div>
-            <div class="col-md-3 ">
-                <label asp-for="OthersQ90" class="control-label"></label>
-                <input asp-for="OthersQ90" class="form-control" />
-                <span asp-validation-for="OthersQ90" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="Q91" class="control-label"></label>
-                <select asp-for="Q91" id="nQ91" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E9>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q91" class="text-danger"></span>
-            </div>
-            <div class="col-md-3 ">
-                <label asp-for="Q92" class="control-label"></label>
-                <select asp-for="Q92" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E92>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q92" class="text-danger"></span>
-            </div>
-            <div class="col-md-3 ">
-                <label asp-for="OthersQ92" class="control-label"></label>
-                <input asp-for="OthersQ92" class="form-control" />
-                <span asp-validation-for="OthersQ92" class="text-danger"></span>
-            </div>
-            <div class="col-md-2 ">
-                <label asp-for="Q93" class="control-label"></label>
-                <select asp-for="Q93" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E93>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q93" class="text-danger"></span>
-            </div>
-            <div class="col-md-4">
-                <label asp-for="Q94" class="control-label"></label>
-                <select asp-for="Q94" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E94>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q94" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="Q95" class="control-label"></label>
-                <select asp-for="Q95" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E95>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q95" class="text-danger"></span>
-            </div>
-            <div class="col-md-7">
-                <label asp-for="Q96" class="control-label"></label>
-                <input asp-for="Q96" class="form-control" />
-                <span asp-validation-for="Q96" class="text-danger"></span>
-            </div>
-            <div class="col-md-5">
-                <label asp-for="Q97" class="control-label"></label>
-                @*<input asp-for="Q97" class="form-control" />*@
-                <select asp-for="Q97" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E9>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q97" class="text-danger"></span>
-            </div>
-            @*<div class="col-md-12">
-                    <p>Q98. External genitalia (tick where appropriate)</p>
-                    @Html.DisplayNameFor(model => model.Q98_1) <input asp-for="Q98_1" />
-                    @Html.DisplayNameFor(model => model.Q98_2) <input asp-for="Q98_2" />
-                    @Html.DisplayNameFor(model => model.Q98_4) <input asp-for="Q98_4" />
-                    @Html.DisplayNameFor(model => model.Q98_5) <input asp-for="Q98_5" />
-                    @Html.DisplayNameFor(model => model.Q98_6) <input asp-for="Q98_6" />
-
-
-
-                </div>*@
-            <div class="col-md-8">
-                <p>Q98. External genitalia (tick where appropriate)</p>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q98_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q98_1" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q98_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q98_2" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q98_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q98_3" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q98_4)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q98_4" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q98_5)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q98_5" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q98_5)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q98_6" />
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            @*<div class="col-md-12">
-                    <p>Q99. Internal genitalia (tick where appropriate)</p>
-                    @Html.DisplayNameFor(model => model.Q99_1) <input asp-for="Q99_1" />
-                    @Html.DisplayNameFor(model => model.Q99_2) <input asp-for="Q99_2" />
-                    @Html.DisplayNameFor(model => model.Q99_4) <input asp-for="Q99_4" />
-                    @Html.DisplayNameFor(model => model.Q99_5) <input asp-for="Q99_5" />
-                </div>*@
-            <div class="col-md-8">
-                <p>Q99. Internal genitalia (tick where appropriate)</p>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q99_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q99_1" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q99_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q99_2" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q99_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q99_3" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q99_4)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q99_4" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q99_5)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q99_5" />
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            <div class="col-md-12">
-                <p>Q100. Vaginal secretion (tick where appropriate)</p>
-                @Html.DisplayNameFor(model => model.Q100_1_1) <input asp-for="Q100_1_1" />
-            </div>
-            @*<div class="col-md-12">
-                    <p>1.Normal</p>
-                    <input asp-for="Q100_1_1" />
-                    Html.DisplayNameFor(model => model.Q100_1_1) <input asp-for="Q100_1_1" />
-                </div>*@
-            @*<div class="col-md-12">
-                    <p>2.Amount</p>
-                    @Html.DisplayNameFor(model => model.Q100_2_1) <input asp-for="Q100_2_1" />
-                    @Html.DisplayNameFor(model => model.Q100_2_2) <input asp-for="Q100_2_2" />
-                    @Html.DisplayNameFor(model => model.Q100_2_3) <input asp-for="Q100_2_3" />
-                </div>*@
-
-            <div class="col-md-6">
-                <p>Q100. Vaginal secretion (tick where appropriate)</p>
-                <p class="text-info">2.Amount</p>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_2_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_2_1" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_2_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_2_2" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_2_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_2_3" />
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            @*<div class="col-md-12">
-                    <p>3.Colour </p>
-                    @Html.DisplayNameFor(model => model.Q100_3_1) <input asp-for="Q100_3_1" />
-                    @Html.DisplayNameFor(model => model.Q100_3_1) <input asp-for="Q100_3_1" />
-                    @Html.DisplayNameFor(model => model.Q100_3_2) <input asp-for="Q100_3_2" />
-                    @Html.DisplayNameFor(model => model.Q100_3_3) <input asp-for="Q100_3_3" />
-                    @Html.DisplayNameFor(model => model.Q100_3_4) <input asp-for="Q100_3_4" />
-
-                </div>*@
-            <div class="col-md-12">
-                <p>Q100. Vaginal secretion (tick where appropriate)</p>
-                <p class="text-info">3.Colour </p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_3_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_3_1" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_3_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_3_2" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_3_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_3_3" />
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="col-md-12">
-                <p>Q100. Vaginal secretion (tick where appropriate)</p>
-                <p class="text-info">4.Consistency </p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_4_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_4_1" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_4_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_4_2" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_4_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_4_3" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_4_4)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_4_4" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q100_4_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q100_4_5" />
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            @*<div class="col-md-12">
-                    <p>Q100. Vaginal secretion (tick where appropriate)</p>
-                    @Html.DisplayNameFor(model => model.Q100_5_1) <input asp-for="Q100_5_1" />
-                </div>*@
-            <div class="col-md-3">
-                <label asp-for="Q100_5_1" class="control-label"></label>
-                <select asp-for="Q100_5_1" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E9>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q100_5_1" class="text-danger"></span>
-            </div>
-
-            @*<div class="col-md-12">
-                    <p>Q100. Vaginal secretion (tick where appropriate)</p>
-                    @Html.DisplayNameFor(model => model.Q100_6_1) <input asp-for="Q100_6_1" />
-                </div>*@
-            <div class="col-md-2">
-                <label asp-for="Q100_6_1" class="control-label"></label>
-                <select asp-for="Q100_6_1" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E9>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q100_6_1" class="text-danger"></span>
-            </div>
-
-
-            <div class="col-md-12">
-                <p>Q100. Vaginal secretion (tick where appropriate)</p>
-                <p class="text-info">4.Consistency </p>
-                <p>Sample taken</p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q101_1)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q101_1" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q101_2)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q101_2" />
-                            </div>
-                            <div class="col-md-3">
-                                @Html.DisplayNameFor(model => model.Q101_3)
-                            </div>
-                            <div class="col-md-1">
-                                <input asp-for="Q101_3" />
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-
-            <div class="col-md-3">
-                <label asp-for="Q102" class="control-label"></label>
-                <input asp-for="Q102" class="form-control" />
-                <span asp-validation-for="Q102" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="Q103" class="control-label"></label>
-                <select asp-for="Q103" class="form-control"
-                        asp-items="Html.GetEnumSelectList<E103>()">
-                    <option selected="selected" value=""></option>
-                </select>
-                <span asp-validation-for="Q103" class="text-danger"></span>
-            </div>
+    <div class="row jumbodm">
+        <div class="col-md-12 text-info">
+            <h5>INFANT FEEDING INFORMATION</h5>
         </div>
+        <div class="col-md-5">
+            <label asp-for="Q80" class="control-label"></label>
+            <select asp-for="Q80" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q80" class="text-danger"></span>
+        </div>
+        @*<div class="col-md-7">
+            <p>Q81. If Yes, what kind of counselling did you receive</p>
+            @Html.DisplayNameFor(model => model.Q81_1) <input asp-for="Q81_1" />
+            @Html.DisplayNameFor(model => model.Q81_2) <input asp-for="Q81_2" />
+            @Html.DisplayNameFor(model => model.Q81_3) <input asp-for="Q81_3" />
+            @Html.DisplayNameFor(model => model.Q81_4) <input asp-for="Q81_4" />
+            @Html.DisplayNameFor(model => model.Q81_5) <input asp-for="Q81_5" />
+            @Html.DisplayNameFor(model => model.Q81_6) <input asp-for="Q81_6" />
+
+
+        </div>*@
+        <div class="col-md-6">
+            <p>Q81. If Yes, what kind of counselling did you receive</p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.Q81_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q81_1" />
+                        </div>
+                        <div class="col-md-4">
+                            @Html.DisplayNameFor(model => model.Q81_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q81_2" />
+                        </div>
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.Q81_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q81_3" />
+                        </div>
+                        <div class="col-md-4">
+                            @Html.DisplayNameFor(model => model.Q81_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q81_4" />
+                        </div>
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.Q81_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q81_5" />
+                        </div>
+                        <div class="col-md-4">
+                            @Html.DisplayNameFor(model => model.Q81_6)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q81_6" />
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="col-md-7">
+            <p>Q82. Where else have you heard about breast feeding and infant feeding?</p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-5">
+                            @Html.DisplayNameFor(model => model.Q82_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q82_1" />
+                        </div>
+                        <div class="col-md-5">
+                            @Html.DisplayNameFor(model => model.Q82_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q82_2" />
+                        </div>
+                        <div class="col-md-5">
+                            @Html.DisplayNameFor(model => model.Q82_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q82_3" />
+                        </div>
+                        <div class="col-md-5">
+                            @Html.DisplayNameFor(model => model.Q82_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q82_4" />
+                        </div>
+                        <div class="col-md-5">
+                            @Html.DisplayNameFor(model => model.Q82_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q82_5" />
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="col-md-5">
+            <label asp-for="Q83" class="control-label"></label>
+            <select asp-for="Q83" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E83>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q83" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Q84" class="control-label"></label>
+            <select asp-for="Q84" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E84>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q84" class="text-danger"></span>
+        </div>
+        <div class="col-md-4">
+            <label asp-for="Q85" class="control-label"></label>
+            <select asp-for="Q85" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E85>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q85" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-5">
+            <label asp-for="Q86" class="control-label"></label>
+            <select asp-for="Q86" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E85>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q86" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Q87" class="control-label"></label>
+            <select asp-for="Q87" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E87>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q87" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Q88" class="control-label"></label>
+            <select asp-for="Q88" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q88" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Q89" class="control-label"></label>
+            <select asp-for="Q89" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q89" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="Q90" class="control-label"></label>
+            <select asp-for="Q90" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E90>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q90" class="text-danger"></span>
+        </div>
+        <div class="col-md-3 ">
+            <label asp-for="OthersQ90" class="control-label"></label>
+            <input asp-for="OthersQ90" class="form-control" />
+            <span asp-validation-for="OthersQ90" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Q91" class="control-label"></label>
+            <select asp-for="Q91" id="nQ91" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q91" class="text-danger"></span>
+        </div>
+        <div class="col-md-3 ">
+            <label asp-for="Q92" class="control-label"></label>
+            <select asp-for="Q92" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E92>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q92" class="text-danger"></span>
+        </div>
+        <div class="col-md-3 ">
+            <label asp-for="OthersQ92" class="control-label"></label>
+            <input asp-for="OthersQ92" class="form-control" />
+            <span asp-validation-for="OthersQ92" class="text-danger"></span>
+        </div>
+        <div class="col-md-2 ">
+            <label asp-for="Q93" class="control-label"></label>
+            <select asp-for="Q93" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E93>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q93" class="text-danger"></span>
+        </div>
+        <div class="col-md-4">
+            <label asp-for="Q94" class="control-label"></label>
+            <select asp-for="Q94" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E94>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q94" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Q95" class="control-label"></label>
+            <select asp-for="Q95" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E95>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q95" class="text-danger"></span>
+        </div>
+        <div class="col-md-7">
+            <label asp-for="Q96" class="control-label"></label>
+            <input asp-for="Q96" class="form-control" />
+            <span asp-validation-for="Q96" class="text-danger"></span>
+        </div>
+        <div class="col-md-5">
+            <label asp-for="Q97" class="control-label"></label>
+            @*<input asp-for="Q97" class="form-control" />*@
+            <select asp-for="Q97" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q97" class="text-danger"></span>
+        </div>
+        @*<div class="col-md-12">
+            <p>Q98. External genitalia (tick where appropriate)</p>
+            @Html.DisplayNameFor(model => model.Q98_1) <input asp-for="Q98_1" />
+            @Html.DisplayNameFor(model => model.Q98_2) <input asp-for="Q98_2" />
+            @Html.DisplayNameFor(model => model.Q98_4) <input asp-for="Q98_4" />
+            @Html.DisplayNameFor(model => model.Q98_5) <input asp-for="Q98_5" />
+            @Html.DisplayNameFor(model => model.Q98_6) <input asp-for="Q98_6" />
+
+
+
+        </div>*@
+        <div class="col-md-8">
+            <p>Q98. External genitalia (tick where appropriate)</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q98_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q98_1" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q98_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q98_2" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q98_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q98_3" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q98_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q98_4" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q98_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q98_5" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q98_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q98_6" />
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        @*<div class="col-md-12">
+            <p>Q99. Internal genitalia (tick where appropriate)</p>
+            @Html.DisplayNameFor(model => model.Q99_1) <input asp-for="Q99_1" />
+            @Html.DisplayNameFor(model => model.Q99_2) <input asp-for="Q99_2" />
+            @Html.DisplayNameFor(model => model.Q99_4) <input asp-for="Q99_4" />
+            @Html.DisplayNameFor(model => model.Q99_5) <input asp-for="Q99_5" />
+        </div>*@
+        <div class="col-md-8">
+            <p>Q99. Internal genitalia (tick where appropriate)</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q99_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q99_1" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q99_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q99_2" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q99_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q99_3" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q99_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q99_4" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q99_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q99_5" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-12">
+            <p>Q100. Vaginal secretion (tick where appropriate)</p>
+            @*@Html.DisplayNameFor(model => model.Q100_1_1) <input asp-for="Q100_1_1" />*@
+        </div>
+        <div class="col-md-3">
+
+            <label asp-for="Q100_1_1" class="control-label"></label>
+            <select asp-for="Q100_1_1" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q100_1_1" class="text-danger"></span>
+
+        </div>
+        @*<div class="col-md-6">
+            <p>Q100. Vaginal secretion (tick where appropriate)</p>
+            <p class="text-info">2.Amount</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_2_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_2_1" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_2_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_2_2" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_2_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_2_3" />
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>*@
+        <div class="col-md-3">
+
+            <label asp-for="QEA100" class="control-label"></label>
+            <select asp-for="QEA100" class="form-control"
+                    asp-items="Html.GetEnumSelectList<EA100>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="QEA100" class="text-danger"></span>
+
+        </div>
+
+        @*<div class="col-md-12">
+            <p>Q100. Vaginal secretion (tick where appropriate)</p>
+            <p class="text-info">3.Colour </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_3_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_3_1" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_3_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_3_2" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_3_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_3_3" />
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>*@
+        <div class="col-md-3">
+
+            <label asp-for="QEC100" class="control-label"></label>
+            <select asp-for="QEC100" class="form-control"
+                    asp-items="Html.GetEnumSelectList<EC100>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="QEC100" class="text-danger"></span>
+
+        </div>
+
+        @*<div class="col-md-12">
+            <p>Q100. Vaginal secretion (tick where appropriate)</p>
+            <p class="text-info">4.Consistency </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_4_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_4_1" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_4_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_4_2" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_4_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_4_3" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_4_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_4_4" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q100_4_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q100_4_5" />
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>*@
+        <div class="col-md-3">
+
+            <label asp-for="QECO100" class="control-label"></label>
+            <select asp-for="QECO100" class="form-control"
+                    asp-items="Html.GetEnumSelectList<ECO100>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="QECO100" class="text-danger"></span>
+
+        </div>
+
+        <div class="col-md-3">
+            <label asp-for="Q100_5_1" class="control-label"></label>
+            <select asp-for="Q100_5_1" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q100_5_1" class="text-danger"></span>
+        </div>
+
+
+        <div class="col-md-2">
+            <label asp-for="Q100_6_1" class="control-label"></label>
+            <select asp-for="Q100_6_1" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q100_6_1" class="text-danger"></span>
+        </div>
+
+
+        @*<div class="col-md-12">
+            <p>Q100. Vaginal secretion (tick where appropriate)</p>
+            <p class="text-info">4.Consistency </p>
+            <p>Sample taken</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q101_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q101_1" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q101_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q101_2" />
+                        </div>
+                        <div class="col-md-3">
+                            @Html.DisplayNameFor(model => model.Q101_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="Q101_3" />
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>*@
+
+        <div class="col-md-4">
+
+            <label asp-for="QECOO100" class="control-label"></label>
+            <select asp-for="QECOO100" class="form-control"
+                    asp-items="Html.GetEnumSelectList<ECOO100>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="QECOO100" class="text-danger"></span>
+
+        </div>
+
+
+
+
+        <div class="col-md-3">
+            <label asp-for="Q102" class="control-label"></label>
+            <input asp-for="Q102" class="form-control" />
+            <span asp-validation-for="Q102" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="Q103" class="control-label"></label>
+            <select asp-for="Q103" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E103>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q103" class="text-danger"></span>
+        </div>
+    </div>
 
         @*<div class="col-md-3 ">
                 <input type="submit" value="Create" class="btn btn-bh" />
