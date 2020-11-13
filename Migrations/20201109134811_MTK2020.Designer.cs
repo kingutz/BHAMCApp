@@ -3,14 +3,16 @@ using System;
 using BHAMCApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BHAMCApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201109134811_MTK2020")]
+    partial class MTK2020
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -704,92 +706,6 @@ namespace BHAMCApp.Migrations
                         .IsUnique();
 
                     b.ToTable("Bhamc");
-                });
-
-            modelBuilder.Entity("BHAMCApp.Models.FKBABA", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("CreatedByUser")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime?>("Date")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime?>("DateFollowup")
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("Edited")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("IDNumber")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ManagementFT")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ModifiedByUser")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ProblemsDiagnosis")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Q1")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Q10_1")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Q10_2")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Q10_3")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Q10_4")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q1_1")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Q2")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Q2_1")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Q3")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Q4")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Q5")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Q6")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Q7")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Q8")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Q9")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("FKBABA");
                 });
 
             modelBuilder.Entity("BHAMCApp.Models.FKMAMA", b =>

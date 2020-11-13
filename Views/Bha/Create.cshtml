@@ -2,7 +2,8 @@
 
 @{
     ViewData["Title"] = "Create";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Bhm.cshtml";
 }
 
 
@@ -10,7 +11,7 @@
 
 
 <div class="row text-muted">
-    <h5>New Record</h5>
+    <h2>Enrollment</h2>
 </div>
 <div class="row">
     <a class="text-info" asp-action="Index">Back to List</a>
@@ -19,64 +20,65 @@
     <div class="row text-white justify-content-between">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         @*<input type="hidden" asp-for="ID" />*@
-        <div class="row jumbodm">
-            <div class="col-md-12 text-info">
-                <h5>GENERAL INFORMATION</h5>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="InterviewerName" class="control-label"></label>
-                <input asp-for="InterviewerName" id="nname" class="form-control" />
-                <span asp-validation-for="InterviewerName" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="InterviewDate" class="control-label"></label>
-                <input asp-for="InterviewDate" class="form-control" />
-                <span asp-validation-for="InterviewDate" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="QuestionnaireNo" class="control-label"></label>
-                <input asp-for="QuestionnaireNo" class="form-control" />
-                <span asp-validation-for="QuestionnaireNo" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="AntenatalCare" class="control-label"></label>
-                <input asp-for="AntenatalCare" class="form-control" />
-                <span asp-validation-for="AntenatalCare" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="GestationalAge" class="control-label"></label>
-                <input asp-for="GestationalAge" class="form-control" />
-                <span asp-validation-for="GestationalAge" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="DateMenstruation" class="control-label"></label>
-                <input asp-for="DateMenstruation" class="form-control" />
-                <span asp-validation-for="DateMenstruation" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="ExpectedDate" class="control-label"></label>
-                <input asp-for="ExpectedDate" class="form-control" />
-                <span asp-validation-for="ExpectedDate" class="text-danger"></span>
-            </div>
-            <div class="col-md-3">
-                <label asp-for="HospitalName" class="control-label"></label>
-                @*<input asp-for="HospitalName" class="form-control" />*@
-                <select asp-for="HospitalName" class="form-control">
-                    <option value=""></option>
-                    <option>Majengo</option>
-                    <option>Pasua </option>
-
-                </select>
-                <span asp-validation-for="HospitalName" class="text-danger"></span>
-            </div>
-            <div class="col-md-5">
-                <label asp-for="PostNatalCare" class="control-label"></label>
-                <input asp-for="PostNatalCare" class="form-control" />
-                <span asp-validation-for="PostNatalCare" class="text-danger"></span>
-            </div>
-
-
+    <div class="row jumbodm">
+       
+        <div class="col-md-12 text-info">
+            <h5>GENERAL INFORMATION</h5>
         </div>
+        <div class="col-md-3">
+            <label asp-for="InterviewerName" class="control-label"></label>
+            <input asp-for="InterviewerName" id="nname" class="form-control" />
+            <span asp-validation-for="InterviewerName" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="InterviewDate" class="control-label"></label>
+            <input asp-for="InterviewDate" class="form-control" />
+            <span asp-validation-for="InterviewDate" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="QuestionnaireNo" class="control-label"></label>
+            <input asp-for="QuestionnaireNo" class="form-control" />
+            <span asp-validation-for="QuestionnaireNo" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="AntenatalCare" class="control-label"></label>
+            <input asp-for="AntenatalCare" class="form-control" />
+            <span asp-validation-for="AntenatalCare" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="GestationalAge" class="control-label"></label>
+            <input asp-for="GestationalAge" class="form-control" />
+            <span asp-validation-for="GestationalAge" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="DateMenstruation" class="control-label"></label>
+            <input asp-for="DateMenstruation" class="form-control" />
+            <span asp-validation-for="DateMenstruation" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="ExpectedDate" class="control-label"></label>
+            <input asp-for="ExpectedDate" class="form-control" />
+            <span asp-validation-for="ExpectedDate" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="HospitalName" class="control-label"></label>
+            @*<input asp-for="HospitalName" class="form-control" />*@
+            <select asp-for="HospitalName" class="form-control">
+                <option value=""></option>
+                <option>Majengo</option>
+                <option>Pasua </option>
+
+            </select>
+            <span asp-validation-for="HospitalName" class="text-danger"></span>
+        </div>
+        <div class="col-md-5">
+            <label asp-for="PostNatalCare" class="control-label"></label>
+            <input asp-for="PostNatalCare" class="form-control" />
+            <span asp-validation-for="PostNatalCare" class="text-danger"></span>
+        </div>
+
+
+    </div>
         @*..........SOCIO-DEMOGRAPHIC CHARACTERISTICS.....*@
         <div class="row jumbodm">
             <div class="col-md-12 text-info">
@@ -1206,7 +1208,7 @@
             </select>
             <span asp-validation-for="Q80" class="text-danger"></span>
         </div>
-      
+
         <div class="col-md-6">
             <p>Q81. If Yes, what kind of counselling did you receive</p>
             <div class="row">
@@ -1552,19 +1554,19 @@
 
 
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 ">
             <p>Q100. Vaginal secretion </p>
             @*@Html.DisplayNameFor(model => model.Q100_1_1) <input asp-for="Q100_1_1" />*@
         </div>
         <div class="col-md-3">
-            
-                    <label asp-for="Q100_1_1" class="control-label"></label>
-                    <select asp-for="Q100_1_1" class="form-control"
-                            asp-items="Html.GetEnumSelectList<E9>()">
-                        <option selected="selected" value=""></option>
-                    </select>
-                    <span asp-validation-for="Q100_1_1" class="text-danger"></span>
-            
+
+            <label asp-for="Q100_1_1" class="control-label"></label>
+            <select asp-for="Q100_1_1" class="form-control"
+                    asp-items="Html.GetEnumSelectList<E9>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q100_1_1" class="text-danger"></span>
+
         </div>
         @*<div class="col-md-6">
             <p>Q100. Vaginal secretion (tick where appropriate)</p>
@@ -1602,14 +1604,14 @@
 
         </div>*@
         <div class="col-md-3">
-           
-                    <label asp-for="QEA100" class="control-label"></label>
-                    <select asp-for="QEA100" class="form-control"
-                            asp-items="Html.GetEnumSelectList<EA100>()">
-                        <option selected="selected" value=""></option>
-                    </select>
-                    <span asp-validation-for="QEA100" class="text-danger"></span>
-              
+
+            <label asp-for="QEA100" class="control-label"></label>
+            <select asp-for="QEA100" class="form-control"
+                    asp-items="Html.GetEnumSelectList<EA100>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="QEA100" class="text-danger"></span>
+
         </div>
 
         @*<div class="col-md-12">
@@ -1648,14 +1650,14 @@
 
         </div>*@
         <div class="col-md-3">
-            
-                    <label asp-for="QEC100" class="control-label"></label>
-                    <select asp-for="QEC100" class="form-control"
-                            asp-items="Html.GetEnumSelectList<EC100>()">
-                        <option selected="selected" value=""></option>
-                    </select>
-                    <span asp-validation-for="QEC100" class="text-danger"></span>
-             
+
+            <label asp-for="QEC100" class="control-label"></label>
+            <select asp-for="QEC100" class="form-control"
+                    asp-items="Html.GetEnumSelectList<EC100>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="QEC100" class="text-danger"></span>
+
         </div>
 
         @*<div class="col-md-12">
@@ -1706,14 +1708,14 @@
 
         </div>*@
         <div class="col-md-3">
-            
-                    <label asp-for="QECO100" class="control-label"></label>
-                    <select asp-for="QECO100" class="form-control"
-                            asp-items="Html.GetEnumSelectList<ECO100>()">
-                        <option selected="selected" value=""></option>
-                    </select>
-                    <span asp-validation-for="QECO100" class="text-danger"></span>
-              
+
+            <label asp-for="QECO100" class="control-label"></label>
+            <select asp-for="QECO100" class="form-control"
+                    asp-items="Html.GetEnumSelectList<ECO100>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="QECO100" class="text-danger"></span>
+
         </div>
 
         <div class="col-md-3">
@@ -1774,59 +1776,65 @@
 
         </div>*@
 
-        <div class="col-md-4">
-            
+       
+
+
+        
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+
                     <label asp-for="QECOO100" class="control-label"></label>
                     <select asp-for="QECOO100" class="form-control"
                             asp-items="Html.GetEnumSelectList<ECOO100>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="QECOO100" class="text-danger"></span>
-                
+
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q102" class="control-label"></label>
+                    <input asp-for="Q102" class="form-control" />
+                    <span asp-validation-for="Q102" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q103" class="control-label"></label>
+                    <select asp-for="Q103" class="form-control"
+                            asp-items="Html.GetEnumSelectList<E103>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q103" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
         </div>
 
-
-        <div class="col-md-3">
-            <label asp-for="Q102" class="control-label"></label>
-            <input asp-for="Q102" class="form-control" />
-            <span asp-validation-for="Q102" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
-            <label asp-for="Q103" class="control-label"></label>
-            <select asp-for="Q103" class="form-control"
-                    asp-items="Html.GetEnumSelectList<E103>()">
-                <option selected="selected" value=""></option>
-            </select>
-            <span asp-validation-for="Q103" class="text-danger"></span>
-        </div>
-    </div>
-
-            @*<div class="col-md-3 ">
+        @*<div class="col-md-3 ">
             <input type="submit" value="Create" class="btn btn-bh" />
         </div>*@
-            <div class="col-md-12">
+        <div class="col-md-12">
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <input type="submit" value="Save" class="btn btn-bh" />
-                            </div>
-                            <div class="col-md-3">
-                                @*<input type="submit" value="Create" class="btn btn-bh" />*@
-                                <a asp-action="Create" class="btn btn-bh">Cancel</a>
-                            </div>
-
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <input type="submit" value="Save" class="btn btn-bh" />
+                        </div>
+                        <div class="col-md-3">
+                            @*<input type="submit" value="Create" class="btn btn-bh" />*@
+                            <a asp-action="Create" class="btn btn-bh">Cancel</a>
                         </div>
 
                     </div>
 
                 </div>
 
-
             </div>
 
+
         </div>
+
+    </div>
 </form>
 @*</div>*@
 @*</div>*@

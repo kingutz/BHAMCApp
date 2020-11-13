@@ -694,11 +694,11 @@ namespace BHAMCApp.Models
         //[Display(Name = "3. Urin")]
         //public bool Q101_3 { get; set; }
 
-        [Display(Name = "Sample taken")]
+        [Display(Name = "Q101. Sample taken")]
         public ECOO100 QECOO100 { get; set; }
 
         //Vaginal sample          
-        [Display(Name = "(pH value")]
+        [Display(Name = "(Q102. pH value")]
         [Range(0, 20, ErrorMessage = "Not applicable!!")]
         public uint? Q102 { get; set; }
 

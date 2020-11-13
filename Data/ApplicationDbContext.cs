@@ -64,6 +64,12 @@ namespace BHAMCApp.Data
         }
 
         public DbSet<BHAMCApp.Models.Bhamc> Bhamc { get; set; }
+
+        public DbSet<BHAMCApp.Models.FKMTOTO> FKMTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.FKMAMA> FKMAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.FKBABA> FKBABA { get; set; }
     }
     public class ApplicationUser : IdentityUser
     {

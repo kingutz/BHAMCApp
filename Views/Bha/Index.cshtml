@@ -2,39 +2,59 @@
 
 @{
     ViewData["Title"] = "Index";
+
 }
 
 
 
 
 
-<p>
+@*<p>
     <a class="text-info" asp-action="Create">Create New</a>
-</p>
-<form>
-    <p class="btn btn-bh text-white">
-        Questionnaire No: <input btn btn-bh type="text" name="SearchString" value="@ViewData["currentFilter"]" />
-        <input class="btn btn-outline-bh text-white" type="submit" value="Search" />
-    </p>
-</form>
-<div class="col-md-2">
+</p>*@
 
-    @*<div class="col-md-4" style="margin-bottom:10px;">*@
-    <div class="btn dropdown">
+@*<div class="col-md-2">*@
+
+    
+    @*<div class="btn dropdown">
         <button class="btn btn-sm dropdown-toggle btn-outline-bh " type="button"
                 data-toggle="dropdown">
             Export
         </button>
         <div class="dropdown-menu">
-            <a class="dropdown-item text-success" asp- asp-action="Exdoc" asp-controller="Bhapi">excel</a>
+            <a class="dropdown-item text-success"  asp-action="Exdoc" asp-controller="Bhapi">excel</a>
         </div>
+    </div>*@
+
+   
+
+@*</div>*@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <form>
+            <p class="btn btn-bh text-white">
+                Questionnaire No: <input btn btn-bh type="text" name="SearchString" value="@ViewData["currentFilter"]" />
+                <input class="btn btn-outline-bh text-white" type="submit" value="Search" />
+            </p>
+        </form>
+    
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+            <a type="button" asp-action="Create" class="btn btn-sm btn-outline-secondary">Create New</a>
+            @*<button type="button" asp-action="Create" class="btn btn-sm btn-outline-secondary">Create New</button>*@
+            <a type="button" asp-action="Exdoc" asp-controller="Bhapi" class="btn btn-sm btn-outline-secondary">Export-excel</a>
+            @*<button type="button" asp-action="Exdoc" asp-controller="Bhapi" class="btn btn-sm btn-outline-secondary">Export-excel</button>*@
+        </div>
+        <a type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            Forms
+        </a>
+        @*<button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            Forms
+        </button>*@
     </div>
-
-    @*</div>*@
-
 </div>
-
-<table class="table table-bh">
+<table class="table table-bh text-white">
     <thead>
         <tr>
             <th>

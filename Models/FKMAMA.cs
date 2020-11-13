@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BHAMCApp.Models
 {
-    public class FKMAMA
+    public class FKMAMA : EntityData
     {
 
         [Display(Name = "Date")]
@@ -30,7 +30,7 @@ namespace BHAMCApp.Models
         [Display(Name = "Q3.Have you resumed sex Je umeshaanza kukutana kimwili na mume/mwenzi wako?")]
         public EFMK2 Q3 { get; set; }
 
-        [Display(Name = "Q4.If yes are you using any contraceptive method? Kama ndiyo, unatumia njia yoyoyte ya kujikinga usipate mimba?")]
+        [Display(Name = "Q4.If yes are you using any contraceptive method? Kama ndiyo, unatumia njia yoyote ya kujikinga usipate mimba?")]
         public EFMK2 Q4 { get; set; }
 
         [Display(Name = "1. Itaje ")]
@@ -52,15 +52,15 @@ namespace BHAMCApp.Models
         [Display(Name = "9.Any other problem Je mama ana tatizo lingine lolote kuhusiana na afya yake? Litaje")]
         public string Q9 { get; set; }
 
-        [Display(Name = "1.Weight__________kg")]
+        [Display(Name = "1.Weight(kg)")]
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q10 { get; set; }
 
-        [Display(Name = "Temperature_______oC")]
+        [Display(Name = "Temperature(oC)")]
         [Range(10, 60, ErrorMessage = "Check Temperature?")]
         public uint? Q11 { get; set; }
 
-        [Display(Name = "3.BP_______mmHg")]
+        [Display(Name = "3.BP(mmHg)")]
         [Range(10, 60, ErrorMessage = "Check BP?")]
         public uint? Q12 { get; set; }
 
