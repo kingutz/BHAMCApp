@@ -10,22 +10,22 @@ using BHAMCApp.Models;
 
 namespace BHAMCApp.Controllers
 {
-    public class KKKController : Controller
+    public class FTMAMATATUController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public KKKController(ApplicationDbContext context)
+        public FTMAMATATUController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: KKK
+        // GET: FTMAMATATU
         public async Task<IActionResult> Index()
         {
-            return View(await _context.FKMAMA.ToListAsync());
+            return View(await _context.FTMAMA.ToListAsync());
         }
 
-        // GET: KKK/Details/5
+        // GET: FTMAMATATU/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,41 +33,39 @@ namespace BHAMCApp.Controllers
                 return NotFound();
             }
 
-            var fKMAMA = await _context.FKMAMA
+            var fTMAMA = await _context.FTMAMA
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (fKMAMA == null)
+            if (fTMAMA == null)
             {
                 return NotFound();
             }
 
-            return View(fKMAMA);
+            return View(fTMAMA);
         }
 
-        // GET: KKK/Create
+        // GET: FTMAMATATU/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: KKK/Create
+        // POST: FTMAMATATU/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Date,IDNumber,Q1,OthersQ1,Q2,Q3,Q4,ItajeQ4,Q5,Q6,Q7,Q8,Q9," +
-            "Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,ProblemsDiagnosis,ManagementFK,DateVisit3," +
-            "ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FKMAMA fKMAMA)
+        public async Task<IActionResult> Create([Bind("Date,IDNumber,Q1,Q1_1,Q2,Q2_1,Q3,Q3_1,Q4,Q4_1,Q5,Q6,Q6_1,Q7,Q8,Q8_1,Q9,Q10,Q11,Q12,Q13,Q13_1,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,Q24,Q25,Q26,ProblemsDiagnosis,ManagementFT,DateVisit6,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FTMAMA fTMAMA)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(fKMAMA);
+                _context.Add(fTMAMA);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(fKMAMA);
+            return View(fTMAMA);
         }
 
-        // GET: KKK/Edit/5
+        // GET: FTMAMATATU/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -75,24 +73,22 @@ namespace BHAMCApp.Controllers
                 return NotFound();
             }
 
-            var fKMAMA = await _context.FKMAMA.FindAsync(id);
-            if (fKMAMA == null)
+            var fTMAMA = await _context.FTMAMA.FindAsync(id);
+            if (fTMAMA == null)
             {
                 return NotFound();
             }
-            return View(fKMAMA);
+            return View(fTMAMA);
         }
 
-        // POST: KKK/Edit/5
+        // POST: FTMAMATATU/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Date,IDNumber,Q1,OthersQ1,Q2,Q3,Q4,ItajeQ4,Q5,Q6,Q7," +
-            "Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,ProblemsDiagnosis,ManagementFK," +
-            "DateVisit3,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FKMAMA fKMAMA)
+        public async Task<IActionResult> Edit(int id, [Bind("Date,IDNumber,Q1,Q1_1,Q2,Q2_1,Q3,Q3_1,Q4,Q4_1,Q5,Q6,Q6_1,Q7,Q8,Q8_1,Q9,Q10,Q11,Q12,Q13,Q13_1,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,Q24,Q25,Q26,ProblemsDiagnosis,ManagementFT,DateVisit6,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FTMAMA fTMAMA)
         {
-            if (id != fKMAMA.ID)
+            if (id != fTMAMA.ID)
             {
                 return NotFound();
             }
@@ -101,12 +97,12 @@ namespace BHAMCApp.Controllers
             {
                 try
                 {
-                    _context.Update(fKMAMA);
+                    _context.Update(fTMAMA);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FKMAMAExists(fKMAMA.ID))
+                    if (!FTMAMAExists(fTMAMA.ID))
                     {
                         return NotFound();
                     }
@@ -117,10 +113,10 @@ namespace BHAMCApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(fKMAMA);
+            return View(fTMAMA);
         }
 
-        // GET: KKK/Delete/5
+        // GET: FTMAMATATU/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -128,30 +124,30 @@ namespace BHAMCApp.Controllers
                 return NotFound();
             }
 
-            var fKMAMA = await _context.FKMAMA
+            var fTMAMA = await _context.FTMAMA
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (fKMAMA == null)
+            if (fTMAMA == null)
             {
                 return NotFound();
             }
 
-            return View(fKMAMA);
+            return View(fTMAMA);
         }
 
-        // POST: KKK/Delete/5
+        // POST: FTMAMATATU/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var fKMAMA = await _context.FKMAMA.FindAsync(id);
-            _context.FKMAMA.Remove(fKMAMA);
+            var fTMAMA = await _context.FTMAMA.FindAsync(id);
+            _context.FTMAMA.Remove(fTMAMA);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FKMAMAExists(int id)
+        private bool FTMAMAExists(int id)
         {
-            return _context.FKMAMA.Any(e => e.ID == id);
+            return _context.FTMAMA.Any(e => e.ID == id);
         }
     }
 }

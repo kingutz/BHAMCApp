@@ -70,6 +70,10 @@ namespace BHAMCApp.Data
         public DbSet<BHAMCApp.Models.FKMAMA> FKMAMA { get; set; }
 
         public DbSet<BHAMCApp.Models.FKBABA> FKBABA { get; set; }
+
+        public DbSet<BHAMCApp.Models.FTMAMA> FTMAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.FSMAMA> FSMAMA { get; set; }
     }
     public class ApplicationUser : IdentityUser
     {

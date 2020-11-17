@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_BhBaba.cshtml";
 }
 
 <div class="row text-muted">
@@ -20,15 +21,16 @@
             <p class="text-center text-info">MARUDIO MWEZI WA TATU NA WA TISA</p>
         </div>
         <div class="col-md-3">
-            <label asp-for="Date" class="control-label"></label>
-            <input asp-for="Date" class="form-control" />
-            <span asp-validation-for="Date" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
             <label asp-for="IDNumber" class="control-label"></label>
             <input asp-for="IDNumber" class="form-control" />
             <span asp-validation-for="IDNumber" class="text-danger"></span>
         </div>
+        <div class="col-md-3">
+            <label asp-for="Date" class="control-label"></label>
+            <input asp-for="Date" class="form-control" />
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+
         <div class="col-md-3">
             <label asp-for="Q1" class="control-label"></label>
             <select asp-for="Q1" class="form-control"></select>

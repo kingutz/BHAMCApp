@@ -14,7 +14,7 @@ namespace BHAMCApp.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? Date { get; set; }
 
-        [Display(Name = "Q2. ID Number")]
+        [Display(Name = "ID Number")]
         [Range(10, 60, ErrorMessage = "Check Age?")]
         public uint? IDNumber { get; set; }
 
@@ -52,49 +52,50 @@ namespace BHAMCApp.Models
         [Display(Name = "9.Any other problem Je mama ana tatizo lingine lolote kuhusiana na afya yake? Litaje")]
         public string Q9 { get; set; }
 
-        [Display(Name = "1.Weight(kg)")]
+        //PHYSICAL EXAMINATION
+        [Display(Name = "1. Weight(kg)")]
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q10 { get; set; }
 
-        [Display(Name = "Temperature(oC)")]
+        [Display(Name = "2. Temperature(oC)")]
         [Range(10, 60, ErrorMessage = "Check Temperature?")]
         public uint? Q11 { get; set; }
 
-        [Display(Name = "3.BP(mmHg)")]
+        [Display(Name = "3. BP(mmHg)")]
         [Range(10, 60, ErrorMessage = "Check BP?")]
         public uint? Q12 { get; set; }
 
-        [Display(Name = "Q13.General appearance")]
+        [Display(Name = "Q4. General appearance")]
         public EFMK13 Q13 { get; set; }
 
-        [Display(Name = "Q14.Mucosa/Conjuctiva")]
+        [Display(Name = "Q5. Mucosa/Conjuctiva")]
         public EFMK14 Q14 { get; set; }
 
-        [Display(Name = "Q15.Oedema")]
+        [Display(Name = "Q6. Oedema")]
         public EFMK2 Q15 { get; set; }
 
-        [Display(Name = "Q16.Lymphadenopathy (neck, axilla)")]
+        [Display(Name = "Q7. Lymphadenopathy (neck, axilla)")]
         public EFMK2 Q16 { get; set; }
 
-        [Display(Name = "Q17.Skin")]
+        [Display(Name = "Q8. Skin")]
         public EFMK17 Q17 { get; set; }
 
-        [Display(Name = "Q18.Mouth	")]
+        [Display(Name = "Q9. Mouth	")]
         public EFMK18 Q18 { get; set; }
 
-        [Display(Name = "Q19.Breasts")]
+        [Display(Name = "Q10. Breasts")]
         public EFMK19 Q19 { get; set; }
 
-        [Display(Name = "Q20.Abdominal palpation- uterus")]
+        [Display(Name = "Q11. Abdominal palpation- uterus")]
         public EFMK20 Q20 { get; set; }
 
-        [Display(Name = "Q21.Lochia")]
+        [Display(Name = "Q12. Lochia")]
         public EFMK21 Q21 { get; set; }
 
-        [Display(Name = "Q22.Vulva")]
+        [Display(Name = "Q13. Vulva")]
         public EFMK22 Q22 { get; set; }
 
-        [Display(Name = "Q23.Any other abnormal finding")]
+        [Display(Name = "Q14. Any other abnormal finding")]
         public string Q23 { get; set; }
 
         [Display(Name = "Problems/ Diagnosis")]

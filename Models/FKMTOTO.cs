@@ -27,7 +27,7 @@ namespace BHAMCApp.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? TareheKuzaliwa { get; set; }
 
-        [Display(Name = "Umri wa mtoto kwa miezi")]
+        [Display(Name = "Umri (miezi)")]
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? UmriMtotoMiezi { get; set; }
 
@@ -66,21 +66,18 @@ namespace BHAMCApp.Models
 
         //1
 
-        [Display(Name = "1.Maziwa ya ngombe")]
+        [Display(Name = "1.Maziwa ya")]
         public string Q5_1_a { get; set; }
 
         [Display(Name = "Mara ngapi kwa siku")]
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q5_1_b { get; set; }
 
-        [Display(Name = "<125mls")]
-        public string Q5_1_c { get; set; }
-
-        [Display(Name = "> 125 mls")]
-        public string Q5_1_d { get; set; }
-
+        [Display(Name = "mls")]
+        public EFMOK5 Q5_1_c { get; set; }
+               
         [Display(Name = "Umri alipoanzishwa")]
-        public string Q5_1_e { get; set; }
+        public uint? Q5_1_e { get; set; }
 
         //2
         [Display(Name = "2.Uji  wa")]
@@ -90,14 +87,13 @@ namespace BHAMCApp.Models
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q5_2_b { get; set; }
 
-        [Display(Name = "<125mls")]
-        public string Q5_2_c { get; set; }
+        [Display(Name = "mls")]
+        public EFMOK5 Q5_2_c { get; set; }
 
-        [Display(Name = "> 125 mls")]
-        public string Q5_2_d { get; set; }
+        
 
         [Display(Name = "Umri alipoanzishwa")]
-        public string Q5_2_e { get; set; }
+        public uint? Q5_2_e { get; set; }
 
 
         //3
@@ -108,14 +104,13 @@ namespace BHAMCApp.Models
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q5_3_b { get; set; }
 
-        [Display(Name = "<125mls")]
-        public string Q5_3_c { get; set; }
+        [Display(Name = "mls")]
+        public EFMOK5 Q5_3_c { get; set; }
 
-        [Display(Name = "> 125 mls")]
-        public string Q5_3_d { get; set; }
+       
 
         [Display(Name = "Umri alipoanzishwa")]
-        public string Q5_3_e { get; set; }
+        public uint? Q5_3_e { get; set; }
 
         //4
         [Display(Name = "4.Juice ya")]
@@ -125,14 +120,14 @@ namespace BHAMCApp.Models
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q5_4_b { get; set; }
 
-        [Display(Name = "<125mls")]
-        public string Q5_4_c { get; set; }
+        [Display(Name = "mls")]
+        public EFMOK5 Q5_4_c { get; set; }
 
-        [Display(Name = "> 125 mls")]
-        public string Q5_4_d { get; set; }
+        //[Display(Name = "> 125 mls")]
+        //public string Q5_4_d { get; set; }
 
         [Display(Name = "Umri alipoanzishwa")]
-        public string Q5_4_e { get; set; }
+        public uint? Q5_4_e { get; set; }
 
 
         //5
@@ -143,14 +138,14 @@ namespace BHAMCApp.Models
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q5_5_b { get; set; }
 
-        [Display(Name = "< 125 mls")]
-        public string Q5_5_c { get; set; }
+        [Display(Name = "mls")]
+        public EFMOK5 Q5_5_c { get; set; }
 
-        [Display(Name = "> 125 mls")]
-        public string Q5_5_d { get; set; }
+        //[Display(Name = "> 125 mls")]
+        //public string Q5_5_d { get; set; }
 
         [Display(Name = "Umri alipoanzishwa")]
-        public string Q5_5_e { get; set; }
+        public uint? Q5_5_e { get; set; }
 
         //Q7.Je mtoto ameshapata matatizo haya yafuatayo tangu ulipokuja kliniki kwa mara ya mwisho?
 
@@ -159,97 +154,89 @@ namespace BHAMCApp.Models
         [Display(Name = "1. Fever   Homa au malaria	")]
         public EFMOK1 Q7_1 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_1_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_1_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_1_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_1_b { get; set; }
 
         //Cough   Kukohoa au kichomi
         [Display(Name = "2.	Cough   Kukohoa au kichomi")]
         public EFMOK1 Q7_2 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_2_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_2_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_2_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_2_b { get; set; }
 
         // Diarrhoea   Kuharisha
         [Display(Name = "3.	Diarrhoea   Kuharisha")]
         public EFMOK1 Q7_3 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_3_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_3_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_3_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_3_b { get; set; }
 
         // Ear discharge  Uchafu/usaha toka masikioni		
         [Display(Name = "4.Ear discharge  Uchafu/usaha toka masikioni")]
         public EFMOK1 Q7_4 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_4_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_4_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_4_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_4_b { get; set; }
 
         // Oral thrush/ulcer   Utando  au vidonda mdomoni		
         [Display(Name = "5.Oral thrush/ulcer   Utando  au vidonda mdomoni")]
         public EFMOK1 Q7_5 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_5_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_5_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_5_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_5_b { get; set; }
 
         // Skin rashes   Upele au tatizo la ngozi		
         [Display(Name = "6.Skin rashes   Upele au tatizo la ngozi")]
         public EFMOK1 Q7_6 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_6_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_6_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_6_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_6_b { get; set; }
 
         // Convulsions    Degedege		
         [Display(Name = "7.Convulsions    Degedege")]
         public EFMOK1 Q7_7 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_7_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_7_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_7_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_7_b { get; set; }
 
         //Other   Mengine, taja		
         [Display(Name = "8.Other   Mengine, taja")]
         public string Q7_8 { get; set; }
 
-        [Display(Name = "< siku 14 ")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_8_a { get; set; }
+        [Display(Name = "Siku")]
+        public EFMOK7 Q7_8_a { get; set; }
 
-        [Display(Name = "> siku 14")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q7_8_b { get; set; }
+        //[Display(Name = "> siku 14")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q7_8_b { get; set; }
 
 
 
@@ -261,7 +248,7 @@ namespace BHAMCApp.Models
         public string Q8_1 { get; set; }
 
         [Display(Name = "Q9.Nani anayemuangalia na kukaa na mtoto zaidi kwa muda wa mchana?")]
-        public EFMOK1 Q9 { get; set; }
+        public EFMOK9 Q9 { get; set; }
 
         [Display(Name = "taja")]
         public string Q9_1 { get; set; }
@@ -360,7 +347,7 @@ namespace BHAMCApp.Models
         [Display(Name = "iii. Floppy (↓ tone)")]
         public EFMOK1 Q15_g { get; set; }
 
-        [Display(Name = "d. Overlapping cranial sutures / Ridging")]
+        [Display(Name = "d. Overlapping cranial sutures")]
         public EFMOK1 Q15_h { get; set; }
 
         //7. Neurosensory
@@ -392,13 +379,32 @@ namespace BHAMCApp.Models
         [Display(Name = "Ke")]
         E2 = 2
     }
-
+   
     public enum EFMOK1
     {
         [Display(Name = "0. Hapana")]
         No = 0,
         [Display(Name = "1. Ndiyo")]
         Yes = 1
+
+
+    }
+    
+        public enum EFMOK5
+    {
+        [Display(Name = "1. < 125mls")]
+        E1 = 1,
+        [Display(Name = "2. > 125mls")]
+        E2 = 2
+
+
+    }
+    public enum EFMOK7
+    {
+        [Display(Name = "1. <siku 14")]
+        E1 = 1,
+        [Display(Name = "2. >siku 14")]
+        E2 = 2
 
 
     }

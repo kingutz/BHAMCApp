@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BHAMCApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201109134811_MTK2020")]
-    partial class MTK2020
+    [Migration("20201117124424_BH002")]
+    partial class BH002
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -708,6 +708,92 @@ namespace BHAMCApp.Migrations
                     b.ToTable("Bhamc");
                 });
 
+            modelBuilder.Entity("BHAMCApp.Models.FKBABA", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CreatedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DateFollowup")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Edited")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("IDNumber")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ManagementFT")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ModifiedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProblemsDiagnosis")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q10_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q10_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q10_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q10_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q1_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q2_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q5")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q8")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Q9")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("FKBABA");
+                });
+
             modelBuilder.Entity("BHAMCApp.Models.FKMAMA", b =>
                 {
                     b.Property<int>("ID")
@@ -995,14 +1081,11 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_1_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_1_c")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Q5_1_c")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_1_d")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Q5_1_e")
-                        .HasColumnType("TEXT");
+                    b.Property<uint?>("Q5_1_e")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Q5_2_a")
                         .HasColumnType("TEXT");
@@ -1010,14 +1093,11 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_2_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_2_c")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Q5_2_c")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_2_d")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Q5_2_e")
-                        .HasColumnType("TEXT");
+                    b.Property<uint?>("Q5_2_e")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Q5_3_a")
                         .HasColumnType("TEXT");
@@ -1025,14 +1105,11 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_3_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_3_c")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Q5_3_c")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_3_d")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Q5_3_e")
-                        .HasColumnType("TEXT");
+                    b.Property<uint?>("Q5_3_e")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Q5_4_a")
                         .HasColumnType("TEXT");
@@ -1040,14 +1117,11 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_4_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_4_c")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Q5_4_c")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_4_d")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Q5_4_e")
-                        .HasColumnType("TEXT");
+                    b.Property<uint?>("Q5_4_e")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Q5_5_a")
                         .HasColumnType("TEXT");
@@ -1055,85 +1129,58 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_5_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_5_c")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Q5_5_c")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Q5_5_d")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Q5_5_e")
-                        .HasColumnType("TEXT");
+                    b.Property<uint?>("Q5_5_e")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7_1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<uint?>("Q7_1_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_1_b")
+                    b.Property<int>("Q7_1_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7_2")
                         .HasColumnType("INTEGER");
 
-                    b.Property<uint?>("Q7_2_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_2_b")
+                    b.Property<int>("Q7_2_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7_3")
                         .HasColumnType("INTEGER");
 
-                    b.Property<uint?>("Q7_3_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_3_b")
+                    b.Property<int>("Q7_3_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7_4")
                         .HasColumnType("INTEGER");
 
-                    b.Property<uint?>("Q7_4_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_4_b")
+                    b.Property<int>("Q7_4_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7_5")
                         .HasColumnType("INTEGER");
 
-                    b.Property<uint?>("Q7_5_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_5_b")
+                    b.Property<int>("Q7_5_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7_6")
                         .HasColumnType("INTEGER");
 
-                    b.Property<uint?>("Q7_6_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_6_b")
+                    b.Property<int>("Q7_6_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7_7")
                         .HasColumnType("INTEGER");
 
-                    b.Property<uint?>("Q7_7_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_7_b")
+                    b.Property<int>("Q7_7_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Q7_8")
                         .HasColumnType("TEXT");
 
-                    b.Property<uint?>("Q7_8_a")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<uint?>("Q7_8_b")
+                    b.Property<int>("Q7_8_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q8")
@@ -1163,6 +1210,256 @@ namespace BHAMCApp.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("FKMTOTO");
+                });
+
+            modelBuilder.Entity("BHAMCApp.Models.FSMAMA", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CreatedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DateVisit9")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Edited")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("IDNumber")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ManagementFT")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ModifiedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProblemsDiagnosis")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q10")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q11")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q12")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q13")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q14")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q15")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q16")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q17")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("Q1_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q2_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q3_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q4_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q6_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("Q7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q8")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q8_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q9")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("FSMAMA");
+                });
+
+            modelBuilder.Entity("BHAMCApp.Models.FTMAMA", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CreatedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DateVisit6")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Edited")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("IDNumber")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ManagementFT")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ModifiedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProblemsDiagnosis")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q10")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q11")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q12")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q13")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q13_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Q14")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("Q15")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q16")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q17")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q18")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q19")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q1_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q20")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q21")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q22")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q23")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q24")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q25")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q26")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q2_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q3_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q4_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q6_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("Q7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Q8")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q8_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Q9")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("FTMAMA");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

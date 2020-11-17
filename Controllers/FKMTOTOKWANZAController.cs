@@ -54,7 +54,14 @@ namespace BHAMCApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Tarehe,IDNumber,SexMt,TareheKuzaliwa,UmriMtotoMiezi,Q1,Q1_a,Q1_b,Q1_c,Q2,Q3,Q3_a,Q3_b,Q4,Q5_1_a,Q5_1_b,Q5_1_c,Q5_1_d,Q5_1_e,Q5_2_a,Q5_2_b,Q5_2_c,Q5_2_d,Q5_2_e,Q5_3_a,Q5_3_b,Q5_3_c,Q5_3_d,Q5_3_e,Q5_4_a,Q5_4_b,Q5_4_c,Q5_4_d,Q5_4_e,Q5_5_a,Q5_5_b,Q5_5_c,Q5_5_d,Q5_5_e,Q7_1,Q7_1_a,Q7_1_b,Q7_2,Q7_2_a,Q7_2_b,Q7_3,Q7_3_a,Q7_3_b,Q7_4,Q7_4_a,Q7_4_b,Q7_5,Q7_5_a,Q7_5_b,Q7_6,Q7_6_a,Q7_6_b,Q7_7,Q7_7_a,Q7_7_b,Q7_8,Q7_8_a,Q7_8_b,Q8,Q8_1,Q9,Q9_1,Q10_a,Q10_b,Q10_c,Q10_d,Q10_e,Q11_a,Q11_b,Q11_c,Q12_a,Q12_b,Q12_c,Q13_a,Q13_b,Q13_c,Q13_d,Q13_e,Q13_f,Q14_a,Q14_b,Q14_c,Q14_d,Q14_e,Q14_f,Q14_g,Q15_a,Q15_b,Q15_c,Q15_d,Q15_e,Q15_f,Q15_g,Q15_h,Q16_a,Q16_b,Q16_c,ProblemsDsis,MedicationPres,Date3Month,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FKMTOTO fKMTOTO)
+        public async Task<IActionResult> Create([Bind("Tarehe,IDNumber,SexMt,TareheKuzaliwa,UmriMtotoMiezi," +
+            "Q1,Q1_a,Q1_b,Q1_c,Q2,Q3,Q3_a,Q3_b,Q4,Q5_1_a,Q5_1_b,Q5_1_c,Q5_1_e,Q5_2_a,Q5_2_b,Q5_2_c,Q5_2_e," +
+            "Q5_3_a,Q5_3_b,Q5_3_c,Q5_3_e,Q5_4_a,Q5_4_b,Q5_4_c,Q5_4_e,Q5_5_a,Q5_5_b,Q5_5_c,Q5_5_e,Q7_1,Q7_1_a," +
+            "Q7_2,Q7_2_a,Q7_3,Q7_3_a,Q7_4,Q7_4_a,Q7_5,Q7_5_a,Q7_6,Q7_6_a,Q7_7,Q7_7_a,Q7_8,Q7_8_a,Q8,Q8_1,Q9," +
+            "Q9_1,Q10_a,Q10_b,Q10_c,Q10_d,Q10_e,Q11_a,Q11_b,Q11_c,Q12_a,Q12_b,Q12_c,Q13_a,Q13_b,Q13_c,Q13_d," +
+            "Q13_e,Q13_f,Q14_a,Q14_b,Q14_c,Q14_d,Q14_e,Q14_f,Q14_g,Q15_a,Q15_b,Q15_c,Q15_d,Q15_e,Q15_f,Q15_g," +
+            "Q15_h,Q16_a,Q16_b,Q16_c,ProblemsDsis,MedicationPres,Date3Month,ID,CreatedByUser,CreatedDate," +
+            "ModifiedByUser,ModifiedDate,Edited")] FKMTOTO fKMTOTO)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +93,14 @@ namespace BHAMCApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Tarehe,IDNumber,SexMt,TareheKuzaliwa,UmriMtotoMiezi,Q1,Q1_a,Q1_b,Q1_c,Q2,Q3,Q3_a,Q3_b,Q4,Q5_1_a,Q5_1_b,Q5_1_c,Q5_1_d,Q5_1_e,Q5_2_a,Q5_2_b,Q5_2_c,Q5_2_d,Q5_2_e,Q5_3_a,Q5_3_b,Q5_3_c,Q5_3_d,Q5_3_e,Q5_4_a,Q5_4_b,Q5_4_c,Q5_4_d,Q5_4_e,Q5_5_a,Q5_5_b,Q5_5_c,Q5_5_d,Q5_5_e,Q7_1,Q7_1_a,Q7_1_b,Q7_2,Q7_2_a,Q7_2_b,Q7_3,Q7_3_a,Q7_3_b,Q7_4,Q7_4_a,Q7_4_b,Q7_5,Q7_5_a,Q7_5_b,Q7_6,Q7_6_a,Q7_6_b,Q7_7,Q7_7_a,Q7_7_b,Q7_8,Q7_8_a,Q7_8_b,Q8,Q8_1,Q9,Q9_1,Q10_a,Q10_b,Q10_c,Q10_d,Q10_e,Q11_a,Q11_b,Q11_c,Q12_a,Q12_b,Q12_c,Q13_a,Q13_b,Q13_c,Q13_d,Q13_e,Q13_f,Q14_a,Q14_b,Q14_c,Q14_d,Q14_e,Q14_f,Q14_g,Q15_a,Q15_b,Q15_c,Q15_d,Q15_e,Q15_f,Q15_g,Q15_h,Q16_a,Q16_b,Q16_c,ProblemsDsis,MedicationPres,Date3Month,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FKMTOTO fKMTOTO)
+        public async Task<IActionResult> Edit(int id, [Bind("Tarehe,IDNumber,SexMt,TareheKuzaliwa,UmriMtotoMiezi," +
+            "Q1,Q1_a,Q1_b,Q1_c,Q2,Q3,Q3_a,Q3_b,Q4,Q5_1_a,Q5_1_b,Q5_1_c,Q5_1_e,Q5_2_a,Q5_2_b,Q5_2_c,Q5_2_e,Q5_3_a," +
+            "Q5_3_b,Q5_3_c,Q5_3_e,Q5_4_a,Q5_4_b,Q5_4_c,Q5_4_e,Q5_5_a,Q5_5_b,Q5_5_c,Q5_5_e,Q7_1,Q7_1_a,Q7_2,Q7_2_a," +
+            "Q7_3,Q7_3_a,Q7_4,Q7_4_a,Q7_5,Q7_5_a,Q7_6,Q7_6_a,Q7_7,Q7_7_a,Q7_8,Q7_8_a,Q8,Q8_1,Q9,Q9_1,Q10_a,Q10_b," +
+            "Q10_c,Q10_d,Q10_e,Q11_a,Q11_b,Q11_c,Q12_a,Q12_b,Q12_c,Q13_a,Q13_b,Q13_c,Q13_d,Q13_e,Q13_f,Q14_a,Q14_b," +
+            "Q14_c,Q14_d,Q14_e,Q14_f,Q14_g,Q15_a,Q15_b,Q15_c,Q15_d,Q15_e,Q15_f,Q15_g,Q15_h,Q16_a,Q16_b,Q16_c," +
+            "ProblemsDsis,MedicationPres,Date3Month,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate," +
+            "Edited")] FKMTOTO fKMTOTO)
         {
             if (id != fKMTOTO.ID)
             {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BHAMCApp.Models
 {
-    public class FSMAMA
+    public class FSMAMA:EntityData
     {
 
 

@@ -1,4 +1,4 @@
-﻿@model BHAMCApp.Models.FKMAMA
+﻿@model BHAMCApp.Models.FSMAMA
 
 @{
     ViewData["Title"] = "Details";
@@ -7,7 +7,7 @@
 <h1>Details</h1>
 
 <div>
-    <h4>FKMAMA</h4>
+    <h4>FSMAMA</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -29,10 +29,10 @@
             @Html.DisplayFor(model => model.Q1)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OthersQ1)
+            @Html.DisplayNameFor(model => model.Q1_1)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OthersQ1)
+            @Html.DisplayFor(model => model.Q1_1)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Q2)
@@ -41,10 +41,22 @@
             @Html.DisplayFor(model => model.Q2)
         </dd>
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Q2_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Q2_1)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Q3)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Q3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Q3_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Q3_1)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Q4)
@@ -53,10 +65,10 @@
             @Html.DisplayFor(model => model.Q4)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ItajeQ4)
+            @Html.DisplayNameFor(model => model.Q4_1)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ItajeQ4)
+            @Html.DisplayFor(model => model.Q4_1)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Q5)
@@ -71,6 +83,12 @@
             @Html.DisplayFor(model => model.Q6)
         </dd>
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Q6_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Q6_1)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Q7)
         </dt>
         <dd class = "col-sm-10">
@@ -81,6 +99,12 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Q8)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Q8_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Q8_1)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Q9)
@@ -131,64 +155,28 @@
             @Html.DisplayFor(model => model.Q16)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Q17)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Q17)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Q18)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Q18)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Q19)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Q19)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Q20)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Q20)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Q21)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Q21)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Q22)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Q22)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Q23)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Q23)
-        </dd>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ProblemsDiagnosis)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ProblemsDiagnosis)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ManagementFK)
+            @Html.DisplayNameFor(model => model.Q17)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ManagementFK)
+            @Html.DisplayFor(model => model.Q17)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateVisit3)
+            @Html.DisplayNameFor(model => model.ManagementFT)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateVisit3)
+            @Html.DisplayFor(model => model.ManagementFT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateVisit9)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateVisit9)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.CreatedByUser)

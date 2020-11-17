@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BHAMCApp.Models.FKMAMA>
+﻿@model IEnumerable<BHAMCApp.Models.FTMAMA>
 
 @{
     ViewData["Title"] = "Index";
@@ -21,20 +21,26 @@
             <th>
                 @Html.DisplayNameFor(model => model.Q1)
             </th>
-            @*<th>
-                @Html.DisplayNameFor(model => model.OthersQ1)
+            <th>
+                @Html.DisplayNameFor(model => model.Q1_1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Q2)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Q2_1)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Q3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q3_1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Q4)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ItajeQ4)
+                @Html.DisplayNameFor(model => model.Q4_1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Q5)
@@ -43,10 +49,16 @@
                 @Html.DisplayNameFor(model => model.Q6)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Q6_1)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Q7)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Q8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Q9)
@@ -62,6 +74,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Q13)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13_1)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Q14)
@@ -94,13 +109,22 @@
                 @Html.DisplayNameFor(model => model.Q23)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Q24)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q25)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q26)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.ProblemsDiagnosis)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ManagementFK)
+                @Html.DisplayNameFor(model => model.ManagementFT)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DateVisit3)
+                @Html.DisplayNameFor(model => model.DateVisit6)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CreatedByUser)
@@ -116,7 +140,7 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Edited)
-            </th>*@
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -132,20 +156,26 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Q1)
             </td>
-            @*<td>
-                @Html.DisplayFor(modelItem => item.OthersQ1)
+            <td>
+                @Html.DisplayFor(modelItem => item.Q1_1)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q2)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Q2_1)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Q3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q3_1)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q4)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ItajeQ4)
+                @Html.DisplayFor(modelItem => item.Q4_1)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q5)
@@ -154,10 +184,16 @@
                 @Html.DisplayFor(modelItem => item.Q6)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Q6_1)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Q7)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q8)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_1)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q9)
@@ -173,6 +209,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q13)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13_1)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q14)
@@ -205,13 +244,22 @@
                 @Html.DisplayFor(modelItem => item.Q23)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Q24)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q25)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q26)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.ProblemsDiagnosis)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ManagementFK)
+                @Html.DisplayFor(modelItem => item.ManagementFT)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DateVisit3)
+                @Html.DisplayFor(modelItem => item.DateVisit6)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CreatedByUser)
@@ -227,7 +275,7 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Edited)
-            </td>*@
+            </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
