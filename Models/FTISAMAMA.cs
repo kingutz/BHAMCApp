@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BHAMCApp.Models
 {
-    public class FTISAMAMA
+    public class FTISAMAMA:EntityData
     {
 
         [Display(Name = "Date")]

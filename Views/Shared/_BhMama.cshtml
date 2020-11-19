@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top shadow navbar-toggleable-sm
+        <nav class="navbar navbar-expand-sm fixed-top  navbar-toggleable-sm
         navbar-light bg-white border-bottom box-shadow mb-3">
 
             <div class="container">
@@ -45,13 +45,14 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             @*<a class="nav-link active" href="#">
-                                    <span data-feather="home"></span>
-                                    Dashboard <span class="sr-only">(current)</span>
-                                </a>*@
-                            <a class="nav-link text-dark active" asp-area="" asp-controller="Bha"
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+            </a>*@
+                            <a class="nav-link text-dark active " asp-area="" asp-controller="Bha"
                                asp-action="Create">
-                                <span data-feather="file"></span>
-                                Baseline
+                         
+                               
+                                <span> BASELINE</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -59,33 +60,30 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="FKMAMAKWANZA"
                                asp-action="Create">
                                 <span data-feather="file"></span>
-                                Form Mama
+                                MOTHER
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="FKMTOTOKWANZA"
                                asp-action="Create">
                                 <span data-feather="file"></span>
-                                Form Mtoto
+                                INFANT
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="FKBABAKWANZA"
                                asp-action="Create">
                                 <span data-feather="file"></span>
-                                Form Baba
+                                 FATHER
                             </a>
                         </li>
-
 
                     </ul>
 
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center
                         px-3 mt-4 mb-1 text-muted">
-                        <span>Follow up Mama</span>
-                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-                            <span data-feather="plus-circle"></span>
-                        </a>
+                        <span>Mother follow up</span>
+                        
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
@@ -103,15 +101,38 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="FTMAMATISA"
+                               asp-action="Create">
+                                <span data-feather="file"></span>
                                 9 Months
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="FKMMAMAMBILI"
+                               asp-action="Create">
+                                <span data-feather="file"></span>
                                 12 Months
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="F15_24MAMA15"
+                               asp-action="Create">
+                                <span data-feather="file"></span>
+                                (15-24) Months
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="F28_44MAMA28"
+                               asp-action="Create">
+                                <span data-feather="file"></span>
+                                (28, 32, 36, 40, 44)  Months
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="F48MAMA48"
+                               asp-action="Create">
+                                <span data-feather="file"></span>
+                                48 (4 YEARS)  Months
                             </a>
                         </li>
                     </ul>
@@ -144,7 +165,7 @@
             </main>
         </div>
     </div>
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted fixed-bottom">
         <div class="container">
             &copy; 2020 - BHAMCApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

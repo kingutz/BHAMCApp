@@ -74,6 +74,16 @@ namespace BHAMCApp.Data
         public DbSet<BHAMCApp.Models.FTMAMA> FTMAMA { get; set; }
 
         public DbSet<BHAMCApp.Models.FSMAMA> FSMAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.FTISAMAMA> FTISAMAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.FKMMAMA> FKMMAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.F15_24MAMA> F15_24MAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.F28_44MAMA> F28_44MAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.F48MAMA> F48MAMA { get; set; }
     }
     public class ApplicationUser : IdentityUser
     {
