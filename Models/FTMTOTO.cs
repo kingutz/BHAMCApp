@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace BHAMCApp.Models
 {
-    public class FKMTOTO : EntityData
+    public class FTMTOTO:EntityData
     {
+        [Display(Name = "ID Number")]
+        [Range(10, 60, ErrorMessage = "Check Age?")]
+        public uint? IDNumber { get; set; }
 
         [Display(Name = "Tarehe")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? Tarehe { get; set; }
 
-        [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
-        public uint? IDNumber { get; set; }
-
-
+        
         [Display(Name = "Sex")]
         public EFMTKSex SexMt { get; set; }
 
@@ -34,15 +33,15 @@ namespace BHAMCApp.Models
         [Display(Name = "Q1.Je mtoto bado ananyonyeshwa maziwa ya mama?")]
         public EFMOK1 Q1 { get; set; }
 
-        [Display(Name = "-Je alianza kunyonya muda gani baada ya kuzaliwa? Baada ya masaa")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q1_a { get; set; }
+        //[Display(Name = "-Je alianza kunyonya muda gani baada ya kuzaliwa? Baada ya masaa")]
+        //[Range(10, 60, ErrorMessage = "Check weight?")]
+        //public uint? Q1_a { get; set; }
 
-        [Display(Name = "-Je mama alimpa maziwa ya mwanzo (colostrum)?")]
-        public EFMOK1 Q1_b { get; set; }
+        //[Display(Name = "-Je mama alimpa maziwa ya mwanzo (colostrum)?")]
+        //public EFMOK1 Q1_b { get; set; }
 
-        [Display(Name = "-Je alimpa kitu chochote kama maji au chai kabla ya kuanza kumyonyesha? ")]
-        public EFMOK1 Q1_c { get; set; }
+        //[Display(Name = "-Je alimpa kitu chochote kama maji au chai kabla ya kuanza kumyonyesha? ")]
+        //public EFMOK1 Q1_c { get; set; }
 
         [Display(Name = "2.Kama hapana, ni kwanini?")]
         public string Q2 { get; set; }
@@ -50,7 +49,7 @@ namespace BHAMCApp.Models
         [Display(Name = "3.Zaidi ya maziwa ya mama, je mtoto anapewa maji ya kunywa?")]
         public EFMOK1 Q3 { get; set; }
 
-        [Display(Name = "Tangu alipokuwa na wiki")]
+        [Display(Name = "Tangu alipokuwa na mwezi/miezi")]
         [Range(10, 60, ErrorMessage = "Check weight?")]
         public uint? Q3_a { get; set; }
 
@@ -75,7 +74,7 @@ namespace BHAMCApp.Models
 
         [Display(Name = "mls")]
         public EFMOK5 Q5_1_c { get; set; }
-               
+
         [Display(Name = "Umri alipoanzishwa")]
         public uint? Q5_1_e { get; set; }
 
@@ -90,7 +89,7 @@ namespace BHAMCApp.Models
         [Display(Name = "mls")]
         public EFMOK5 Q5_2_c { get; set; }
 
-        
+
 
         [Display(Name = "Umri alipoanzishwa")]
         public uint? Q5_2_e { get; set; }
@@ -107,7 +106,7 @@ namespace BHAMCApp.Models
         [Display(Name = "mls")]
         public EFMOK5 Q5_3_c { get; set; }
 
-       
+
 
         [Display(Name = "Umri alipoanzishwa")]
         public uint? Q5_3_e { get; set; }
@@ -147,18 +146,15 @@ namespace BHAMCApp.Models
         [Display(Name = "Umri alipoanzishwa")]
         public uint? Q5_5_e { get; set; }
 
-        [Display(Name = "Q6. Kitovu?")]
-        public EFMOK6 Q6 { get; set; }
-
-        //Q7.Je mtoto ameshapata matatizo haya yafuatayo tangu ulipokuja kliniki kwa mara ya mwisho?
+        //Q6.Je mtoto ameshapata matatizo haya yafuatayo tangu ulipokuja kliniki kwa mara ya mwisho?
 
 
-
+        
         [Display(Name = "1. Fever   Homa au malaria	")]
-        public EFMOK1 Q7_1 { get; set; }
+        public EFMOK1 Q6_1 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_1_a { get; set; }
+        public EFMOK7 Q6_1_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -166,10 +162,10 @@ namespace BHAMCApp.Models
 
         //Cough   Kukohoa au kichomi
         [Display(Name = "2.	Cough   Kukohoa au kichomi")]
-        public EFMOK1 Q7_2 { get; set; }
+        public EFMOK1 Q6_2 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_2_a { get; set; }
+        public EFMOK7 Q6_2_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -177,10 +173,10 @@ namespace BHAMCApp.Models
 
         // Diarrhoea   Kuharisha
         [Display(Name = "3.	Diarrhoea   Kuharisha")]
-        public EFMOK1 Q7_3 { get; set; }
+        public EFMOK1 Q6_3 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_3_a { get; set; }
+        public EFMOK7 Q6_3_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -188,10 +184,10 @@ namespace BHAMCApp.Models
 
         // Ear discharge  Uchafu/usaha toka masikioni		
         [Display(Name = "4.Ear discharge  Uchafu/usaha toka masikioni")]
-        public EFMOK1 Q7_4 { get; set; }
+        public EFMOK1 Q6_4 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_4_a { get; set; }
+        public EFMOK7 Q6_4_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -199,10 +195,10 @@ namespace BHAMCApp.Models
 
         // Oral thrush/ulcer   Utando  au vidonda mdomoni		
         [Display(Name = "5.Oral thrush/ulcer   Utando  au vidonda mdomoni")]
-        public EFMOK1 Q7_5 { get; set; }
+        public EFMOK1 Q6_5 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_5_a { get; set; }
+        public EFMOK7 Q6_5_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -210,10 +206,10 @@ namespace BHAMCApp.Models
 
         // Skin rashes   Upele au tatizo la ngozi		
         [Display(Name = "6.Skin rashes   Upele au tatizo la ngozi")]
-        public EFMOK1 Q7_6 { get; set; }
+        public EFMOK1 Q6_6 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_6_a { get; set; }
+        public EFMOK7 Q6_6_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -221,10 +217,10 @@ namespace BHAMCApp.Models
 
         // Convulsions    Degedege		
         [Display(Name = "7.Convulsions    Degedege")]
-        public EFMOK1 Q7_7 { get; set; }
+        public EFMOK1 Q6_7 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_7_a { get; set; }
+        public EFMOK7 Q6_7_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -232,10 +228,10 @@ namespace BHAMCApp.Models
 
         //Other   Mengine, taja		
         [Display(Name = "8.Other   Mengine, taja")]
-        public string Q7_8 { get; set; }
+        public string Q6_8 { get; set; }
 
         [Display(Name = "Siku")]
-        public EFMOK7 Q7_8_a { get; set; }
+        public EFMOK7 Q6_8_a { get; set; }
 
         //[Display(Name = "> siku 14")]
         //[Range(10, 60, ErrorMessage = "Check weight?")]
@@ -244,17 +240,73 @@ namespace BHAMCApp.Models
 
 
 
-        [Display(Name = "Q8.Je mtoto ameshalazwa hospitalini tangu ulipokuja kliniki kwa mara ya mwisho?")]
-        public EFMOK1 Q8 { get; set; }
+        [Display(Name = "Q7.Je mtoto ameshalazwa hospitalini tangu ulipokuja kliniki kwa mara ya mwisho?")]
+        public EFMOK1 Q7 { get; set; }
 
         [Display(Name = "Tatizo")]
-        public string Q8_1 { get; set; }
+        public string Q7_1 { get; set; }
 
-        [Display(Name = "Q9.Nani anayemuangalia na kukaa na mtoto zaidi kwa muda wa mchana?")]
-        public EFMOK9 Q9 { get; set; }
+        [Display(Name = "Q8.Nani anayemuangalia na kukaa na mtoto zaidi kwa muda wa mchana?")]
+        public EFMOK9 Q8 { get; set; }
 
         [Display(Name = "taja")]
-        public string Q9_1 { get; set; }
+        public string Q8_1 { get; set; }
+
+
+        //9.Nani anayefanya shughuli zifuatazo zaidi wakati wa mchana?	Tiki panapostahili
+
+
+        //a).Kumbadilisha nepi   
+        [Display(Name = "1. Mama")]
+        public bool Q9_a_1 { get; set; }
+
+        [Display(Name = "2. Binti wa nyumbani")]
+        public bool Q9_a_2 { get; set; }
+
+        [Display(Name = "3. Dada/kaka zake")]
+        public bool Q9_a_3 { get; set; }
+
+        [Display(Name = "4. Wengine")]
+        public bool Q9_a_4 { get; set; }
+
+        [Display(Name = "Wengine")]
+        public string Q9_a_5 { get; set; }
+
+        //(b).Kutayarisha chakula cha mtoto   
+        [Display(Name = "1. Mama")]
+        public bool Q9_b_1 { get; set; }
+
+        [Display(Name = "2. Binti wa nyumbani")]
+        public bool Q9_b_2 { get; set; }
+
+        [Display(Name = "3. Dada/kaka zake")]
+        public bool Q9_b_3 { get; set; }
+
+        [Display(Name = "4. Wengine")]
+        public bool Q9_b_4 { get; set; }
+
+        [Display(Name = "Wengine")]
+        public string Q9_b_5 { get; set; }
+
+        //(b).Kutayarisha chakula cha mtoto   
+        [Display(Name = "1. Mama")]
+        public bool Q9_c_1 { get; set; }
+
+        [Display(Name = "2. Binti wa nyumbani")]
+        public bool Q9_c_2 { get; set; }
+
+        [Display(Name = "3. Dada/kaka zake")]
+        public bool Q9_c_3 { get; set; }
+
+        [Display(Name = "4. Wengine")]
+        public bool Q9_c_4 { get; set; }
+
+        [Display(Name = "Wengine")]
+        public string Q9_c_5 { get; set; }
+
+        [Display(Name = "Q10.Je umesharudi kazini au kuanza shughuli zako za kukupatia kipato?	")]
+        public EFMOK1 Q10 { get; set; }
+
 
         //1.General
         [Display(Name = "a. Pallor")]
@@ -328,7 +380,7 @@ namespace BHAMCApp.Models
         //a. Palate
         [Display(Name = "i. High Arched")]
         public EFMOK1 Q15_a { get; set; }
-      
+
         [Display(Name = "ii. Cleft / Other")]
         public EFMOK1 Q15_b { get; set; }
         //b. Hands
@@ -361,6 +413,14 @@ namespace BHAMCApp.Models
         [Display(Name = "c. Is your child happy?")]
         public EFMOK1 Q16_c { get; set; }
 
+        //8. BINS test result (at 3,6,9 & 12 month assessment only)
+        [Display(Name = "a. Low Risk")]
+        public EFMOK1 Q17_a { get; set; }
+        [Display(Name = "b. Moderate Risk")]
+        public EFMOK1 Q17_b { get; set; }
+        [Display(Name = "c. High Risk")]
+        public EFMOK1 Q17_c { get; set; }
+
         [Display(Name = "Problems/ Diagnosis")]
         public string ProblemsDsis { get; set; }
 
@@ -372,64 +432,5 @@ namespace BHAMCApp.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? Date3Month { get; set; }
-    }
-
-
-    public enum EFMTKSex
-    {
-        [Display(Name = "Me")]
-        E1 = 1,
-        [Display(Name = "Ke")]
-        E2 = 2
-    }
-   
-    public enum EFMOK1
-    {
-        [Display(Name = "0. Hapana")]
-        No = 0,
-        [Display(Name = "1. Ndiyo")]
-        Yes = 1
-
-
-    }
-    
-        public enum EFMOK5
-    {
-        [Display(Name = "1. < 125mls")]
-        E1 = 1,
-        [Display(Name = "2. > 125mls")]
-        E2 = 2
-
-
-    }
-    public enum EFMOK6
-    {
-        [Display(Name = "1. Kimepona")]
-        E1 = 1,
-        [Display(Name = "2. Kina uambukizo")]
-        E2 = 2
-
-
-    }
-    public enum EFMOK7
-    {
-        [Display(Name = "1. <siku 14")]
-        E1 = 1,
-        [Display(Name = "2. >siku 14")]
-        E2 = 2
-
-
-    }
-    public enum EFMOK9
-    {
-        [Display(Name = "1.Mama")]
-        E1= 1,
-        [Display(Name = "2.Binti anayesaidia kazi za nyumbani")]
-        E2 = 2,
-        [Display(Name = "3.Baba wa mtoto")]
-        E3 = 3,
-        [Display(Name = "4.Wengine")]
-        E4 = 4
-
     }
 }
