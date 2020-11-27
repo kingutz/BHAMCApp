@@ -1,0 +1,780 @@
+﻿@model IEnumerable<BHAMCApp.Models.F48MTOTO>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_BhMtoto.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IDNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tarehe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SexMt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TareheKuzaliwa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UmriMtotoMiezi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.M36)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.M40)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.M44)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.M48)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q1_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q2_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q3_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q4_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q5_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q5_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_1_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_1_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_1_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_1_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_1_e)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_1_f)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_2_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_2_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_2_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_2_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_e)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_f)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_g)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_h)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_3_i)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q18_4_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_4_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_4_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_4_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_e)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_f)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_g)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_h)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q8_5_i)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q9_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q9_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q9_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q9_4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q9_5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q10_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q11)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q12)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q12_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q15)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_a_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_a_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_a_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_a_4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_a_5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_b_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_b_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_b_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_b_4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_b_5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_c_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_c_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_c_3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_c_4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_c_5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q17)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q17_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q18)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q18_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q10_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q10_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q10_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q10_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q10_e)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q11_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q11_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q11_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q12_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q12_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q12_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13_e)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q13_f)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14_e)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14_f)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q14_g)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q15_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q15_b)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q15_c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q15_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q16_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Q17_a)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProblemsDsis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MedicationPres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateVisit32)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedByUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedByUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Edited)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tarehe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SexMt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TareheKuzaliwa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UmriMtotoMiezi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.M36)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.M40)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.M44)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.M48)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q1_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q2_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q3_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q4_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q5_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q5_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_1_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_1_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_1_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_1_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_1_e)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_1_f)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_2_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_2_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_2_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_2_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_e)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_f)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_g)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_h)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_3_i)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q18_4_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_4_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_4_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_4_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_e)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_f)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_g)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_h)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q8_5_i)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q9_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q9_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q9_3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q9_4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q9_5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q10)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q10_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q11)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q12)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q12_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q15)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_a_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_a_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_a_3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_a_4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_a_5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_b_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_b_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_b_3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_b_4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_b_5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_c_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_c_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_c_3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_c_4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_c_5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q17)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q17_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q18)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q18_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q10_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q10_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q10_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q10_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q10_e)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q11_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q11_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q11_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q12_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q12_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q12_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13_e)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q13_f)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14_e)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14_f)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q14_g)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q15_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q15_b)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q15_c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q15_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q16_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q17_a)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProblemsDsis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicationPres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateVisit32)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedByUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifiedByUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifiedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Edited)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

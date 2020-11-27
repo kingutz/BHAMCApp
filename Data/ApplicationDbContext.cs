@@ -84,6 +84,20 @@ namespace BHAMCApp.Data
         public DbSet<BHAMCApp.Models.F28_44MAMA> F28_44MAMA { get; set; }
 
         public DbSet<BHAMCApp.Models.F48MAMA> F48MAMA { get; set; }
+
+        public DbSet<BHAMCApp.Models.FTMTOTO> FTMTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.FSMTOTO> FSMTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.FTISAMTOTO> FTISAMTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.FKMMTOTO> FKMMTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.F12_24MTOTO> F12_24MTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.F28_44MTOTO> F28_44MTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.F48MTOTO> F48MTOTO { get; set; }
     }
     public class ApplicationUser : IdentityUser
     {

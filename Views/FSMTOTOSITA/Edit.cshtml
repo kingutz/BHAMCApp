@@ -1,0 +1,665 @@
+﻿@model BHAMCApp.Models.FSMTOTO
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_BhMtoto.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>FSMTOTO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IDNumber" class="control-label"></label>
+                <input asp-for="IDNumber" class="form-control" />
+                <span asp-validation-for="IDNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tarehe" class="control-label"></label>
+                <input asp-for="Tarehe" class="form-control" />
+                <span asp-validation-for="Tarehe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SexMt" class="control-label"></label>
+                <select asp-for="SexMt" class="form-control"></select>
+                <span asp-validation-for="SexMt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TareheKuzaliwa" class="control-label"></label>
+                <input asp-for="TareheKuzaliwa" class="form-control" />
+                <span asp-validation-for="TareheKuzaliwa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UmriMtotoMiezi" class="control-label"></label>
+                <input asp-for="UmriMtotoMiezi" class="form-control" />
+                <span asp-validation-for="UmriMtotoMiezi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q1" class="control-label"></label>
+                <select asp-for="Q1" class="form-control"></select>
+                <span asp-validation-for="Q1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q2" class="control-label"></label>
+                <input asp-for="Q2" class="form-control" />
+                <span asp-validation-for="Q2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q3" class="control-label"></label>
+                <select asp-for="Q3" class="form-control"></select>
+                <span asp-validation-for="Q3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_1_a" class="control-label"></label>
+                <input asp-for="Q4_1_a" class="form-control" />
+                <span asp-validation-for="Q4_1_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_1_b" class="control-label"></label>
+                <input asp-for="Q4_1_b" class="form-control" />
+                <span asp-validation-for="Q4_1_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_1_c" class="control-label"></label>
+                <select asp-for="Q4_1_c" class="form-control"></select>
+                <span asp-validation-for="Q4_1_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_1_e" class="control-label"></label>
+                <input asp-for="Q4_1_e" class="form-control" />
+                <span asp-validation-for="Q4_1_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_2_a" class="control-label"></label>
+                <input asp-for="Q4_2_a" class="form-control" />
+                <span asp-validation-for="Q4_2_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_2_b" class="control-label"></label>
+                <input asp-for="Q4_2_b" class="form-control" />
+                <span asp-validation-for="Q4_2_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_2_c" class="control-label"></label>
+                <select asp-for="Q4_2_c" class="form-control"></select>
+                <span asp-validation-for="Q4_2_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_2_e" class="control-label"></label>
+                <input asp-for="Q4_2_e" class="form-control" />
+                <span asp-validation-for="Q4_2_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_3_a" class="control-label"></label>
+                <input asp-for="Q4_3_a" class="form-control" />
+                <span asp-validation-for="Q4_3_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_3_b" class="control-label"></label>
+                <input asp-for="Q4_3_b" class="form-control" />
+                <span asp-validation-for="Q4_3_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_3_c" class="control-label"></label>
+                <select asp-for="Q4_3_c" class="form-control"></select>
+                <span asp-validation-for="Q4_3_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_3_e" class="control-label"></label>
+                <input asp-for="Q4_3_e" class="form-control" />
+                <span asp-validation-for="Q4_3_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_4_a" class="control-label"></label>
+                <input asp-for="Q4_4_a" class="form-control" />
+                <span asp-validation-for="Q4_4_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_4_b" class="control-label"></label>
+                <input asp-for="Q4_4_b" class="form-control" />
+                <span asp-validation-for="Q4_4_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_4_c" class="control-label"></label>
+                <select asp-for="Q4_4_c" class="form-control"></select>
+                <span asp-validation-for="Q4_4_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q4_4_e" class="control-label"></label>
+                <input asp-for="Q4_4_e" class="form-control" />
+                <span asp-validation-for="Q4_4_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q5_5_a" class="control-label"></label>
+                <input asp-for="Q5_5_a" class="form-control" />
+                <span asp-validation-for="Q5_5_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q5_5_b" class="control-label"></label>
+                <input asp-for="Q5_5_b" class="form-control" />
+                <span asp-validation-for="Q5_5_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q5_5_c" class="control-label"></label>
+                <select asp-for="Q5_5_c" class="form-control"></select>
+                <span asp-validation-for="Q5_5_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q5_5_e" class="control-label"></label>
+                <input asp-for="Q5_5_e" class="form-control" />
+                <span asp-validation-for="Q5_5_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_5_a" class="control-label"></label>
+                <input asp-for="Q6_5_a" class="form-control" />
+                <span asp-validation-for="Q6_5_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_5_b" class="control-label"></label>
+                <input asp-for="Q6_5_b" class="form-control" />
+                <span asp-validation-for="Q6_5_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_5_c" class="control-label"></label>
+                <select asp-for="Q6_5_c" class="form-control"></select>
+                <span asp-validation-for="Q6_5_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_5_e" class="control-label"></label>
+                <input asp-for="Q6_5_e" class="form-control" />
+                <span asp-validation-for="Q6_5_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q7_5_a" class="control-label"></label>
+                <input asp-for="Q7_5_a" class="form-control" />
+                <span asp-validation-for="Q7_5_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q7_5_b" class="control-label"></label>
+                <input asp-for="Q7_5_b" class="form-control" />
+                <span asp-validation-for="Q7_5_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q7_5_c" class="control-label"></label>
+                <select asp-for="Q7_5_c" class="form-control"></select>
+                <span asp-validation-for="Q7_5_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q7_5_e" class="control-label"></label>
+                <input asp-for="Q7_5_e" class="form-control" />
+                <span asp-validation-for="Q7_5_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q8_5_a" class="control-label"></label>
+                <input asp-for="Q8_5_a" class="form-control" />
+                <span asp-validation-for="Q8_5_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q8_5_b" class="control-label"></label>
+                <input asp-for="Q8_5_b" class="form-control" />
+                <span asp-validation-for="Q8_5_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q8_5_c" class="control-label"></label>
+                <select asp-for="Q8_5_c" class="form-control"></select>
+                <span asp-validation-for="Q8_5_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q8_5_e" class="control-label"></label>
+                <input asp-for="Q8_5_e" class="form-control" />
+                <span asp-validation-for="Q8_5_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q9_5_a" class="control-label"></label>
+                <input asp-for="Q9_5_a" class="form-control" />
+                <span asp-validation-for="Q9_5_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q9_5_b" class="control-label"></label>
+                <input asp-for="Q9_5_b" class="form-control" />
+                <span asp-validation-for="Q9_5_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q9_5_c" class="control-label"></label>
+                <select asp-for="Q9_5_c" class="form-control"></select>
+                <span asp-validation-for="Q9_5_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q9_5_e" class="control-label"></label>
+                <input asp-for="Q9_5_e" class="form-control" />
+                <span asp-validation-for="Q9_5_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_5_a" class="control-label"></label>
+                <input asp-for="Q10_5_a" class="form-control" />
+                <span asp-validation-for="Q10_5_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_5_b" class="control-label"></label>
+                <input asp-for="Q10_5_b" class="form-control" />
+                <span asp-validation-for="Q10_5_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_5_c" class="control-label"></label>
+                <select asp-for="Q10_5_c" class="form-control"></select>
+                <span asp-validation-for="Q10_5_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_5_e" class="control-label"></label>
+                <input asp-for="Q10_5_e" class="form-control" />
+                <span asp-validation-for="Q10_5_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q5_1" class="control-label"></label>
+                <select asp-for="Q5_1" class="form-control"></select>
+                <span asp-validation-for="Q5_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q5_1_a" class="control-label"></label>
+                <select asp-for="Q5_1_a" class="form-control"></select>
+                <span asp-validation-for="Q5_1_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_2" class="control-label"></label>
+                <select asp-for="Q6_2" class="form-control"></select>
+                <span asp-validation-for="Q6_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_2_a" class="control-label"></label>
+                <select asp-for="Q6_2_a" class="form-control"></select>
+                <span asp-validation-for="Q6_2_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_3" class="control-label"></label>
+                <select asp-for="Q6_3" class="form-control"></select>
+                <span asp-validation-for="Q6_3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_3_a" class="control-label"></label>
+                <select asp-for="Q6_3_a" class="form-control"></select>
+                <span asp-validation-for="Q6_3_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_4" class="control-label"></label>
+                <select asp-for="Q6_4" class="form-control"></select>
+                <span asp-validation-for="Q6_4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_4_a" class="control-label"></label>
+                <select asp-for="Q6_4_a" class="form-control"></select>
+                <span asp-validation-for="Q6_4_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_5" class="control-label"></label>
+                <select asp-for="Q6_5" class="form-control"></select>
+                <span asp-validation-for="Q6_5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_5_aa" class="control-label"></label>
+                <select asp-for="Q6_5_aa" class="form-control"></select>
+                <span asp-validation-for="Q6_5_aa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_6" class="control-label"></label>
+                <select asp-for="Q6_6" class="form-control"></select>
+                <span asp-validation-for="Q6_6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_6_a" class="control-label"></label>
+                <select asp-for="Q6_6_a" class="form-control"></select>
+                <span asp-validation-for="Q6_6_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_7" class="control-label"></label>
+                <select asp-for="Q6_7" class="form-control"></select>
+                <span asp-validation-for="Q6_7" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_7_a" class="control-label"></label>
+                <select asp-for="Q6_7_a" class="form-control"></select>
+                <span asp-validation-for="Q6_7_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_8" class="control-label"></label>
+                <input asp-for="Q6_8" class="form-control" />
+                <span asp-validation-for="Q6_8" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_8_a" class="control-label"></label>
+                <select asp-for="Q6_8_a" class="form-control"></select>
+                <span asp-validation-for="Q6_8_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6" class="control-label"></label>
+                <select asp-for="Q6" class="form-control"></select>
+                <span asp-validation-for="Q6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q6_1" class="control-label"></label>
+                <input asp-for="Q6_1" class="form-control" />
+                <span asp-validation-for="Q6_1" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_a_1" /> @Html.DisplayNameFor(model => model.Q7_a_1)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_a_2" /> @Html.DisplayNameFor(model => model.Q7_a_2)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_a_3" /> @Html.DisplayNameFor(model => model.Q7_a_3)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_a_4" /> @Html.DisplayNameFor(model => model.Q7_a_4)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q7_a_5" class="control-label"></label>
+                <input asp-for="Q7_a_5" class="form-control" />
+                <span asp-validation-for="Q7_a_5" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_b_1" /> @Html.DisplayNameFor(model => model.Q7_b_1)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_b_2" /> @Html.DisplayNameFor(model => model.Q7_b_2)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_b_3" /> @Html.DisplayNameFor(model => model.Q7_b_3)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_b_4" /> @Html.DisplayNameFor(model => model.Q7_b_4)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q7_b_5" class="control-label"></label>
+                <input asp-for="Q7_b_5" class="form-control" />
+                <span asp-validation-for="Q7_b_5" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_c_1" /> @Html.DisplayNameFor(model => model.Q7_c_1)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_c_2" /> @Html.DisplayNameFor(model => model.Q7_c_2)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_c_3" /> @Html.DisplayNameFor(model => model.Q7_c_3)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Q7_c_4" /> @Html.DisplayNameFor(model => model.Q7_c_4)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q7_c_5" class="control-label"></label>
+                <input asp-for="Q7_c_5" class="form-control" />
+                <span asp-validation-for="Q7_c_5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_a" class="control-label"></label>
+                <select asp-for="Q10_a" class="form-control"></select>
+                <span asp-validation-for="Q10_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_b" class="control-label"></label>
+                <select asp-for="Q10_b" class="form-control"></select>
+                <span asp-validation-for="Q10_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_c" class="control-label"></label>
+                <select asp-for="Q10_c" class="form-control"></select>
+                <span asp-validation-for="Q10_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_d" class="control-label"></label>
+                <select asp-for="Q10_d" class="form-control"></select>
+                <span asp-validation-for="Q10_d" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q10_e" class="control-label"></label>
+                <select asp-for="Q10_e" class="form-control"></select>
+                <span asp-validation-for="Q10_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q11_a" class="control-label"></label>
+                <select asp-for="Q11_a" class="form-control"></select>
+                <span asp-validation-for="Q11_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q11_b" class="control-label"></label>
+                <select asp-for="Q11_b" class="form-control"></select>
+                <span asp-validation-for="Q11_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q11_c" class="control-label"></label>
+                <select asp-for="Q11_c" class="form-control"></select>
+                <span asp-validation-for="Q11_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q12_a" class="control-label"></label>
+                <select asp-for="Q12_a" class="form-control"></select>
+                <span asp-validation-for="Q12_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q12_b" class="control-label"></label>
+                <select asp-for="Q12_b" class="form-control"></select>
+                <span asp-validation-for="Q12_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q12_c" class="control-label"></label>
+                <select asp-for="Q12_c" class="form-control"></select>
+                <span asp-validation-for="Q12_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q13_a" class="control-label"></label>
+                <select asp-for="Q13_a" class="form-control"></select>
+                <span asp-validation-for="Q13_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q13_b" class="control-label"></label>
+                <select asp-for="Q13_b" class="form-control"></select>
+                <span asp-validation-for="Q13_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q13_c" class="control-label"></label>
+                <select asp-for="Q13_c" class="form-control"></select>
+                <span asp-validation-for="Q13_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q13_d" class="control-label"></label>
+                <select asp-for="Q13_d" class="form-control"></select>
+                <span asp-validation-for="Q13_d" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q13_e" class="control-label"></label>
+                <select asp-for="Q13_e" class="form-control"></select>
+                <span asp-validation-for="Q13_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q13_f" class="control-label"></label>
+                <select asp-for="Q13_f" class="form-control"></select>
+                <span asp-validation-for="Q13_f" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q14_a" class="control-label"></label>
+                <select asp-for="Q14_a" class="form-control"></select>
+                <span asp-validation-for="Q14_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q14_b" class="control-label"></label>
+                <select asp-for="Q14_b" class="form-control"></select>
+                <span asp-validation-for="Q14_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q14_c" class="control-label"></label>
+                <select asp-for="Q14_c" class="form-control"></select>
+                <span asp-validation-for="Q14_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q14_d" class="control-label"></label>
+                <select asp-for="Q14_d" class="form-control"></select>
+                <span asp-validation-for="Q14_d" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q14_e" class="control-label"></label>
+                <input asp-for="Q14_e" class="form-control" />
+                <span asp-validation-for="Q14_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q14_f" class="control-label"></label>
+                <input asp-for="Q14_f" class="form-control" />
+                <span asp-validation-for="Q14_f" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q14_g" class="control-label"></label>
+                <input asp-for="Q14_g" class="form-control" />
+                <span asp-validation-for="Q14_g" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_a" class="control-label"></label>
+                <select asp-for="Q15_a" class="form-control"></select>
+                <span asp-validation-for="Q15_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_b" class="control-label"></label>
+                <select asp-for="Q15_b" class="form-control"></select>
+                <span asp-validation-for="Q15_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_c" class="control-label"></label>
+                <select asp-for="Q15_c" class="form-control"></select>
+                <span asp-validation-for="Q15_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_d" class="control-label"></label>
+                <select asp-for="Q15_d" class="form-control"></select>
+                <span asp-validation-for="Q15_d" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_e" class="control-label"></label>
+                <select asp-for="Q15_e" class="form-control"></select>
+                <span asp-validation-for="Q15_e" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_f" class="control-label"></label>
+                <select asp-for="Q15_f" class="form-control"></select>
+                <span asp-validation-for="Q15_f" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_g" class="control-label"></label>
+                <select asp-for="Q15_g" class="form-control"></select>
+                <span asp-validation-for="Q15_g" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q15_h" class="control-label"></label>
+                <select asp-for="Q15_h" class="form-control"></select>
+                <span asp-validation-for="Q15_h" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q16_a" class="control-label"></label>
+                <select asp-for="Q16_a" class="form-control"></select>
+                <span asp-validation-for="Q16_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q16_b" class="control-label"></label>
+                <select asp-for="Q16_b" class="form-control"></select>
+                <span asp-validation-for="Q16_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q16_c" class="control-label"></label>
+                <select asp-for="Q16_c" class="form-control"></select>
+                <span asp-validation-for="Q16_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q17_a" class="control-label"></label>
+                <select asp-for="Q17_a" class="form-control"></select>
+                <span asp-validation-for="Q17_a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q17_b" class="control-label"></label>
+                <select asp-for="Q17_b" class="form-control"></select>
+                <span asp-validation-for="Q17_b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Q17_c" class="control-label"></label>
+                <select asp-for="Q17_c" class="form-control"></select>
+                <span asp-validation-for="Q17_c" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProblemsDsis" class="control-label"></label>
+                <input asp-for="ProblemsDsis" class="form-control" />
+                <span asp-validation-for="ProblemsDsis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedicationPres" class="control-label"></label>
+                <input asp-for="MedicationPres" class="form-control" />
+                <span asp-validation-for="MedicationPres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date6Month" class="control-label"></label>
+                <input asp-for="Date6Month" class="form-control" />
+                <span asp-validation-for="Date6Month" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="CreatedByUser" class="control-label"></label>
+                <input asp-for="CreatedByUser" class="form-control" />
+                <span asp-validation-for="CreatedByUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" class="form-control" />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModifiedByUser" class="control-label"></label>
+                <input asp-for="ModifiedByUser" class="form-control" />
+                <span asp-validation-for="ModifiedByUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModifiedDate" class="control-label"></label>
+                <input asp-for="ModifiedDate" class="form-control" />
+                <span asp-validation-for="ModifiedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Edited" /> @Html.DisplayNameFor(model => model.Edited)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
