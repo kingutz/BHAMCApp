@@ -5,610 +5,1110 @@
     Layout = "~/Views/Shared/_BhMtoto.cshtml";
 }
 
-<h1>Edit</h1>
-
-<h4>FKMMTOTO</h4>
-<hr />
+<div class="row text-muted">
+    <h5>Form Mtoto</h5>
+</div>
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="IDNumber" class="control-label"></label>
-                <input asp-for="IDNumber" class="form-control" />
-                <span asp-validation-for="IDNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tarehe" class="control-label"></label>
-                <input asp-for="Tarehe" class="form-control" />
-                <span asp-validation-for="Tarehe" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SexMt" class="control-label"></label>
-                <select asp-for="SexMt" class="form-control"></select>
-                <span asp-validation-for="SexMt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TareheKuzaliwa" class="control-label"></label>
-                <input asp-for="TareheKuzaliwa" class="form-control" />
-                <span asp-validation-for="TareheKuzaliwa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UmriMtotoMiezi" class="control-label"></label>
-                <input asp-for="UmriMtotoMiezi" class="form-control" />
-                <span asp-validation-for="UmriMtotoMiezi" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q1" class="control-label"></label>
-                <select asp-for="Q1" class="form-control"></select>
-                <span asp-validation-for="Q1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q1_1" class="control-label"></label>
-                <input asp-for="Q1_1" class="form-control" />
-                <span asp-validation-for="Q1_1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q2" class="control-label"></label>
-                <input asp-for="Q2" class="form-control" />
-                <span asp-validation-for="Q2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q3" class="control-label"></label>
-                <select asp-for="Q3" class="form-control"></select>
-                <span asp-validation-for="Q3" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q1_1_a" class="control-label"></label>
-                <input asp-for="Q1_1_a" class="form-control" />
-                <span asp-validation-for="Q1_1_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q1_1_b" class="control-label"></label>
-                <input asp-for="Q1_1_b" class="form-control" />
-                <span asp-validation-for="Q1_1_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q1_1_c" class="control-label"></label>
-                <input asp-for="Q1_1_c" class="form-control" />
-                <span asp-validation-for="Q1_1_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q2_2_a" class="control-label"></label>
-                <input asp-for="Q2_2_a" class="form-control" />
-                <span asp-validation-for="Q2_2_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q2_2_b" class="control-label"></label>
-                <input asp-for="Q2_2_b" class="form-control" />
-                <span asp-validation-for="Q2_2_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q2_2_c" class="control-label"></label>
-                <input asp-for="Q2_2_c" class="form-control" />
-                <span asp-validation-for="Q2_2_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q3_3_a" class="control-label"></label>
-                <input asp-for="Q3_3_a" class="form-control" />
-                <span asp-validation-for="Q3_3_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q3_3_b" class="control-label"></label>
-                <input asp-for="Q3_3_b" class="form-control" />
-                <span asp-validation-for="Q3_3_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q3_3_c" class="control-label"></label>
-                <input asp-for="Q3_3_c" class="form-control" />
-                <span asp-validation-for="Q3_3_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_4_a" class="control-label"></label>
-                <input asp-for="Q4_4_a" class="form-control" />
-                <span asp-validation-for="Q4_4_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_4_b" class="control-label"></label>
-                <input asp-for="Q4_4_b" class="form-control" />
-                <span asp-validation-for="Q4_4_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_4_c" class="control-label"></label>
-                <input asp-for="Q4_4_c" class="form-control" />
-                <span asp-validation-for="Q4_4_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q5_5_a" class="control-label"></label>
-                <input asp-for="Q5_5_a" class="form-control" />
-                <span asp-validation-for="Q5_5_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q5_5_b" class="control-label"></label>
-                <input asp-for="Q5_5_b" class="form-control" />
-                <span asp-validation-for="Q5_5_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q5_5_c" class="control-label"></label>
-                <input asp-for="Q5_5_c" class="form-control" />
-                <span asp-validation-for="Q5_5_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q6_5_a" class="control-label"></label>
-                <input asp-for="Q6_5_a" class="form-control" />
-                <span asp-validation-for="Q6_5_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q6_5_b" class="control-label"></label>
-                <input asp-for="Q6_5_b" class="form-control" />
-                <span asp-validation-for="Q6_5_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q6_5_c" class="control-label"></label>
-                <input asp-for="Q6_5_c" class="form-control" />
-                <span asp-validation-for="Q6_5_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q7_5_a" class="control-label"></label>
-                <input asp-for="Q7_5_a" class="form-control" />
-                <span asp-validation-for="Q7_5_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q7_5_b" class="control-label"></label>
-                <input asp-for="Q7_5_b" class="form-control" />
-                <span asp-validation-for="Q7_5_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q7_5_c" class="control-label"></label>
-                <input asp-for="Q7_5_c" class="form-control" />
-                <span asp-validation-for="Q7_5_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q8_5_a" class="control-label"></label>
-                <input asp-for="Q8_5_a" class="form-control" />
-                <span asp-validation-for="Q8_5_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q8_5_b" class="control-label"></label>
-                <input asp-for="Q8_5_b" class="form-control" />
-                <span asp-validation-for="Q8_5_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q8_5_c" class="control-label"></label>
-                <input asp-for="Q8_5_c" class="form-control" />
-                <span asp-validation-for="Q8_5_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_1" class="control-label"></label>
-                <select asp-for="Q4_1" class="form-control"></select>
-                <span asp-validation-for="Q4_1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_1_a" class="control-label"></label>
-                <select asp-for="Q4_1_a" class="form-control"></select>
-                <span asp-validation-for="Q4_1_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_2" class="control-label"></label>
-                <select asp-for="Q4_2" class="form-control"></select>
-                <span asp-validation-for="Q4_2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_2_a" class="control-label"></label>
-                <select asp-for="Q4_2_a" class="form-control"></select>
-                <span asp-validation-for="Q4_2_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_3" class="control-label"></label>
-                <select asp-for="Q4_3" class="form-control"></select>
-                <span asp-validation-for="Q4_3" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_3_a" class="control-label"></label>
-                <select asp-for="Q4_3_a" class="form-control"></select>
-                <span asp-validation-for="Q4_3_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_4" class="control-label"></label>
-                <select asp-for="Q4_4" class="form-control"></select>
-                <span asp-validation-for="Q4_4" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_4_aa" class="control-label"></label>
-                <select asp-for="Q4_4_aa" class="form-control"></select>
-                <span asp-validation-for="Q4_4_aa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_5" class="control-label"></label>
-                <select asp-for="Q4_5" class="form-control"></select>
-                <span asp-validation-for="Q4_5" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_5_aa" class="control-label"></label>
-                <select asp-for="Q4_5_aa" class="form-control"></select>
-                <span asp-validation-for="Q4_5_aa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_6" class="control-label"></label>
-                <select asp-for="Q4_6" class="form-control"></select>
-                <span asp-validation-for="Q4_6" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_6_a" class="control-label"></label>
-                <select asp-for="Q4_6_a" class="form-control"></select>
-                <span asp-validation-for="Q4_6_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_7" class="control-label"></label>
-                <select asp-for="Q4_7" class="form-control"></select>
-                <span asp-validation-for="Q4_7" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_7_a" class="control-label"></label>
-                <select asp-for="Q4_7_a" class="form-control"></select>
-                <span asp-validation-for="Q4_7_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_8" class="control-label"></label>
-                <input asp-for="Q4_8" class="form-control" />
-                <span asp-validation-for="Q4_8" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q4_8_a" class="control-label"></label>
-                <select asp-for="Q4_8_a" class="form-control"></select>
-                <span asp-validation-for="Q4_8_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q5" class="control-label"></label>
-                <select asp-for="Q5" class="form-control"></select>
-                <span asp-validation-for="Q5" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q5_1" class="control-label"></label>
-                <input asp-for="Q5_1" class="form-control" />
-                <span asp-validation-for="Q5_1" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_a_1" /> @Html.DisplayNameFor(model => model.Q6_a_1)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_a_2" /> @Html.DisplayNameFor(model => model.Q6_a_2)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_a_3" /> @Html.DisplayNameFor(model => model.Q6_a_3)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_a_4" /> @Html.DisplayNameFor(model => model.Q6_a_4)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q6_a_5" class="control-label"></label>
-                <input asp-for="Q6_a_5" class="form-control" />
-                <span asp-validation-for="Q6_a_5" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_b_1" /> @Html.DisplayNameFor(model => model.Q6_b_1)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_b_2" /> @Html.DisplayNameFor(model => model.Q6_b_2)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_b_3" /> @Html.DisplayNameFor(model => model.Q6_b_3)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_b_4" /> @Html.DisplayNameFor(model => model.Q6_b_4)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q6_b_5" class="control-label"></label>
-                <input asp-for="Q6_b_5" class="form-control" />
-                <span asp-validation-for="Q6_b_5" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_c_1" /> @Html.DisplayNameFor(model => model.Q6_c_1)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_c_2" /> @Html.DisplayNameFor(model => model.Q6_c_2)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_c_3" /> @Html.DisplayNameFor(model => model.Q6_c_3)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_c_4" /> @Html.DisplayNameFor(model => model.Q6_c_4)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q6_c_5" class="control-label"></label>
-                <input asp-for="Q6_c_5" class="form-control" />
-                <span asp-validation-for="Q6_c_5" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_d_1" /> @Html.DisplayNameFor(model => model.Q6_d_1)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_d_2" /> @Html.DisplayNameFor(model => model.Q6_d_2)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_d_3" /> @Html.DisplayNameFor(model => model.Q6_d_3)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Q6_d_4" /> @Html.DisplayNameFor(model => model.Q6_d_4)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q6_d_5" class="control-label"></label>
-                <input asp-for="Q6_d_5" class="form-control" />
-                <span asp-validation-for="Q6_d_5" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q10_a" class="control-label"></label>
-                <select asp-for="Q10_a" class="form-control"></select>
-                <span asp-validation-for="Q10_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q10_b" class="control-label"></label>
-                <select asp-for="Q10_b" class="form-control"></select>
-                <span asp-validation-for="Q10_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q10_c" class="control-label"></label>
-                <select asp-for="Q10_c" class="form-control"></select>
-                <span asp-validation-for="Q10_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q10_d" class="control-label"></label>
-                <select asp-for="Q10_d" class="form-control"></select>
-                <span asp-validation-for="Q10_d" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q10_e" class="control-label"></label>
-                <select asp-for="Q10_e" class="form-control"></select>
-                <span asp-validation-for="Q10_e" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q11_a" class="control-label"></label>
-                <select asp-for="Q11_a" class="form-control"></select>
-                <span asp-validation-for="Q11_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q11_b" class="control-label"></label>
-                <select asp-for="Q11_b" class="form-control"></select>
-                <span asp-validation-for="Q11_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q11_c" class="control-label"></label>
-                <select asp-for="Q11_c" class="form-control"></select>
-                <span asp-validation-for="Q11_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q12_a" class="control-label"></label>
-                <select asp-for="Q12_a" class="form-control"></select>
-                <span asp-validation-for="Q12_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q12_b" class="control-label"></label>
-                <select asp-for="Q12_b" class="form-control"></select>
-                <span asp-validation-for="Q12_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q12_c" class="control-label"></label>
-                <select asp-for="Q12_c" class="form-control"></select>
-                <span asp-validation-for="Q12_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q13_a" class="control-label"></label>
-                <select asp-for="Q13_a" class="form-control"></select>
-                <span asp-validation-for="Q13_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q13_b" class="control-label"></label>
-                <select asp-for="Q13_b" class="form-control"></select>
-                <span asp-validation-for="Q13_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q13_c" class="control-label"></label>
-                <select asp-for="Q13_c" class="form-control"></select>
-                <span asp-validation-for="Q13_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q13_d" class="control-label"></label>
-                <select asp-for="Q13_d" class="form-control"></select>
-                <span asp-validation-for="Q13_d" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q13_e" class="control-label"></label>
-                <select asp-for="Q13_e" class="form-control"></select>
-                <span asp-validation-for="Q13_e" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q13_f" class="control-label"></label>
-                <select asp-for="Q13_f" class="form-control"></select>
-                <span asp-validation-for="Q13_f" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q14_a" class="control-label"></label>
-                <select asp-for="Q14_a" class="form-control"></select>
-                <span asp-validation-for="Q14_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q14_b" class="control-label"></label>
-                <select asp-for="Q14_b" class="form-control"></select>
-                <span asp-validation-for="Q14_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q14_c" class="control-label"></label>
-                <select asp-for="Q14_c" class="form-control"></select>
-                <span asp-validation-for="Q14_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q14_d" class="control-label"></label>
-                <select asp-for="Q14_d" class="form-control"></select>
-                <span asp-validation-for="Q14_d" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q14_e" class="control-label"></label>
-                <input asp-for="Q14_e" class="form-control" />
-                <span asp-validation-for="Q14_e" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q14_f" class="control-label"></label>
-                <input asp-for="Q14_f" class="form-control" />
-                <span asp-validation-for="Q14_f" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q14_g" class="control-label"></label>
-                <input asp-for="Q14_g" class="form-control" />
-                <span asp-validation-for="Q14_g" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_a" class="control-label"></label>
-                <select asp-for="Q15_a" class="form-control"></select>
-                <span asp-validation-for="Q15_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_b" class="control-label"></label>
-                <select asp-for="Q15_b" class="form-control"></select>
-                <span asp-validation-for="Q15_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_c" class="control-label"></label>
-                <select asp-for="Q15_c" class="form-control"></select>
-                <span asp-validation-for="Q15_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_d" class="control-label"></label>
-                <select asp-for="Q15_d" class="form-control"></select>
-                <span asp-validation-for="Q15_d" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_e" class="control-label"></label>
-                <select asp-for="Q15_e" class="form-control"></select>
-                <span asp-validation-for="Q15_e" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_f" class="control-label"></label>
-                <select asp-for="Q15_f" class="form-control"></select>
-                <span asp-validation-for="Q15_f" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_g" class="control-label"></label>
-                <select asp-for="Q15_g" class="form-control"></select>
-                <span asp-validation-for="Q15_g" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q15_h" class="control-label"></label>
-                <select asp-for="Q15_h" class="form-control"></select>
-                <span asp-validation-for="Q15_h" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q16_a" class="control-label"></label>
-                <select asp-for="Q16_a" class="form-control"></select>
-                <span asp-validation-for="Q16_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q16_b" class="control-label"></label>
-                <select asp-for="Q16_b" class="form-control"></select>
-                <span asp-validation-for="Q16_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q16_c" class="control-label"></label>
-                <select asp-for="Q16_c" class="form-control"></select>
-                <span asp-validation-for="Q16_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q17_a" class="control-label"></label>
-                <select asp-for="Q17_a" class="form-control"></select>
-                <span asp-validation-for="Q17_a" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q17_b" class="control-label"></label>
-                <select asp-for="Q17_b" class="form-control"></select>
-                <span asp-validation-for="Q17_b" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Q17_c" class="control-label"></label>
-                <select asp-for="Q17_c" class="form-control"></select>
-                <span asp-validation-for="Q17_c" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ProblemsDsis" class="control-label"></label>
-                <input asp-for="ProblemsDsis" class="form-control" />
-                <span asp-validation-for="ProblemsDsis" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MedicationPres" class="control-label"></label>
-                <input asp-for="MedicationPres" class="form-control" />
-                <span asp-validation-for="MedicationPres" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Date6Month" class="control-label"></label>
-                <input asp-for="Date6Month" class="form-control" />
-                <span asp-validation-for="Date6Month" class="text-danger"></span>
-            </div>
-            <input type="hidden" asp-for="ID" />
-            <div class="form-group">
-                <label asp-for="CreatedByUser" class="control-label"></label>
-                <input asp-for="CreatedByUser" class="form-control" />
-                <span asp-validation-for="CreatedByUser" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ModifiedByUser" class="control-label"></label>
-                <input asp-for="ModifiedByUser" class="form-control" />
-                <span asp-validation-for="ModifiedByUser" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ModifiedDate" class="control-label"></label>
-                <input asp-for="ModifiedDate" class="form-control" />
-                <span asp-validation-for="ModifiedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Edited" /> @Html.DisplayNameFor(model => model.Edited)
-                </label>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+    <a class="text-info" asp-action="Index">Back to List</a>
+</div>
+<form asp-action="Edit">
+    <div class="row text-white justify-content-between jumbodm">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ID" />
+        <div class="col-md-12">
+            <p class="text-center text-info">FOMU YA MTOTO  </p>
+        </div>
+        <div class="col-md-12">
+            <p class="text-center text-info">MWEZI WA  (12)  BAADA YA KUZALIWA</p>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="IDNumber" class="control-label"></label>
+                    <input asp-for="IDNumber" class="form-control"  />
+                    <span asp-validation-for="IDNumber" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Tarehe" class="control-label"></label>
+                    <input asp-for="Tarehe" class="form-control" />
+                    <span asp-validation-for="Tarehe" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="SexMt" class="control-label"></label>
+                    <select asp-for="SexMt" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMTKSex>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="SexMt" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="TareheKuzaliwa" class="control-label"></label>
+                    <input asp-for="TareheKuzaliwa" class="form-control" />
+                    <span asp-validation-for="TareheKuzaliwa" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="UmriMtotoMiezi" class="control-label"></label>
+                    <input asp-for="UmriMtotoMiezi" class="form-control" />
+                    <span asp-validation-for="UmriMtotoMiezi" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-5">
+                    <label asp-for="Q1" class="control-label"></label>
+                    <select asp-for="Q1" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q1" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 collapse" id="nQ1_1">
+                    <label asp-for="Q1_1" class="control-label"></label>
+                    <input asp-for="Q1_1" class="form-control" />
+                    <span asp-validation-for="Q1_1" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q2" class="control-label"></label>
+                    <input asp-for="Q2" class="form-control" />
+                    <span asp-validation-for="Q2" class="text-danger"></span>
+                </div>
+                <div class="col-md-7 ">
+                    <label asp-for="Q3" class="control-label"></label>
+                    <select asp-for="Q3" class="form-control" id="nQ3a"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q3" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                @*4.Aina ya vyakula anavyopewa*@
+                <div class="col-md-12">
+                    <p class="text-info">4.Aina ya vyakula anavyopewa</p>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q1_1_a" class="control-label"></label>
+                            <input asp-for="Q1_1_a" class="form-control" />
+                            <span asp-validation-for="Q1_1_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q1_1_b" class="control-label"></label>
+                            <input asp-for="Q1_1_b" class="form-control" />
+                            <span asp-validation-for="Q1_1_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q1_1_c" class="control-label"></label>
+                            <input asp-for="Q1_1_c" class="form-control" />
+                            <span asp-validation-for="Q1_1_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q2_2_a" class="control-label"></label>
+                            <input asp-for="Q2_2_a" class="form-control" />
+                            <span asp-validation-for="Q2_2_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q2_2_b" class="control-label"></label>
+                            <input asp-for="Q2_2_b" class="form-control" />
+                            <span asp-validation-for="Q2_2_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q2_2_c" class="control-label"></label>
+                            <input asp-for="Q2_2_c" class="form-control" />
+                            <span asp-validation-for="Q2_2_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q3_3_a" class="control-label"></label>
+                            <input asp-for="Q3_3_a" class="form-control" />
+                            <span asp-validation-for="Q3_3_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q3_3_b" class="control-label"></label>
+                            <input asp-for="Q3_3_b" class="form-control" />
+                            <span asp-validation-for="Q3_3_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q3_3_c" class="control-label"></label>
+                            <input asp-for="Q3_3_c" class="form-control" />
+                            <span asp-validation-for="Q3_3_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q4_4_a" class="control-label"></label>
+                            <input asp-for="Q4_4_a" class="form-control" />
+                            <span asp-validation-for="Q4_4_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q4_4_b" class="control-label"></label>
+                            <input asp-for="Q4_4_b" class="form-control" />
+                            <span asp-validation-for="Q4_4_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q4_4_c" class="control-label"></label>
+                            <input asp-for="Q4_4_c" class="form-control" />
+                            <span asp-validation-for="Q4_4_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q5_5_a" class="control-label"></label>
+                            <input asp-for="Q5_5_a" class="form-control" />
+                            <span asp-validation-for="Q5_5_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q5_5_b" class="control-label"></label>
+                            <input asp-for="Q5_5_b" class="form-control" />
+                            <span asp-validation-for="Q5_5_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q5_5_c" class="control-label"></label>
+                            <input asp-for="Q5_5_c" class="form-control" />
+                            <span asp-validation-for="Q5_5_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q6_5_a" class="control-label"></label>
+                            <input asp-for="Q6_5_a" class="form-control" />
+                            <span asp-validation-for="Q6_5_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q6_5_b" class="control-label"></label>
+                            <input asp-for="Q6_5_b" class="form-control" />
+                            <span asp-validation-for="Q6_5_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q6_5_c" class="control-label"></label>
+                            <input asp-for="Q6_5_c" class="form-control" />
+                            <span asp-validation-for="Q6_5_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q7_5_a" class="control-label"></label>
+                            <input asp-for="Q7_5_a" class="form-control" />
+                            <span asp-validation-for="Q7_5_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q7_5_b" class="control-label"></label>
+                            <input asp-for="Q7_5_b" class="form-control" />
+                            <span asp-validation-for="Q7_5_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q7_5_c" class="control-label"></label>
+                            <input asp-for="Q7_5_c" class="form-control" />
+                            <span asp-validation-for="Q7_5_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q8_5_a" class="control-label"></label>
+                            <input asp-for="Q8_5_a" class="form-control" />
+                            <span asp-validation-for="Q8_5_a" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q8_5_b" class="control-label"></label>
+                            <input asp-for="Q8_5_b" class="form-control" />
+                            <span asp-validation-for="Q8_5_b" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="Q8_5_c" class="control-label"></label>
+                            <input asp-for="Q8_5_c" class="form-control" />
+                            <span asp-validation-for="Q8_5_c" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*Q5.Je mtoto ameshapata matatizo haya yafuatayo tangu ulipokuja kliniki kwa mara ya mwisho?*@
+        <div class="col-md-12">
+            <p class="text-info">Q5.Je mtoto ameshapata matatizo haya yafuatayo tangu ulipokuja kliniki kwa mara ya mwisho?</p>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_1" class="control-label"></label>
+                    <select asp-for="Q4_1" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_1" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q4_1_a" class="control-label"></label>
+                    <select asp-for="Q4_1_a" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_1_a" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_2" class="control-label"></label>
+                    <select asp-for="Q4_2" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_2" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q4_2_a" class="control-label"></label>
+                    <select asp-for="Q4_2_a" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_2_a" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_3" class="control-label"></label>
+                    <select asp-for="Q4_3" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_3" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q4_3_a" class="control-label"></label>
+                    <select asp-for="Q4_3_a" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_3_a" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_4" class="control-label"></label>
+                    <select asp-for="Q4_4" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_4" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q4_4_aa" class="control-label"></label>
+                    <select asp-for="Q4_4_aa" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_4_aa" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_5" class="control-label"></label>
+                    <select asp-for="Q4_5" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_5" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q4_5_aa" class="control-label"></label>
+                    <select asp-for="Q4_5_aa" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_5_aa" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_6" class="control-label"></label>
+                    <select asp-for="Q4_6" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_6" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q4_6_a" class="control-label"></label>
+                    <select asp-for="Q4_6_a" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_6_a" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_7" class="control-label"></label>
+                    <select asp-for="Q4_7" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_7" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q4_7_a" class="control-label"></label>
+                    <select asp-for="Q4_7_a" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_7_a" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q4_8" class="control-label"></label>
+                    <input asp-for="Q4_8" class="form-control"  />
+                    <span asp-validation-for="Q4_8" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q4_8_a" class="control-label"></label>
+                    <select asp-for="Q4_8_a" class="form-control" a"
+                            asp-items="Html.GetEnumSelectList<EFMOK7>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q4_8_a" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-9">
+                    <label asp-for="Q5" class="control-label"></label>
+                    <select asp-for="Q5" class="form-control" 
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q5" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 ">
+                    <label asp-for="Q5_1" class="control-label"></label>
+                    <input asp-for="Q5_1" class="form-control" />
+                    <span asp-validation-for="Q5_1" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        @*6.Nani anayefanya shughuli zifuatazo zaidi wakati wa mchana?	Tiki panapostahili*@
+        <div class="col-md-12">
+            <p class="text-info">Q6. Nani anayefanya shughuli zifuatazo zaidi wakati wa mchana?	Tiki panapostahili</p>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">(a).Kumuangalia mtoto   </p>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_a_1)
+
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-check-input" asp-for="Q6_a_1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_a_2)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_a_2" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_a_3)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_a_3" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_a_4)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_a_4"  />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q6_a_5" class="control-label"></label>
+                            <input asp-for="Q6_a_5" class="form-control" />
+                            <span asp-validation-for="Q6_a_5" class="text-danger"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">(b).Kumbadilisha nepi</p>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_b_1)
+
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-check-input" asp-for="Q6_b_1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_b_2)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_b_2" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_b_3)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_b_3" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_b_4)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_b_4"  />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <label asp-for="Q6_b_5" class="control-label"></label>
+                            <input asp-for="Q6_b_5" class="form-control" />
+                            <span asp-validation-for="Q6_b_5" class="text-danger"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">(c).Kutayarisha chakula cha mtoto </p>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_c_1)
+
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-check-input" asp-for="Q6_c_1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_c_2)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_c_2" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_c_3)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_c_3" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_c_4)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_c_4"  />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label asp-for="Q6_c_5" class="control-label"></label>
+                            <input asp-for="Q6_c_5" class="form-control" />
+                            <span asp-validation-for="Q6_c_5" class="text-danger"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">(d).Kumlisha mtoto </p>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_d_1)
+
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-check-input" asp-for="Q6_c_1" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_d_2)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_d_2" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_d_3)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_d_3" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            @Html.DisplayNameFor(model => model.Q6_d_4)
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <input class="form-check-input" asp-for="Q6_d_4"  />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <label asp-for="Q6_d_5" class="control-label"></label>
+                            <input asp-for="Q6_d_5" class="form-control" />
+                            <span asp-validation-for="Q6_d_5" class="text-danger"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        @*INFANT EXAMINATION FORM : At 6 months*@
+
+        <div class="col-md-12">
+            <p class="text-info">INFANT EXAMINATION FORM : At 12 months</p>
+        </div>
+        <div class="col-md-12">
+            <p class="text-info">1. General</p>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Q10_a" class="control-label"></label>
+                    <select asp-for="Q10_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q10_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q10_b" class="control-label"></label>
+                    <select asp-for="Q10_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q10_b" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q10_c" class="control-label"></label>
+                    <select asp-for="Q10_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q10_c" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q10_d" class="control-label"></label>
+                    <select asp-for="Q10_d" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q10_d" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q10_e" class="control-label"></label>
+                    <select asp-for="Q10_e" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q10_e" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">2. Lymphadenopathy</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q11_a" class="control-label"></label>
+                    <select asp-for="Q11_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q11_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q11_b" class="control-label"></label>
+                    <select asp-for="Q11_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q11_b" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q11_c" class="control-label"></label>
+                    <select asp-for="Q11_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q11_c" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">3. Mouth</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q12_a" class="control-label"></label>
+                    <select asp-for="Q12_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q12_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q12_b" class="control-label"></label>
+                    <select asp-for="Q12_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q12_b" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q12_c" class="control-label"></label>
+                    <select asp-for="Q12_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q12_c" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">4.Respiratory system</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q13_a" class="control-label"></label>
+                    <select asp-for="Q13_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q13_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q13_b" class="control-label"></label>
+                    <select asp-for="Q13_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q13_b" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q13_c" class="control-label"></label>
+                    <select asp-for="Q13_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q13_c" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q13_d" class="control-label"></label>
+                    <select asp-for="Q13_d" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q13_d" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q13_e" class="control-label"></label>
+                    <select asp-for="Q13_e" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q13_e" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q13_f" class="control-label"></label>
+                    <select asp-for="Q13_f" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q13_f" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">5. Gastro-intestinal Tract</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q14_a" class="control-label"></label>
+                    <select asp-for="Q14_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q14_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q14_b" class="control-label"></label>
+                    <select asp-for="Q14_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q14_b" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q14_c" class="control-label"></label>
+                    <select asp-for="Q14_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q14_c" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q14_d" class="control-label"></label>
+                    <select asp-for="Q14_d" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q14_d" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q14_e" class="control-label"></label>
+                    <input asp-for="Q14_e" class="form-control" />
+                    <span asp-validation-for="Q14_e" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q14_f" class="control-label"></label>
+                    <input asp-for="Q14_f" class="form-control" />
+                    <span asp-validation-for="Q14_f" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q14_g" class="control-label"></label>
+                    <input asp-for="Q14_g" class="form-control" />
+                    <span asp-validation-for="Q14_g" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        @*6. Early Triad Assessment / Neurological Status*@
+        <div class="col-md-12">
+            <p class="text-info">6. Early Triad Assessment / Neurological Status</p>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">a. Palate</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q15_a" class="control-label"></label>
+                    <select asp-for="Q15_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q15_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q15_b" class="control-label"></label>
+                    <select asp-for="Q15_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q15_b" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">b. Hands</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q15_c" class="control-label"></label>
+                    <select asp-for="Q15_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q15_c" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q15_d" class="control-label"></label>
+                    <select asp-for="Q15_d" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q15_d" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">c. Truncal tone</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q15_e" class="control-label"></label>
+                    <select asp-for="Q15_e" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q15_e" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q15_f" class="control-label"></label>
+                    <select asp-for="Q15_f" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q15_f" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q15_g" class="control-label"></label>
+                    <select asp-for="Q15_g" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q15_g" class="text-danger"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3 text-info">
+            <label asp-for="Q15_h" class="control-label"></label>
+            <select asp-for="Q15_h" class="form-control"
+                    asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                <option selected="selected" value=""></option>
+            </select>
+            <span asp-validation-for="Q15_h" class="text-danger"></span>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">7. Neurosensory</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q16_a" class="control-label"></label>
+                    <select asp-for="Q16_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q16_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q16_b" class="control-label"></label>
+                    <select asp-for="Q16_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q16_b" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q16_c" class="control-label"></label>
+                    <select asp-for="Q16_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q16_c" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-info">8. BINS test result (at 3,6,9 & 12 month assessment only)</p>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q17_a" class="control-label"></label>
+                    <select asp-for="Q17_a" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q17_a" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q17_b" class="control-label"></label>
+                    <select asp-for="Q17_b" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q17_b" class="text-danger"></span>
+                </div>
+                <div class="col-md-3">
+                    <label asp-for="Q17_c" class="control-label"></label>
+                    <select asp-for="Q17_c" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q17_c" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="ProblemsDsis" class="control-label"></label>
+            <input asp-for="ProblemsDsis" class="form-control" />
+            <span asp-validation-for="ProblemsDsis" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="MedicationPres" class="control-label"></label>
+            <input asp-for="MedicationPres" class="form-control" />
+            <span asp-validation-for="MedicationPres" class="text-danger"></span>
+        </div>
+        <div class="col-md-3">
+            <label asp-for="Date6Month" class="control-label"></label>
+            <input asp-for="Date6Month" class="form-control" />
+            <span asp-validation-for="Date6Month" class="text-danger"></span>
+        </div>
     </div>
+    <div class="col-md-12">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Save" class="btn btn-bh" />
+                    </div>
+                    <div class="col-md-3">
+                        <a asp-action="Create" class="btn btn-bh">Cancel</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</form>
+
+
+<div class="row justify-content-center">
+    <a class="text-info" asp-action="Index">Back to List</a>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

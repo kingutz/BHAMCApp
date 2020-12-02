@@ -3294,67 +3294,67 @@ namespace BHAMCApp.Migrations
                     b.Property<int>("Q1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_a")
+                    b.Property<int?>("Q10_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_b")
+                    b.Property<int?>("Q10_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_c")
+                    b.Property<int?>("Q10_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_d")
+                    b.Property<int?>("Q10_d")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_e")
+                    b.Property<int?>("Q10_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q11_a")
+                    b.Property<int?>("Q11_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q11_b")
+                    b.Property<int?>("Q11_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q11_c")
+                    b.Property<int?>("Q11_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q12_a")
+                    b.Property<int?>("Q12_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q12_b")
+                    b.Property<int?>("Q12_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q12_c")
+                    b.Property<int?>("Q12_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_a")
+                    b.Property<int?>("Q13_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_b")
+                    b.Property<int?>("Q13_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_c")
+                    b.Property<int?>("Q13_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_d")
+                    b.Property<int?>("Q13_d")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_e")
+                    b.Property<int?>("Q13_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_f")
+                    b.Property<int?>("Q13_f")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_a")
+                    b.Property<int?>("Q14_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_b")
+                    b.Property<int?>("Q14_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_c")
+                    b.Property<int?>("Q14_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_d")
+                    b.Property<int?>("Q14_d")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q14_e")
@@ -3366,52 +3366,52 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q14_g")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_a")
+                    b.Property<int?>("Q15_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_b")
+                    b.Property<int?>("Q15_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_c")
+                    b.Property<int?>("Q15_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_d")
+                    b.Property<int?>("Q15_d")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_e")
+                    b.Property<int?>("Q15_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_f")
+                    b.Property<int?>("Q15_f")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_g")
+                    b.Property<int?>("Q15_g")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_h")
+                    b.Property<int?>("Q15_h")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q16_a")
+                    b.Property<int?>("Q16_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q16_b")
+                    b.Property<int?>("Q16_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q16_c")
+                    b.Property<int?>("Q16_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q1_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q1_b")
+                    b.Property<int?>("Q1_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q1_c")
+                    b.Property<int?>("Q1_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Q2")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Q3")
+                    b.Property<int?>("Q3")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q3_a")
@@ -3420,7 +3420,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q3_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q4")
+                    b.Property<int?>("Q4")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Q5_1_a")
@@ -3429,7 +3429,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_1_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_1_c")
+                    b.Property<int?>("Q5_1_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_1_e")
@@ -3441,7 +3441,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_2_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_2_c")
+                    b.Property<int?>("Q5_2_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_2_e")
@@ -3453,7 +3453,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_3_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_3_c")
+                    b.Property<int?>("Q5_3_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_3_e")
@@ -3465,7 +3465,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_4_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_4_c")
+                    b.Property<int?>("Q5_4_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_4_e")
@@ -3477,61 +3477,61 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_5_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_5_c")
+                    b.Property<int?>("Q5_5_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_5_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6")
+                    b.Property<int?>("Q6")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_1")
+                    b.Property<int?>("Q7_1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_1_a")
+                    b.Property<int?>("Q7_1_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_2")
+                    b.Property<int?>("Q7_2")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_2_a")
+                    b.Property<int?>("Q7_2_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_3")
+                    b.Property<int?>("Q7_3")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_3_a")
+                    b.Property<int?>("Q7_3_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_4")
+                    b.Property<int?>("Q7_4")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_4_a")
+                    b.Property<int?>("Q7_4_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_5")
+                    b.Property<int?>("Q7_5")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_5_a")
+                    b.Property<int?>("Q7_5_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_6")
+                    b.Property<int?>("Q7_6")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_6_a")
+                    b.Property<int?>("Q7_6_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_7")
+                    b.Property<int?>("Q7_7")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q7_7_a")
+                    b.Property<int?>("Q7_7_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Q7_8")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Q7_8_a")
+                    b.Property<int?>("Q7_8_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q8")
@@ -4758,67 +4758,67 @@ namespace BHAMCApp.Migrations
                     b.Property<int>("Q10")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_a")
+                    b.Property<int?>("Q10_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_b")
+                    b.Property<int?>("Q10_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_c")
+                    b.Property<int?>("Q10_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_d")
+                    b.Property<int?>("Q10_d")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q10_e")
+                    b.Property<int?>("Q10_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q11_a")
+                    b.Property<int?>("Q11_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q11_b")
+                    b.Property<int?>("Q11_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q11_c")
+                    b.Property<int?>("Q11_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q12_a")
+                    b.Property<int?>("Q12_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q12_b")
+                    b.Property<int?>("Q12_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q12_c")
+                    b.Property<int?>("Q12_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_a")
+                    b.Property<int?>("Q13_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_b")
+                    b.Property<int?>("Q13_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_c")
+                    b.Property<int?>("Q13_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_d")
+                    b.Property<int?>("Q13_d")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_e")
+                    b.Property<int?>("Q13_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q13_f")
+                    b.Property<int?>("Q13_f")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_a")
+                    b.Property<int?>("Q14_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_b")
+                    b.Property<int?>("Q14_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_c")
+                    b.Property<int?>("Q14_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q14_d")
+                    b.Property<int?>("Q14_d")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q14_e")
@@ -4830,52 +4830,52 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q14_g")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_a")
+                    b.Property<int?>("Q15_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_b")
+                    b.Property<int?>("Q15_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_c")
+                    b.Property<int?>("Q15_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_d")
+                    b.Property<int?>("Q15_d")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_e")
+                    b.Property<int?>("Q15_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_f")
+                    b.Property<int?>("Q15_f")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_g")
+                    b.Property<int?>("Q15_g")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q15_h")
+                    b.Property<int?>("Q15_h")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q16_a")
+                    b.Property<int?>("Q16_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q16_b")
+                    b.Property<int?>("Q16_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q16_c")
+                    b.Property<int?>("Q16_c")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q17_a")
+                    b.Property<int?>("Q17_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q17_b")
+                    b.Property<int?>("Q17_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q17_c")
+                    b.Property<int?>("Q17_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Q2")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Q3")
+                    b.Property<int?>("Q3")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q3_a")
@@ -4884,7 +4884,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q3_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q4")
+                    b.Property<int?>("Q4")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Q5_1_a")
@@ -4893,7 +4893,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_1_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_1_c")
+                    b.Property<int?>("Q5_1_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_1_e")
@@ -4905,7 +4905,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_2_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_2_c")
+                    b.Property<int?>("Q5_2_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_2_e")
@@ -4917,7 +4917,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_3_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_3_c")
+                    b.Property<int?>("Q5_3_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_3_e")
@@ -4929,7 +4929,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_4_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_4_c")
+                    b.Property<int?>("Q5_4_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_4_e")
@@ -4941,58 +4941,58 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q5_5_b")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q5_5_c")
+                    b.Property<int?>("Q5_5_c")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q5_5_e")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_1")
+                    b.Property<int?>("Q6_1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_1_a")
+                    b.Property<int?>("Q6_1_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_2")
+                    b.Property<int?>("Q6_2")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_2_a")
+                    b.Property<int?>("Q6_2_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_3")
+                    b.Property<int?>("Q6_3")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_3_a")
+                    b.Property<int?>("Q6_3_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_4")
+                    b.Property<int?>("Q6_4")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_4_a")
+                    b.Property<int?>("Q6_4_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_5")
+                    b.Property<int?>("Q6_5")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_5_a")
+                    b.Property<int?>("Q6_5_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_6")
+                    b.Property<int?>("Q6_6")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_6_a")
+                    b.Property<int?>("Q6_6_a")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_7")
+                    b.Property<int?>("Q6_7")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q6_7_a")
+                    b.Property<int?>("Q6_7_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Q6_8")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Q6_8_a")
+                    b.Property<int?>("Q6_8_a")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q7")
