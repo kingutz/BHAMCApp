@@ -14,7 +14,7 @@ namespace BHAMCApp.Models
         public DateTime? Date { get; set; }
 
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Q1.Have you resumed your menses? Je umeshaanza kutumika tangu ujifungue?")]
@@ -28,7 +28,7 @@ namespace BHAMCApp.Models
         public EFMT1 Q2 { get; set; }
 
         [Display(Name = "tangu mwezi wa baada ya kujifungua")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 30, ErrorMessage = "Have you resumed sex Month?")]
         public uint? Q2_1 { get; set; }
 
         [Display(Name = "Q3.If yes are you using any contraceptive method? Kama ndiyo, unatumia njia yoyoyte ya kujikinga ")]
@@ -41,7 +41,7 @@ namespace BHAMCApp.Models
         public EFMT1 Q4 { get; set; }
 
         [Display(Name = "Huyu wa sasa akiwa na miaka")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 15, ErrorMessage = "Huyu wa sasa akiwa na miaka?")]
         public uint? Q4_1 { get; set; }
 
         [Display(Name = "Q5.Are you breastfeeding the infant? Unamyonyesha mtoto?")]
@@ -54,7 +54,7 @@ namespace BHAMCApp.Models
         public string Q6_1 { get; set; }
 
         [Display(Name = "Q7.How long did you take to inform him/them? Je ulichukua muda gani tangu upimwe hadi ulipomueleza/waeleza?")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 10, ErrorMessage = "How long did you take to inform him/them?")]
         public uint? Q7 { get; set; }
 
         [Display(Name = "Q8.Did you experience any of the following when you informed your partner about the results? Je mume/mwenzi alifanyaje ulipomueleza majibu yako?")]
@@ -85,43 +85,42 @@ namespace BHAMCApp.Models
         public string Q14 { get; set; }
 
         [Display(Name = "1.Weight(kg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "Weight(kg)?")]
         public uint? Q15 { get; set; }
 
         [Display(Name = "2.BP(mmHg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q16 { get; set; }
+        public string Q16 { get; set; }
 
         [Display(Name = "3.General appearance")]
-        public EFMT17 Q17 { get; set; }
+        public EFMT17? Q17 { get; set; }
 
         [Display(Name = "4.Mucosa/Conjuctiva")]
-        public EFMT18 Q18 { get; set; }
+        public EFMT18? Q18 { get; set; }
 
         [Display(Name = "5.Lymphadenopathy (neck, axilla)")]
-        public EFMT1 Q19 { get; set; }
+        public EFMT1? Q19 { get; set; }
 
         [Display(Name = "7.Mouth")]
-        public EFMT20 Q20 { get; set; }
+        public EFMT20? Q20 { get; set; }
 
 
         [Display(Name = "8.Breasts")]
-        public EFMT20 Q21 { get; set; }
+        public EFMT20? Q21 { get; set; }
 
         [Display(Name = "9.Vulva")]
-        public EFMT22 Q22 { get; set; }
+        public EFMT22? Q22 { get; set; }
 
         [Display(Name = "10.Vagina")]
-        public EFMT23 Q23 { get; set; }
+        public EFMT23? Q23 { get; set; }
 
         [Display(Name = " 11.Cervix")]
-        public EFMT24 Q24 { get; set; }
+        public EFMT24? Q24 { get; set; }
 
         [Display(Name = "12.Bi-manual palpation")]
-        public EFMT25 Q25 { get; set; }
+        public EFMT25? Q25 { get; set; }
 
         [Display(Name = "13.Pap smear")]
-        public EFMT26 Q26 { get; set; }
+        public EFMT26? Q26 { get; set; }
 
         [Display(Name = "Problems/ Diagnosis")]
         public string ProblemsDiagnosis { get; set; }

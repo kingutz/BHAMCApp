@@ -33,8 +33,11 @@ namespace BHAMCApp.Models
         [Display(Name = "Q2. Je unakutana kimwili na mwenzi wako kwa sasa baada ya kujifungua?")]
         public EFM28_44_1 Q2 { get; set; }
 
-        [Display(Name = "Q3. Je unatumia njia yoyoyte ya kujikinga usipate mimba?")]
+        [Display(Name = "Q3. Je unatumia njia yoyote ya kujikinga usipate mimba?")]
         public EFM28_44_1 Q3 { get; set; }
+
+        [Display(Name = "(Itaje/Zitaje")]
+        public string Q3_1 { get; set; }
 
         [Display(Name = "Q4. Je mnatumia kondomu wakati mnapokutana kimwili na mwenzi?")]
         public EFM28_44_1 Q4 { get; set; }
@@ -124,6 +127,13 @@ namespace BHAMCApp.Models
 
         [Display(Name = "Q16. Je kwa sasa unafanya shughuli gani ya kukuingizia kipato?")]
         public EFM28_44_16 Q16 { get; set; }
+
+        [Display(Name = "(Shughuli, itaje ")]
+        public string Q16_1 { get; set; }
+
+        [Display(Name = "Kipato kwa mwezi, akadirie")]
+        [Range(10, 60, ErrorMessage = "Kipato kwa mwezi?")]
+        public uint? Q16_2 { get; set; }
 
         [Display(Name = "(Q17. Kama hapana, unamtegemea mwenzi kwa matumizi yote?")]
         public string Q17 { get; set; }

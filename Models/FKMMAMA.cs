@@ -16,14 +16,14 @@ namespace BHAMCApp.Models
         public DateTime? Date { get; set; }
 
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Q1.Have you resumed your menses? Je umeshaanza kutumika tangu ujifungue?")]
         public EFMKM1 Q1 { get; set; }
 
         [Display(Name = "tangu mwezi wa baada ya kujifungua")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 30, ErrorMessage = "Have you resumed sex Month?")]
         public uint? Q1_1 { get; set; }
 
         [Display(Name = "Q2.Have you resumed sex Je umeshaanza kukutana kimwili na mume/mwenzi wako?")]
@@ -95,6 +95,10 @@ namespace BHAMCApp.Models
             "Je bado unaishi na baba wa mtoto wako au mtengana baada ya kujifungua?")]
         public EFMKM9 Q9 { get; set; }
 
+        [Display(Name = "(Mwezi) baada ya kujifungua?")]
+        [Range(1, 10, ErrorMessage = "Still living with the husband?")]
+        public uint? Q9_1 { get; set; }
+
         [Display(Name = "Q10.Do you presently have the following symptoms? Je kwa sasa una dalili zifuatazo?")]
         public EFMKM10 Q10 { get; set; }
 
@@ -108,15 +112,14 @@ namespace BHAMCApp.Models
         public string Q13 { get; set; }
 
         [Display(Name = "1. Weight(kg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(1, 120, ErrorMessage = "weight?")]
         public uint? Q14 { get; set; }
 
         [Display(Name = "2.BP(mmHg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
-        public uint? Q15 { get; set; }
+        public string Q15 { get; set; }
 
         [Display(Name = "3. Height")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(1, 60, ErrorMessage = "Height?")]
         public uint? Q16 { get; set; }
 
         

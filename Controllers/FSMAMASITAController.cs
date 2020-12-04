@@ -54,7 +54,9 @@ namespace BHAMCApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Date,IDNumber,Q1,Q1_1,Q2,Q2_1,Q3,Q3_1,Q4,Q4_1,Q5,Q6,Q6_1,Q7,Q8,Q8_1,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,ProblemsDiagnosis,Q17,ManagementFT,DateVisit9,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FSMAMA fSMAMA)
+        public async Task<IActionResult> Create([Bind("Date,IDNumber,Q1,Q1_1,Q2,Q2_1,Q3,Q3_1,Q4,Q4_1,Q5,Q6,Q6_1,Q7,Q8," +
+            "Q8_1,Q9,Q10,Q11,Q12,Q12_1,Q13,Q14,Q14_1,Q15,Q16,ProblemsDiagnosis,Q17,ManagementFT,DateVisit9," +
+            "ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FSMAMA fSMAMA)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +88,9 @@ namespace BHAMCApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Date,IDNumber,Q1,Q1_1,Q2,Q2_1,Q3,Q3_1,Q4,Q4_1,Q5,Q6,Q6_1,Q7,Q8,Q8_1,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,ProblemsDiagnosis,Q17,ManagementFT,DateVisit9,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FSMAMA fSMAMA)
+        public async Task<IActionResult> Edit(int id, [Bind("Date,IDNumber,Q1,Q1_1,Q2,Q2_1,Q3,Q3_1,Q4,Q4_1,Q5,Q6,Q6_1,Q7," +
+            "Q8,Q8_1,Q9,Q10,Q11,Q12,Q12_1,Q13,Q14,Q14_1,Q15,Q16,ProblemsDiagnosis,Q17,ManagementFT,DateVisit9,ID," +
+            "CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] FSMAMA fSMAMA)
         {
             if (id != fSMAMA.ID)
             {

@@ -69,6 +69,10 @@ namespace BHAMCApp.Models
             "Je bado unaishi na baba wa mtoto wako au mtengana baada ya kujifungua?")]
         public EFMTISA10 Q8 { get; set; }
 
+        [Display(Name = "(Mwezi) baada ya kujifungua?")]
+        [Range(1, 10, ErrorMessage = "Still living with the husband?")]
+        public uint? Q8_1 { get; set; }
+
         [Display(Name = "Q9.Do you presently have the following symptoms? Je kwa sasa una dalili zifuatazo?")]
         public EFMTISA11 Q9 { get; set; }
 

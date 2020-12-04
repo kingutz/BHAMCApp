@@ -15,21 +15,21 @@ namespace BHAMCApp.Models
         public DateTime? Date { get; set; }
 
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Q1.Have you resumed your menses? Je umeshaanza kutumika tangu ujifungue?")]
         public EFMTISA1 Q1 { get; set; }
 
         [Display(Name = "tangu mwezi wa baada ya kujifungua")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 30, ErrorMessage = "Have you resumed sex Month?")]
         public uint? Q1_1 { get; set; }
 
         [Display(Name = "Q2.Have you resumed sex Je umeshaanza kukutana kimwili na mume/mwenzi wako?")]
         public EFMTISA1 Q2 { get; set; }
 
         [Display(Name = "tangu mwezi wa baada ya kujifungua")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 24, ErrorMessage = "tangu mwezi wa baada ya kujifungua?")]
         public uint? Q2_1 { get; set; }
 
         [Display(Name = "Q3. Are you using any contraceptive method? Je  unatumia njia yoyoyte ya kujikinga usipate mimba?")]
@@ -80,6 +80,10 @@ namespace BHAMCApp.Models
             "Je bado unaishi na baba wa mtoto wako au mtengana baada ya kujifungua?")]
         public EFMTISA10 Q10 { get; set; }
 
+        [Display(Name = "(Mwezi) baada ya kujifungua?")]
+        [Range(1, 10, ErrorMessage = "Still living with the husband?")]
+        public uint? Q10_1 { get; set; }
+
         [Display(Name = "Q11.Do you presently have the following symptoms? Je kwa sasa una dalili zifuatazo?")]
         public EFMTISA11 Q11 { get; set; }
 
@@ -93,7 +97,7 @@ namespace BHAMCApp.Models
         public string Q13 { get; set; }
 
         [Display(Name = "1. Weight(kg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "weight?")]
         public uint? Q14 { get; set; }
 
         //[Display(Name = "2.BP(mmHg)")]
@@ -101,40 +105,40 @@ namespace BHAMCApp.Models
         //public uint? Q15 { get; set; }
 
         [Display(Name = "2. General appearance")]
-        public EFMTISA17 Q15 { get; set; }
+        public EFMTISA17? Q15 { get; set; }
 
         //[Display(Name = "4.Mucosa/Conjuctiva")]
         //public EFMTISA18 Q17 { get; set; }
 
         [Display(Name = "3. Lymphadenopathy (neck, axilla)")]
-        public EFMTISA1 Q16 { get; set; }
+        public EFMTISA1? Q16 { get; set; }
 
         //[Display(Name = "7.Mouth")]
         //public EFMTISA20 Q20 { get; set; }
 
         [Display(Name = "4. Skin")]
-        public EFMTISA17 Q17 { get; set; }
+        public EFMTISA17? Q17 { get; set; }
 
         [Display(Name = "5. Gastrointestinal")]
-        public EFMTISA18 Q18 { get; set; }
+        public EFMTISA18? Q18 { get; set; }
 
         [Display(Name = "6. Breasts")]
-        public EFMTISA19 Q19 { get; set; }
+        public EFMTISA19? Q19 { get; set; }
 
         [Display(Name = "7. Respiratory")]
-        public EFMTISA20 Q20 { get; set; }
+        public EFMTISA20? Q20 { get; set; }
 
         [Display(Name = "8. Genitalia")]
-        public EFMTISA21 Q21 { get; set; }
+        public EFMTISA21? Q21 { get; set; }
 
         [Display(Name = "9.Vulva")]
-        public EFMTISA22 Q22 { get; set; }
+        public EFMTISA22? Q22 { get; set; }
 
         [Display(Name = "10.Vagina")]
-        public EFMTISA23 Q23 { get; set; }
+        public EFMTISA23? Q23 { get; set; }
 
         [Display(Name = "10.Vagina")]
-        public EFMTISA24 Q24 { get; set; }
+        public EFMTISA24? Q24 { get; set; }
 
         [Display(Name = "Problems/ Diagnosis")]
         public string ProblemsDiagnosis { get; set; }

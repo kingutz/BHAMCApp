@@ -54,7 +54,11 @@ namespace BHAMCApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IDNumber,Date,DateKuzaliwa,UmriMama,Q1,Q2,Q3,Q4,Q5,Q5_1,Q6,Q7,Q7_1,Q7_2,Q8,Q9,Q10,Q10_1,Q11,Q12,Q13,Q13_1,Q13_2,Q13_3,Q14_1,Q14_2,Q14_3,Q14_4,Q14_5,Q14_6,Q15,Q15_1,Q16,Q17,Q18,Q19_1,Q19_2,Q19_3,Q20,Q21,Q22,Q23,Q24,Q25,Q26,Q27,Q28,Q29,Q30,ProblemsDiagnosis,ManagementFT,DateVisit32,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] F28_44MAMA f28_44MAMA)
+        public async Task<IActionResult> Create([Bind("IDNumber,Date,DateKuzaliwa,UmriMama,Q1,Q2,Q3,Q3_1,Q4,Q5,Q5_1,Q6,Q7," +
+            "Q7_1,Q7_2,Q8,Q9,Q10,Q10_1,Q11,Q12,Q13,Q13_1,Q13_2,Q13_3,Q14_1,Q14_2,Q14_3,Q14_4,Q14_5,Q14_6,Q15," +
+            "Q15_1,Q16,Q16_1,Q16_2,Q17,Q18,Q19_1,Q19_2,Q19_3,Q20,Q21,Q22,Q23,Q24,Q25,Q26,Q27,Q28,Q29,Q30,ProblemsDiagnosis," +
+            "ManagementFT,DateVisit32,ID,CreatedByUser,CreatedDate,ModifiedByUser," +
+            "ModifiedDate,Edited")] F28_44MAMA f28_44MAMA)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +90,11 @@ namespace BHAMCApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IDNumber,Date,DateKuzaliwa,UmriMama,Q1,Q2,Q3,Q4,Q5,Q5_1,Q6,Q7,Q7_1,Q7_2,Q8,Q9,Q10,Q10_1,Q11,Q12,Q13,Q13_1,Q13_2,Q13_3,Q14_1,Q14_2,Q14_3,Q14_4,Q14_5,Q14_6,Q15,Q15_1,Q16,Q17,Q18,Q19_1,Q19_2,Q19_3,Q20,Q21,Q22,Q23,Q24,Q25,Q26,Q27,Q28,Q29,Q30,ProblemsDiagnosis,ManagementFT,DateVisit32,ID,CreatedByUser,CreatedDate,ModifiedByUser,ModifiedDate,Edited")] F28_44MAMA f28_44MAMA)
+        public async Task<IActionResult> Edit(int id, [Bind("IDNumber,Date,DateKuzaliwa,UmriMama,Q1,Q2,Q3,Q3_1,Q4,Q5,Q5_1," +
+            "Q6,Q7,Q7_1,Q7_2,Q8,Q9,Q10,Q10_1,Q11,Q12,Q13,Q13_1,Q13_2,Q13_3,Q14_1,Q14_2,Q14_3,Q14_4,Q14_5,Q14_6,Q15," +
+            "Q15_1,Q16,Q16_1,Q16_2,Q17,Q18,Q19_1,Q19_2,Q19_3,Q20,Q21,Q22,Q23,Q24,Q25,Q26,Q27,Q28,Q29,Q30,ProblemsDiagnosis," +
+            "ManagementFT,DateVisit32,ID,CreatedByUser,CreatedDate,ModifiedByUser," +
+            "ModifiedDate,Edited")] F28_44MAMA f28_44MAMA)
         {
             if (id != f28_44MAMA.ID)
             {
