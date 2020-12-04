@@ -14,6 +14,7 @@
 <form asp-action="Create">
     <div class="row text-white justify-content-between jumbodm">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @*<input type="hidden" asp-for="ID" />*@
         <div class="col-md-12">
             <p class="text-center text-info">INFANT FOLLOW-UP</p>
         </div>
@@ -24,7 +25,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <label asp-for="IDNumber" class="control-label"></label>
-                    <input asp-for="IDNumber" class="form-control" />
+                    <input asp-for="IDNumber" class="form-control" id="nname" />
                     <span asp-validation-for="IDNumber" class="text-danger"></span>
                 </div>
                 <div class="col-md-3">
@@ -54,51 +55,53 @@
         </div>
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-5">
                     <label asp-for="Q1" class="control-label"></label>
-                    <select asp-for="Q1" class="form-control"
+                    <select asp-for="Q1" class="form-control" id="nQ1"
                             asp-items="Html.GetEnumSelectList<EFMOK1>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q1" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4 collapse" id="nQ1_1">
                     <label asp-for="Q1_1" class="control-label"></label>
                     <input asp-for="Q1_1" class="form-control" />
                     <span asp-validation-for="Q1_1" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 collapse" id="nQ2">
                     <label asp-for="Q2" class="control-label"></label>
                     <input asp-for="Q2" class="form-control" />
                     <span asp-validation-for="Q2" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-5">
                     <label asp-for="Q3" class="control-label"></label>
-                    <select asp-for="Q3" class="form-control"
+                    <select asp-for="Q3" class="form-control" id="nQ3"
                             asp-items="Html.GetEnumSelectList<EFMOK1>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q3" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2 collapse" id="nQ3_1">
                     <label asp-for="Q3_1" class="control-label"></label>
-                    <input asp-for="Q3_1" class="form-control" />
+                    @*<input asp-for="Q3_1" class="form-control" />*@
+                    <textarea asp-for="Q3_1" class="control-label"></textarea>
                     <span asp-validation-for="Q3_1" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-5">
                     <label asp-for="Q4" class="control-label"></label>
-                    <select asp-for="Q4" class="form-control"
+                    <select asp-for="Q4" class="form-control" id="nQ4"
                             asp-items="Html.GetEnumSelectList<EFMOK1>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q4" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2 collapse" id="nQ4_1">
                     <label asp-for="Q4_1" class="control-label"></label>
-                    <input asp-for="Q4_1" class="form-control" />
+                    @*<input asp-for="Q4_1" class="form-control" />*@
+                    <textarea asp-for="Q4_1" class="control-label"></textarea>
                     <span asp-validation-for="Q4_1" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-5">
                     <label asp-for="Q5" class="control-label"></label>
                     <select asp-for="Q5" class="form-control"
                             asp-items="Html.GetEnumSelectList<EFMOK1>()">
@@ -108,13 +111,13 @@
                 </div>
                 <div class="col-md-3">
                     <label asp-for="Q6" class="control-label"></label>
-                    <select asp-for="Q6" class="form-control"
+                    <select asp-for="Q6" class="form-control" id="nQ6"
                             asp-items="Html.GetEnumSelectList<EFMO12_6>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q6" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-5 collapse" id="nQ7">
                     <label asp-for="Q7" class="control-label"></label>
                     <select asp-for="Q7" class="form-control"
                             asp-items="Html.GetEnumSelectList<EFMOK1>()">
@@ -122,7 +125,7 @@
                     </select>
                     <span asp-validation-for="Q7" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <label asp-for="Q8" class="control-label"></label>
                     <input asp-for="Q8" class="form-control" />
                     <span asp-validation-for="Q8" class="text-danger"></span>
@@ -136,7 +139,7 @@
             <div class="row">
                 <div class="col-md-2">
                     <label asp-for="Q9_1_a" class="control-label"></label>
-                    <input asp-for="Q9_1_a" class="form-control" />
+                    <input asp-for="Q9_1_a" class="form-control" id="nQ9_1_a" />
                     <span asp-validation-for="Q9_1_a" class="text-danger"></span>
                 </div>
                 <div class="col-md-2">
@@ -774,13 +777,13 @@
             <div class="row">
                 <div class="col-md-3">
                     <label asp-for="Q10" class="control-label"></label>
-                    <select asp-for="Q10" class="form-control"
+                    <select asp-for="Q10" class="form-control" id="nQ10"
                             asp-items="Html.GetEnumSelectList<EFMOK1>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q10" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 collapse" id="nQ10_1">
                     <label asp-for="Q10_1" class="control-label"></label>
                     <select asp-for="Q10_1" class="form-control"
                             asp-items="Html.GetEnumSelectList<EFMO12_10>()">
@@ -790,13 +793,13 @@
                 </div>
                 <div class="col-md-3">
                     <label asp-for="Q11" class="control-label"></label>
-                    <select asp-for="Q11" class="form-control"
-                            asp-items="Html.GetEnumSelectList<EFMO12_10>()">
+                    <select asp-for="Q11" class="form-control" id="nQ11"
+                            asp-items="Html.GetEnumSelectList<EFMOK1>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q11" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 collapse" id="nQ11_1">
                     <label asp-for="Q11_1" class="control-label"></label>
                     <select asp-for="Q11_1" class="form-control"
                             asp-items="Html.GetEnumSelectList<EFMO12_10>()">
@@ -810,13 +813,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Q12" class="control-label"></label>
-                    <select asp-for="Q12" class="form-control"
+                    <select asp-for="Q12" class="form-control" id="nQ12"
                             asp-items="Html.GetEnumSelectList<EFMOK1>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q12" class="text-danger"></span>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 collapse" id="nQ12_1">
                     <label asp-for="Q12_1" class="control-label"></label>
                     <select asp-for="Q12_1" class="form-control"
                             asp-items="Html.GetEnumSelectList<EFMO12_12>()">
@@ -1044,12 +1047,12 @@
                         </div>
                         <div class="col-md-3">
 
-                            <input class="form-check-input" asp-for="Q15_a_4" />
+                            <input class="form-check-input" asp-for="Q15_a_4" id="nQ15_a_4" />
 
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 collapse" id="nQ15_a_5">
                             <label asp-for="Q15_a_5" class="control-label"></label>
                             <input asp-for="Q15_a_5" class="form-control" />
                             <span asp-validation-for="Q15_a_5" class="text-danger"></span>
@@ -1108,12 +1111,12 @@
                         </div>
                         <div class="col-md-3">
 
-                            <input class="form-check-input" asp-for="Q15_b_4" />
+                            <input class="form-check-input" asp-for="Q15_b_4" id="nQ15_b_4" />
 
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 collapse" id="nQ15_b_5">
                             <label asp-for="Q15_b_5" class="control-label"></label>
                             <input asp-for="Q15_b_5" class="form-control" />
                             <span asp-validation-for="Q15_b_5" class="text-danger"></span>
@@ -1172,12 +1175,12 @@
                         </div>
                         <div class="col-md-3">
 
-                            <input class="form-check-input" asp-for="Q15_c_4" />
+                            <input class="form-check-input" asp-for="Q15_c_4" id="nQ15_c_4" />
 
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 collapse" id="nQ15_c_5">
                             <label asp-for="Q15_c_5" class="control-label"></label>
                             <input asp-for="Q15_c_5" class="form-control" />
                             <span asp-validation-for="Q15_c_5" class="text-danger"></span>
@@ -1589,26 +1592,26 @@
             <span asp-validation-for="DateNext" class="text-danger"></span>
         </div>
     </div>
-                                                                                    <div class="col-md-12">
+    <div class="col-md-12">
 
-                                                                                        <div class="row">
-                                                                                            <div class="col-md-6">
-                                                                                                <div class="row">
-                                                                                                    <div class="col-md-2">
-                                                                                                        <input type="submit" value="Save" class="btn btn-bh" />
-                                                                                                    </div>
-                                                                                                    <div class="col-md-3">
-                                                                                                        <a asp-action="Create" class="btn btn-bh">Cancel</a>
-                                                                                                    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Save" class="btn btn-bh" />
+                    </div>
+                    <div class="col-md-3">
+                        <a asp-action="Create" class="btn btn-bh">Cancel</a>
+                    </div>
 
-                                                                                                </div>
+                </div>
 
-                                                                                            </div>
+            </div>
 
-                                                                                        </div>
+        </div>
 
 
-                                                                                    </div>
+    </div>
 </form>
 
 
@@ -1618,4 +1621,161 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+<script type="text/javascript">
+
+    document.getElementById('nname').focus();
+
+    document.getElementById('nQ9_1_a').value = "Cows milk";
+    //Q1
+
+    $(document).on("change", "#nQ1", function () {
+        if ($(this).val() == '1') {
+
+            $("#nQ2").addClass('collapse');
+            $("#nQ2").removeClass('text-info');
+
+            $("#nQ1_1").addClass('collapse');
+            $("#nQ1_1").removeClass('text-info');
+
+        }
+        else {
+            $("#nQ2").removeClass('collapse');
+            $("#nQ2").addClass('text-info');
+
+            $("#nQ1_1").removeClass('collapse');
+            $("#nQ1_1").addClass('text-info');
+
+             }
+    });
+
+    $(document).on("change", "#nQ3", function () {
+        if ($(this).val() == '1') {
+
+            $("#nQ3_1").removeClass('collapse');
+            $("#nQ3_1").addClass('text-info');
+        }
+        else {
+            $("#nQ3_1").addClass('collapse');
+            $("#nQ3_1").removeClass('text-info');
+            $('#nQ3_1').val('');
+        }
+    });
+
+    $(document).on("change", "#nQ4", function () {
+        if ($(this).val() == '1') {
+
+            $("#nQ4_1").removeClass('collapse');
+            $("#nQ4_1").addClass('text-info');
+        }
+        else {
+            $("#nQ4_1").addClass('collapse');
+            $("#nQ4_1").removeClass('text-info');
+            $('#nQ4_1').val('');
+        }
+    });
+    //Q6
+    $(document).on("change", "#nQ6", function () {
+        if ($(this).val() == '1') {
+
+            $("#nQ7").removeClass('collapse');
+            $("#nQ7").addClass('text-info');
+        }
+        else {
+            $("#nQ7").addClass('collapse');
+            $("#nQ7").removeClass('text-info');
+            $('#nQ7').val('');
+        }
+    });
+
+    //Q10
+    $(document).on("change", "#nQ10", function () {
+        if ($(this).val() == '1') {
+
+            $("#nQ10_1").removeClass('collapse');
+            $("#nQ10_1").addClass('text-info');
+        }
+        else {
+            $("#nQ10_1").addClass('collapse');
+            $("#nQ10_1").removeClass('text-info');
+            $('#nQ10_1').val('');
+        }
+    });
+
+    //Q11
+    $(document).on("change", "#nQ11", function () {
+        if ($(this).val() == '1') {
+
+            $("#nQ11_1").removeClass('collapse');
+            $("#nQ11_1").addClass('text-info');
+        }
+        else {
+            $("#nQ11_1").addClass('collapse');
+            $("#nQ11_1").removeClass('text-info');
+            $('#nQ11_1').val('');
+        }
+    });
+
+    //Q12
+    $(document).on("change", "#nQ12", function () {
+        if ($(this).val() == '1') {
+
+            $("#nQ12_1").removeClass('collapse');
+            $("#nQ12_1").addClass('text-info');
+        }
+        else {
+            $("#nQ12_1").addClass('collapse');
+            $("#nQ12_1").removeClass('text-info');
+            $('#nQ12_1').val('');
+        }
+    });
+    //Q15_a_4
+    $(document).ready(function () {
+        $('#nQ15_a_4').click(function () {
+            if ($(this).prop("checked") == true) {
+                $("#nQ15_a_5").removeClass("collapse");
+                $("#nQ15_a_5").addClass('text-info');
+            }
+            else if ($(this).prop("checked") == false) {
+
+                $("#nQ15_a_5").addClass("collapse");
+                $("#nQ15_a_5").removeClass('text-info');
+            }
+        });
+    });
+
+    //Q15_b_4
+    $(document).ready(function () {
+        $('#nQ15_b_4').click(function () {
+            if ($(this).prop("checked") == true) {
+                $("#nQ15_b_5").removeClass("collapse");
+                $("#nQ15_b_5").addClass('text-info');
+            }
+            else if ($(this).prop("checked") == false) {
+
+                $("#nQ15_b_5").addClass("collapse");
+                $("#nQ15_b_5").removeClass('text-info');
+            }
+        });
+    });
+
+    //Q15_c_4
+    $(document).ready(function () {
+        $('#nQ15_c_4').click(function () {
+            if ($(this).prop("checked") == true) {
+                $("#nQ15_c_5").removeClass("collapse");
+                $("#nQ15_c_5").addClass('text-info');
+            }
+            else if ($(this).prop("checked") == false) {
+
+                $("#nQ15_c_5").addClass("collapse");
+                $("#nQ15_c_5").removeClass('text-info');
+            }
+        });
+    });
+
+
+
+    </script>
+
 }

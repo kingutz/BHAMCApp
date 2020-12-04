@@ -15,13 +15,13 @@ namespace BHAMCApp.Models
         public DateTime? Date { get; set; }
 
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Q1.Did you experience any of the following after delivery? Je umeshapata kati ya haya tangu ujifungue?")]
         public EFMK1 Q1 { get; set; }
 
-        [Display(Name = "6. Other(specify)")]
+        [Display(Name = "Other(specify)")]
         public string OthersQ1 { get; set; }
 
         [Display(Name = "Q2.Have you resumed your menses? Je umeshaanza kutumika tangu ujifungue?")]
@@ -33,11 +33,14 @@ namespace BHAMCApp.Models
         [Display(Name = "Q4.If yes are you using any contraceptive method? Kama ndiyo, unatumia njia yoyote ya kujikinga usipate mimba?")]
         public EFMK2 Q4 { get; set; }
 
-        [Display(Name = "1. Itaje ")]
+        [Display(Name = "Itaje ")]
         public string ItajeQ4 { get; set; }
 
         [Display(Name = "Q5.Have you informed anybody about your HIV test results?   Je umeshamueleza mtu yeyote kuhusu majibu yako ya kipimo cha ukimwi?")]
         public EFMK5 Q5 { get; set; }
+
+        [Display(Name = "mtaje")]
+        public string Q5_1 { get; set; }
 
         [Display(Name = "Q6.Are you breastfeeding the infant?    Unamyonyesha mtoto?")]
         public EFMK2 Q6 { get; set; }
@@ -54,46 +57,45 @@ namespace BHAMCApp.Models
 
         //PHYSICAL EXAMINATION
         [Display(Name = "1. Weight(kg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "Weight(kg)?")]
         public uint? Q10 { get; set; }
 
         [Display(Name = "2. Temperature(oC)")]
-        [Range(10, 60, ErrorMessage = "Check Temperature?")]
+        [Range(1, 42, ErrorMessage = "Temperature?")]
         public uint? Q11 { get; set; }
 
         [Display(Name = "3. BP(mmHg)")]
-        [Range(10, 60, ErrorMessage = "Check BP?")]
-        public uint? Q12 { get; set; }
+        public string Q12 { get; set; }
 
         [Display(Name = "Q4. General appearance")]
-        public EFMK13 Q13 { get; set; }
+        public EFMK13? Q13 { get; set; }
 
         [Display(Name = "Q5. Mucosa/Conjuctiva")]
-        public EFMK14 Q14 { get; set; }
+        public EFMK14? Q14 { get; set; }
 
         [Display(Name = "Q6. Oedema")]
-        public EFMK2 Q15 { get; set; }
+        public EFMK2? Q15 { get; set; }
 
         [Display(Name = "Q7. Lymphadenopathy (neck, axilla)")]
-        public EFMK2 Q16 { get; set; }
+        public EFMK2? Q16 { get; set; }
 
         [Display(Name = "Q8. Skin")]
-        public EFMK17 Q17 { get; set; }
+        public EFMK17? Q17 { get; set; }
 
         [Display(Name = "Q9. Mouth	")]
-        public EFMK18 Q18 { get; set; }
+        public EFMK18? Q18 { get; set; }
 
         [Display(Name = "Q10. Breasts")]
-        public EFMK19 Q19 { get; set; }
+        public EFMK19? Q19 { get; set; }
 
         [Display(Name = "Q11. Abdominal palpation- uterus")]
-        public EFMK20 Q20 { get; set; }
+        public EFMK20? Q20 { get; set; }
 
         [Display(Name = "Q12. Lochia")]
-        public EFMK21 Q21 { get; set; }
+        public EFMK21? Q21 { get; set; }
 
         [Display(Name = "Q13. Vulva")]
-        public EFMK22 Q22 { get; set; }
+        public EFMK22? Q22 { get; set; }
 
         [Display(Name = "Q14. Any other abnormal finding")]
         public string Q23 { get; set; }

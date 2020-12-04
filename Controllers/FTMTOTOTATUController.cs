@@ -23,7 +23,7 @@ namespace BHAMCApp.Controllers
         private readonly ICurrentUserService _currentUserService;
         private readonly ApplicationDbContext _context;
 
-        public FTMTOTOTATUController(ApplicationDbContext context, RoleManager<IdentityRole> roleManager,
+        public FTMTOTOTATUController(ApplicationDbContext context,RoleManager<IdentityRole> roleManager,
             UserManager<ApplicationUser> userManager, ILogger<ApplicationDbContext> logger,
             ICurrentUserService currentUserService)
         {

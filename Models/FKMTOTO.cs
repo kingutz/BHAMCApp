@@ -15,7 +15,7 @@ namespace BHAMCApp.Models
         public DateTime? Tarehe { get; set; }
 
         [Display(Name = "ID Number")]
-        [Range(1, 1000, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
 

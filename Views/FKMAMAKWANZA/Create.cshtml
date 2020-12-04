@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <label asp-for="IDNumber" class="control-label"></label>
-                    <input asp-for="IDNumber" class="form-control" />
+                    <input asp-for="IDNumber" class="form-control" id="nname" />
                     <span asp-validation-for="IDNumber" class="text-danger"></span>
                 </div>
                 <div class="col-md-3">
@@ -37,13 +37,13 @@
         </div>
         <div class="col-md-12">
             <label asp-for="Q1" class="control-label"></label>
-            <select asp-for="Q1" id="nQ4" class="form-control"
+            <select asp-for="Q1" class="form-control" id="nQ1"
                     asp-items="Html.GetEnumSelectList<EFMK1>()">
                 <option selected="selected" value=""></option>
             </select>
             <span asp-validation-for="Q1" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 collapse" id="nOthersQ1">
             <label asp-for="OthersQ1" class="control-label"></label>
             <input asp-for="OthersQ1" class="form-control" />
             <span asp-validation-for="OthersQ1" class="text-danger"></span>
@@ -66,24 +66,29 @@
         </div>
         <div class="col-md-12">
             <label asp-for="Q4" class="control-label"></label>
-            <select asp-for="Q4" id="nQ4" class="form-control"
+            <select asp-for="Q4" class="form-control" id="nQ4"
                     asp-items="Html.GetEnumSelectList<EFMK2>()">
                 <option selected="selected" value=""></option>
             </select>
             <span asp-validation-for="Q4" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 collapse" id="nItajeQ4">
             <label asp-for="ItajeQ4" class="control-label"></label>
             <input asp-for="ItajeQ4" class="form-control" />
             <span asp-validation-for="ItajeQ4" class="text-danger"></span>
         </div>
         <div class="col-md-12">
             <label asp-for="Q5" class="control-label"></label>
-            <select asp-for="Q5" id="nQ4" class="form-control"
+            <select asp-for="Q5"  class="form-control" id="nQ5"
                     asp-items="Html.GetEnumSelectList<EFMK5>()">
                 <option selected="selected" value=""></option>
             </select>
             <span asp-validation-for="Q5" class="text-danger"></span>
+        </div>
+        <div class="col-md-3 collapse" id="nQ5_1">
+            <label asp-for="Q5_1" class="control-label"></label>
+            <input asp-for="Q5_1" class="form-control" />
+            <span asp-validation-for="Q5_1" class="text-danger"></span>
         </div>
         <div class="col-md-12">
             <label asp-for="Q6" class="control-label"></label>
@@ -275,4 +280,57 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+<script type="text/javascript">
+
+    document.getElementById('nname').focus();
+        
+    //Q1
+
+    $(document).on("change", "#nQ1", function () {
+        if ($(this).val() == '6') {
+
+            $("#nOthersQ1").removeClass('collapse');
+            $("#nOthersQ1").addClass('text-info');
+           }
+        else {
+            $("#nOthersQ1").addClass('collapse');
+            $("#nOthersQ1").removeClass('text-info');
+
+            }
+    });
+
+    //Q4    
+
+    $(document).on("change", "#nQ4", function () {
+        if ($(this).val() == '1') {
+
+            $("#nItajeQ4").removeClass('collapse');
+            $("#nItajeQ4").addClass('text-info');
+        }
+        else {
+            $("#nItajeQ4").addClass('collapse');
+            $("#nItajeQ4").removeClass('text-info');
+            $('#nItajeQ4').val('');
+        }
+    });
+
+    //Q5
+    $(document).on("change", "#nQ5", function () {
+        if ($(this).val() == '4') {
+
+            $("#nQ5_1").removeClass('collapse');
+            $("#nQ5_1").addClass('text-info');
+        }
+        else {
+            $("#nQ5_1").addClass('collapse');
+            $("#nQ5_1").removeClass('text-info');
+            $('#nQ5_1').val('');
+        }
+    });
+
+    
+
+
+</script>
 }

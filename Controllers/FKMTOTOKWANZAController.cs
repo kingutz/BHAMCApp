@@ -24,7 +24,7 @@ namespace BHAMCApp.Controllers
         private readonly ApplicationDbContext _context;
         
 
-        public FKMTOTOKWANZAController(ApplicationDbContext context, RoleManager<IdentityRole> roleManager,
+        public FKMTOTOKWANZAController(ApplicationDbContext context,RoleManager<IdentityRole> roleManager,
             UserManager<ApplicationUser> userManager, ILogger<ApplicationDbContext> logger,
             ICurrentUserService currentUserService)
         {

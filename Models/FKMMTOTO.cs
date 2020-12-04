@@ -9,7 +9,7 @@ namespace BHAMCApp.Models
     public class FKMMTOTO:EntityData
     {
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Tarehe")]
