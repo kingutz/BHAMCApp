@@ -9,7 +9,7 @@ namespace BHAMCApp.Models
     public class F48MAMA:EntityData
     {
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Date")]
@@ -18,7 +18,7 @@ namespace BHAMCApp.Models
         public DateTime? Date { get; set; }
 
         [Display(Name = "Miaka aliyoishi Moshi")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(1, 100, ErrorMessage = "Miaka aliyoishi Moshi?")]
         public uint? MiakaMoshi { get; set; }
 
         [Display(Name = "Tarehe/Mwezi/Mwaka wa kuzaliwa")]
@@ -27,11 +27,11 @@ namespace BHAMCApp.Models
         public DateTime? DateKuzaliwa { get; set; }
 
         [Display(Name = "Umri wa mama kwa miaka")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "Umri wa mama kwa (miaka)?")]
         public uint? UmriMama { get; set; }
 
         [Display(Name = "1. Je ana umri gani ? (Miaka)")]
-        [Range(1, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "Je ana umri gani ? (Miaka)?")]
         public uint? Q1 { get; set; }
 
         [Display(Name = "Q2. Je umeajiriwa na unapokea mshahara mwisho wa mwezi ? ")]
@@ -56,11 +56,11 @@ namespace BHAMCApp.Models
         public EFM48_5 Q5 { get; set; }
 
         [Display(Name = "Q6. Kama mmepanga, je mnalipia kodi ya shilingi ngapi kwa mwezi? ")]
-        [Range(1000, 1000000, ErrorMessage = "Kodi!!!!")]
+        [Range(1000, 1000000, ErrorMessage = "mnalipia kodi ya shilingi ngapi kwa mwezi??")]
         public uint? Q6 { get; set; }
 
         [Display(Name = "Q7. Kwa kukadiria kipato chako cha mwezi ni kiasi gani? ")]
-        [Range(1000, 1000000, ErrorMessage = "Kipato!!!!")]
+        [Range(1000, 1000000, ErrorMessage = "kipato chako cha mwezi??")]
         public uint? Q7 { get; set; }
 
         [Display(Name = "Q8. Nyumbani, mko watu wa ngapi kwa ujumla ? (idadi ya wote wanaolala na kula)")]
@@ -78,19 +78,27 @@ namespace BHAMCApp.Models
         [Display(Name = "Q9. Je unasafiri mara kwa mara kwenda nje ya mji/mkoa ? ")]
         public EFM48_9 Q9 { get; set; }
 
+        [Display(Name = "mara ngapi kwa mwezi?")]
+        [Range(1, 31, ErrorMessage = "mara ngapi kwa mwezi ?!!!!")]
+        public uint? Q9_1 { get; set; }
+
+        [Display(Name = "mara ngapi kwa mwezi ?")]
+        [Range(1, 31, ErrorMessage = "mara ngapi kwa mwezi ?!!!!")]
+        public uint? Q9_2 { get; set; }
+
         [Display(Name = "(b) Kwa wasafiri, ukiwa umesafiri ni nani anamuangalia mtoto ?")]
-        public string Q9_1 { get; set; }
+        public string Q9_3 { get; set; }
 
         [Display(Name = "Q10. Je unakunywa pombe ?")]
         public EFM48_1 Q10 { get; set; }
 
-        [Display(Name = "Q11. Je unatumia njia yoyoyte ya kujikinga usipate mimba?")]
+        [Display(Name = "Q11. Je unatumia njia yoyote ya kujikinga usipate mimba?")]
         public EFM48_1 Q11 { get; set; }
 
         [Display(Name = "Itaje/Zitaje")]
         public string Q11_1 { get; set; }
 
-        [Display(Name = "Q12.J e mnatumia kondomu wakati mnapokutana kimwili na mwenzi?")]
+        [Display(Name = "Q12. Je mnatumia kondomu wakati mnapokutana kimwili na mwenzi?")]
         public EFM48_1 Q12 { get; set; }
 
         [Display(Name = "Q13. Je hali yako ya unyumba kwa sasa ikoje?")]
@@ -113,13 +121,13 @@ namespace BHAMCApp.Models
         public uint? Q14 { get; set; }
 
         [Display(Name = "Q15. Kama hujaolewa, mmetengana, au mjane je una mwenzi wa kila siku?")]
-        public EFM48_1 Q15 { get; set; }
+        public EFM48_1? Q15 { get; set; }
 
         [Display(Name = "Q16. Je bado unaishi na baba wa mtoto huyu aliye kwenye utafiti ? ")]
         public EFM48_16 Q16 { get; set; }
 
         [Display(Name = "Mwaka wa ngapi baada ya kujifungua")]
-        [Range(1, 30, ErrorMessage = "kwa miaka ?!!!!")]
+        [Range(1, 30, ErrorMessage = "Mwaka wa ngapi baada ya kujifungua?")]
         public uint? Q16_1 { get; set; }
 
         [Display(Name = "Q17. Je umeolewa au unaishi na mume/mwenzi mwenye wake wengi ? (uke wenza)")]
@@ -136,15 +144,15 @@ namespace BHAMCApp.Models
         public EFM48_19 Q19 { get; set; }
 
         [Display(Name = "mara ngapi kwa wiki?")]
-        [Range(1, 30, ErrorMessage = "ngapi? !!!!")]
+        [Range(1, 7, ErrorMessage = "ngapi? !!!!")]
         public uint? Q19_1 { get; set; }
 
         [Display(Name = "anakuja mara ngapi kwa mwaka")]
-        [Range(1, 30, ErrorMessage = "ngapi? !!!!")]
+        [Range(1, 52, ErrorMessage = "ngapi? !!!!")]
         public uint? Q19_2 { get; set; }
 
         [Display(Name = "Q20. Mume au mwenzi wako wa sasa ana umri gani? (Miaka) ")]
-        [Range(1, 30, ErrorMessage = "Miaka? !!!!")]
+        [Range(1, 120, ErrorMessage = "Miaka? !!!!")]
         public uint? Q20 { get; set; }
 
         [Display(Name = "(Anafanya kazi au shughuli gani?")]
@@ -154,7 +162,7 @@ namespace BHAMCApp.Models
         public EFM48_1 Q20_2 { get; set; }
 
         [Display(Name = "mara ngapi kwa mwezi")]
-        [Range(1, 30, ErrorMessage = "ngapi? !!!!")]
+        [Range(1, 31, ErrorMessage = "ngapi? !!!!")]
         public uint? Q20_2_1 { get; set; }
 
         [Display(Name = "(Je anakunywa pombe?")]
@@ -166,7 +174,7 @@ namespace BHAMCApp.Models
         [Display(Name = "Q21. Je kwa ujumla ukimuweka mume/mwenzi wako wa sasa," +
             " umeshakuwa na wenzi/wapenzi wangapi tangu ulipokutana kimwili kwa" +
             " mara ya kwanza hadi sasa hivi?  Idadi")]
-        [Range(1, 30, ErrorMessage = "idadi? !!!!")]
+        [Range(1, 50, ErrorMessage = "idadi ya wapenzi?")]
         public uint? Q21 { get; set; }
 
         [Display(Name = "(Q22. Na je ni watu wangapi tofauti ambao umekutana nao kimwili kwa kipindi" +
@@ -174,7 +182,7 @@ namespace BHAMCApp.Models
         public EFM48_1 Q22 { get; set; }
 
         [Display(Name = "idadi")]
-        [Range(1, 30, ErrorMessage = "idadi ? !!!!")]
+        [Range(1, 50, ErrorMessage = "idadi?")]
         public uint? Q22_1 { get; set; }
 
         [Display(Name = "(Q23. Je mpaka sasa umeshashirikiana majibu yako ya kipimo cha UKIMWI (HIV) " +
@@ -200,11 +208,11 @@ namespace BHAMCApp.Models
         public uint? Q27 { get; set; }
 
         [Display(Name = "Umri wa mtoto wa kwanza:")]
-        [Range(1, 30, ErrorMessage = "idadi ? !!!!")]
+        [Range(1, 70, ErrorMessage = "idadi ? !!!!")]
         public uint? Q27_1 { get; set; }
 
         [Display(Name = "Umri wa mtoto wa mwisho:")]
-        [Range(1, 30, ErrorMessage = "idadi ? !!!!")]
+        [Range(1, 70, ErrorMessage = "idadi ? !!!!")]
         public uint? Q27_2 { get; set; }
 
         [Display(Name = "Je watoto wote wana baba mmoja?")]
@@ -230,7 +238,7 @@ namespace BHAMCApp.Models
         public EFM48_1 Q31_1 { get; set; }
 
         [Display(Name = "-Watu walioathirika na UKIMWI wana haki ya kutomwambia mtu" +
-            " au unadhani hali hiyo iwe wazi kwa   jamii wanapoishi ?")]
+            " au unadhani hali hiyo iwe wazi kwa jamii wanapoishi?")]
         public EFM48_31_2 Q31_2 { get; set; }
 
         [Display(Name = "-Je ukiwa na ndugu aliyeathirika na VVU, uko tayari kuishi naye au kumlea nyumbani kwako? ")]
@@ -250,33 +258,33 @@ namespace BHAMCApp.Models
         //32.Je tangu uje kliniki mara ya mwisho au kwa sasa una dalili zifuatazo?
 
         [Display(Name = "1. Abnormal vaginal discharge  Kutoka ute usio wa kawaida ukeni-unanuka, rangi njano ")]
-        public EFM48_1 Q32_1 { get; set; }
+        public EFM48_1? Q32_1 { get; set; }
 
         [Display(Name = "2. Genital itching Kuwashwa sehemu za siri")]
-        public EFM48_1 Q32_2 { get; set; }
+        public EFM48_1? Q32_2 { get; set; }
 
         [Display(Name = "3.Genital ulcers Vidonda sehemu za siri")]
-        public EFM48_1 Q32_3 { get; set; }
+        public EFM48_1? Q32_3 { get; set; }
 
         [Display(Name = "4. Dysuria Maumivu wakati wa kwenda kukujoa")]
-        public EFM48_1 Q32_4 { get; set; }
+        public EFM48_1? Q32_4 { get; set; }
 
         [Display(Name = "5. Dyspareunia  Maumivu wakati wa kufanya mapenzi")]
-        public EFM48_1 Q32_5 { get; set; }
+        public EFM48_1? Q32_5 { get; set; }
 
         [Display(Name = "6. Lower abdominal pain Maumivu katika tumbo la uzazi")]
-        public EFM48_1 Q32_6 { get; set; }
+        public EFM48_1? Q32_6 { get; set; }
 
         //Kama ana shida kati ya hizo, toa HVS, mpe tiba syndromically kabla hata majibu ya HVS hayajaja
 
         [Display(Name = "Q33. Je umeshalazwa hospitalini tangu ulipokuja kliniki kwa mara ya mwisho?")]
-        public EFM48_1 Q33 { get; set; }
+        public EFM48_1? Q33 { get; set; }
 
         [Display(Name = "Tatizo")]
         public string Q33_1 { get; set; }
 
         [Display(Name = "Q34. Je kwa kawaida unakula mara ngapi kwa siku ukiweka kifungua kinywa/breakfast?")]
-        [Range(1, 30, ErrorMessage = "idadi ? !!!!")]
+        [Range(1, 24, ErrorMessage = "unakula mara ngapi kwa siku??")]
         public uint? Q34 { get; set; }
 
         //35.Mara nyingi unakula vyakula gani(List aina zote anazotaja + mboga na matunda)
@@ -293,37 +301,37 @@ namespace BHAMCApp.Models
         //PHYSICAL EXAMINATION
 
         [Display(Name = "1. Weight(kg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "weight?")]
         public uint? Q36 { get; set; }
 
         [Display(Name = "2. Height")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 60, ErrorMessage = "Height?")]
         public uint? Q37 { get; set; }
 
         [Display(Name = "4. Waist /Kiuno (cm")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 60, ErrorMessage = "Waist?")]
         public uint? Q38 { get; set; }
 
         [Display(Name = "Hip (cm)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 60, ErrorMessage = "Hip?")]
         public uint? Q39 { get; set; }
 
         [Display(Name = "3. BP(mmHg)")]
         public string Q40 { get; set; }
 
         [Display(Name = "Mid upper arm circumference (cm)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 60, ErrorMessage = "Waist?")]
         public uint? Q41 { get; set; }
 
 
         [Display(Name = "Palor-mucosa and conjuctiva")]
-        public EFM48_42 Q42 { get; set; }
+        public EFM48_42? Q42 { get; set; }
 
         [Display(Name = "Oral thrush")]
-        public EFM48_43 Q43 { get; set; }
+        public EFM48_43? Q43 { get; set; }
 
         [Display(Name = "Oral thrush")]
-        public EFM48_43 Q44 { get; set; }
+        public EFM48_43? Q44 { get; set; }
 
         [Display(Name = "Problems/ Diagnosis")]
         public string ProblemsDiagnosis { get; set; }
@@ -424,15 +432,15 @@ namespace BHAMCApp.Models
 
     public enum EFM48_28
     {
-        [Display(Name = "1. Hapana sina hatari")]
+        [Display(Name = "1. Hapana sina hatari (no risk) ")]
         E1 = 1,
-        [Display(Name = "2. Niko kwenye hatari kidogo")]
+        [Display(Name = "2. Niko kwenye hatari kidogo (small risk) ")]
         E2 = 2,
-        [Display(Name = "3. Niko kwenye hatari kiasi")]
+        [Display(Name = "3. Niko kwenye hatari kiasi (moderate risk) ")]
         E3 = 3,
-        [Display(Name = "4. Niko kwenye hatari sana/hatari kubwa")]
+        [Display(Name = "4. Niko kwenye hatari sana/hatari kubwa (High risk) ")]
         E4 = 4,
-        [Display(Name = "5. ijui")]
+        [Display(Name = "5. Sijui (Don’t know) ")]
         E5 = 5
 
     }

@@ -9,7 +9,7 @@ namespace BHAMCApp.Models
     public class F15_24MAMA:EntityData
     {
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Date")]
@@ -23,7 +23,7 @@ namespace BHAMCApp.Models
         public EFMTISA1 Q1 { get; set; }
 
         [Display(Name = "tangu mwezi wa baada ya kujifungua")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 30, ErrorMessage = "Have you resumed sex Month?")]
         public uint? Q1_1 { get; set; }
 
 
@@ -44,11 +44,11 @@ namespace BHAMCApp.Models
         public EFMTISA1 Q4 { get; set; }
 
         [Display(Name = "•Kama ndiyo mchana ananyonya kama mara ngapi? ")]
-        [Range(1, 10, ErrorMessage = "Check Age?")]
+        [Range(1, 20, ErrorMessage = "mchana ananyonya kama mara ngapi?")]
         public uint? Q4_1 { get; set; }
 
         [Display(Name = "•Usiku anaweza kunyonya kama mara ngapi?")]
-        [Range(1, 10, ErrorMessage = "Check Age?")]
+        [Range(1, 20, ErrorMessage = "Usiku ananyonya kama mara ngapi?")]
         public uint? Q4_2 { get; set; }
 
         [Display(Name = "Q5.Have you shared your HIV results with your partner?" +
@@ -70,7 +70,7 @@ namespace BHAMCApp.Models
         public EFMTISA10 Q8 { get; set; }
 
         [Display(Name = "(Mwezi) baada ya kujifungua?")]
-        [Range(1, 10, ErrorMessage = "Still living with the husband?")]
+        [Range(1, 20, ErrorMessage = "Still living with the husband?")]
         public uint? Q8_1 { get; set; }
 
         [Display(Name = "Q9.Do you presently have the following symptoms? Je kwa sasa una dalili zifuatazo?")]

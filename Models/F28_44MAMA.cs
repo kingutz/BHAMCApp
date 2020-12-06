@@ -10,7 +10,7 @@ namespace BHAMCApp.Models
     {
 
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Date")]
@@ -24,7 +24,7 @@ namespace BHAMCApp.Models
         public DateTime? DateKuzaliwa { get; set; }
 
         [Display(Name = "Umri wa mama kwa miaka")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "Umri wa mama kwa miaka?")]
         public uint? UmriMama { get; set; }
 
         [Display(Name = "Q1. Je bado unamyonyesha mtoto?")]
@@ -46,7 +46,7 @@ namespace BHAMCApp.Models
         public EFM28_44_5 Q5 { get; set; }
 
         [Display(Name = "(Mwezi)baada ya kujifungua")]
-        [Range(1, 24, ErrorMessage = "Mwezi?")]
+        [Range(1, 24, ErrorMessage = "Miezi?")]
         public uint? Q5_1 { get; set; }
 
 
@@ -100,39 +100,39 @@ namespace BHAMCApp.Models
         
 
         [Display(Name = "1. Abnormal vaginal discharge Kutoka ute usio wa kawaida ukeni-unanuka, rangi njano")]
-        public EFM28_44_1 Q14_1 { get; set; }
+        public EFM28_44_1? Q14_1 { get; set; }
 
         [Display(Name = "2. Genital itching Kuwashwa sehemu za siri")]
-        public EFM28_44_1 Q14_2 { get; set; }
+        public EFM28_44_1? Q14_2 { get; set; }
 
         [Display(Name = "3. Genital ulcers Vidonda sehemu za siri")]
-        public EFM28_44_1 Q14_3 { get; set; }
+        public EFM28_44_1? Q14_3 { get; set; }
 
         [Display(Name = "4. Dysuria Maumivu wakati wa kwenda kukujoa")]
-        public EFM28_44_1 Q14_4 { get; set; }
+        public EFM28_44_1? Q14_4 { get; set; }
 
         [Display(Name = "5. Dyspareunia  Maumivu wakati wa kufanya mapenzi")]
-        public EFM28_44_1 Q14_5 { get; set; }
+        public EFM28_44_1? Q14_5 { get; set; }
 
         [Display(Name = "6. Lower abdominal pain Maumivu katika tumbo la uzazi")]
-        public EFM28_44_1 Q14_6 { get; set; }
+        public EFM28_44_1? Q14_6 { get; set; }
 
         //Kama ana shida kati ya hizo mpe tiba syndromically kabla hata majibu ya HVS hayajaja
 
         [Display(Name = "Q15. Je umeshalazwa hospitalini tangu ulipokuja kliniki kwa mara ya mwisho?")]
-        public EFM28_44_1 Q15 { get; set; }
+        public EFM28_44_1? Q15 { get; set; }
 
         [Display(Name = "(Tatizo")]
         public string Q15_1 { get; set; }
 
         [Display(Name = "Q16. Je kwa sasa unafanya shughuli gani ya kukuingizia kipato?")]
-        public EFM28_44_16 Q16 { get; set; }
+        public EFM28_44_16? Q16 { get; set; }
 
         [Display(Name = "(Shughuli, itaje ")]
         public string Q16_1 { get; set; }
 
         [Display(Name = "Kipato kwa mwezi, akadirie")]
-        [Range(10, 60, ErrorMessage = "Kipato kwa mwezi?")]
+        [Range(1000, 2000000, ErrorMessage = "Kipato kwa mwezi?")]
         public uint? Q16_2 { get; set; }
 
         [Display(Name = "(Q17. Kama hapana, unamtegemea mwenzi kwa matumizi yote?")]
@@ -155,42 +155,42 @@ namespace BHAMCApp.Models
         //PHYSICAL EXAMINATION
 
         [Display(Name = "1. Weight(kg)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 120, ErrorMessage = "weight?")]
         public uint? Q20 { get; set; }
 
         [Display(Name = "2. Height")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 60, ErrorMessage = "Height?")]
         public uint? Q21 { get; set; }
 
         [Display(Name = "3. BP(mmHg)")]
         public string Q22 { get; set; }
 
         [Display(Name = "4. Waist /Kiuno (cm")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 60, ErrorMessage = "Waist?")]
         public uint? Q23 { get; set; }
 
         [Display(Name = "Hip (cm)")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(10, 60, ErrorMessage = "Hip?")]
         public uint? Q24 { get; set; }
 
         [Display(Name = "3.General appearance")]
         public EFMT17 Q25 { get; set; }
 
         [Display(Name = "4.Mucosa/Conjuctiva")]
-        public EFMT18 Q26 { get; set; }
+        public EFMT18? Q26 { get; set; }
 
         [Display(Name = "5.Lymphadenopathy (neck, axilla)")]
         public EFMT1 Q27 { get; set; }
 
         [Display(Name = "7.Mouth")]
-        public EFMT20 Q28 { get; set; }
+        public EFMT20? Q28 { get; set; }
 
         [Display(Name = "8. Haemoglobin")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(1, 30, ErrorMessage = "Haemoglobin?")]
         public uint? Q29 { get; set; }
 
         [Display(Name = "9. Random Blood Glucose (RBG")]
-        [Range(10, 60, ErrorMessage = "Check weight?")]
+        [Range(1, 20, ErrorMessage = "RBG?")]
         public uint? Q30 { get; set; }
 
         [Display(Name = "Problems/ Diagnosis")]

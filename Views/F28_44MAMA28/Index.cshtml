@@ -5,12 +5,11 @@
     Layout = "~/Views/Shared/_BhMama.cshtml";
 }
 
-<h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="text-info" asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-bh text-white">
     <thead>
         <tr>
             <th>
@@ -25,7 +24,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.UmriMama)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Q1)
             </th>
             <th>
@@ -183,190 +182,191 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Edited)
-            </th>
+            </th>*@
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IDNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateKuzaliwa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UmriMama)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.Q1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q5)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q5_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q6)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q7)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q7_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q7_2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q8)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q9)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q10)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q10_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q11)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q12)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q13)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q13_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q13_2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q13_3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q14_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q14_2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q14_3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q14_4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q14_5)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q14_6)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q15)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q15_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q16)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q17)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q18)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q19_1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q19_2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q19_3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q20)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q21)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q22)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q23)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q24)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q25)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q26)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q27)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q28)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q29)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Q30)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProblemsDiagnosis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ManagementFT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateVisit32)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedByUser)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedByUser)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Edited)
+                </td>*@
             <td>
-                @Html.DisplayFor(modelItem => item.IDNumber)
+                <a class="text-info" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a class="text-info" asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a class="text-info" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateKuzaliwa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UmriMama)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q4)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q5)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q5_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q6)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q7)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q7_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q7_2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q8)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q9)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q10)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q10_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q11)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q12)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q13)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q13_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q13_2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q13_3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q14_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q14_2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q14_3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q14_4)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q14_5)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q14_6)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q15)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q15_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q16)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q17)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q18)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q19_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q19_2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q19_3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q20)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q21)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q22)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q23)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q24)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q25)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q26)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q27)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q28)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q29)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Q30)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProblemsDiagnosis)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ManagementFT)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateVisit32)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedByUser)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ModifiedByUser)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ModifiedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Edited)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
+            </tr>
+        }
     </tbody>
 </table>

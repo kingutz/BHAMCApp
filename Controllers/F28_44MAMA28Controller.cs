@@ -7,22 +7,47 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BHAMCApp.Data;
 using BHAMCApp.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Identity;
+using BHAMCApp.Services;
 
 namespace BHAMCApp.Controllers
 {
+    [Authorize(Roles = "admin,Datamanager")]
     public class F28_44MAMA28Controller : Controller
     {
+        private readonly ILogger<ApplicationDbContext> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ICurrentUserService _currentUserService;
         private readonly ApplicationDbContext _context;
 
-        public F28_44MAMA28Controller(ApplicationDbContext context)
+        public F28_44MAMA28Controller(ApplicationDbContext context, RoleManager<IdentityRole> roleManager,
+            UserManager<ApplicationUser> userManager, ILogger<ApplicationDbContext> logger,
+            ICurrentUserService currentUserService)
         {
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _logger = logger;
             _context = context;
+            _currentUserService = currentUserService;
         }
 
         // GET: F28_44MAMA28
         public async Task<IActionResult> Index()
         {
-            return View(await _context.F28_44MAMA.ToListAsync());
+            bool isAdmin = User.IsInRole("admin");
+            if (isAdmin)
+            {
+                return View(await _context.F28_44MAMA.ToListAsync());
+            }
+            else
+            {
+                return View(await _context.F28_44MAMA.Where(p => p.CreatedByUser == _currentUserService.GetCurrentUsername()).ToListAsync());
+
+            }
+            //return View(await _context.F28_44MAMA.ToListAsync());
         }
 
         // GET: F28_44MAMA28/Details/5

@@ -7,22 +7,48 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BHAMCApp.Data;
 using BHAMCApp.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Identity;
+using BHAMCApp.Services;
 
 namespace BHAMCApp.Controllers
 {
+    [Authorize(Roles = "admin,Datamanager")]
     public class FSMAMASITAController : Controller
     {
+        private readonly ILogger<ApplicationDbContext> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ICurrentUserService _currentUserService;
         private readonly ApplicationDbContext _context;
 
-        public FSMAMASITAController(ApplicationDbContext context)
+        public FSMAMASITAController(ApplicationDbContext context, RoleManager<IdentityRole> roleManager,
+            UserManager<ApplicationUser> userManager, ILogger<ApplicationDbContext> logger,
+            ICurrentUserService currentUserService)
         {
+            
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _logger = logger;
             _context = context;
+            _currentUserService = currentUserService;
         }
 
         // GET: FSMAMASITA
         public async Task<IActionResult> Index()
         {
-            return View(await _context.FSMAMA.ToListAsync());
+            bool isAdmin = User.IsInRole("admin");
+            if (isAdmin)
+            {
+                return View(await _context.FSMAMA.ToListAsync());
+            }
+            else
+            {
+                return View(await _context.FSMAMA.Where(p => p.CreatedByUser == _currentUserService.GetCurrentUsername()).ToListAsync());
+
+            }
+            //return View(await _context.FSMAMA.ToListAsync());
         }
 
         // GET: FSMAMASITA/Details/5

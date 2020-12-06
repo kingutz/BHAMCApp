@@ -15,14 +15,14 @@ namespace BHAMCApp.Models
         public DateTime? Date { get; set; }
 
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Q1. Have you resumed sex? Je mmeshaanza kukutana kimwili na mama?")]
         public EFMKM1 Q1 { get; set; }
 
         [Display(Name = "tangu mwezi wa baada ya kujifungua")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 24, ErrorMessage = "tangu mwezi wa baada ya kujifungua?")]
         public uint? Q1_1 { get; set; }
 
         [Display(Name = "Q2. Contraceptive method? Mmeshajadiliana na mama kuhusu kutumia kinga asipte mimba?")]
@@ -38,9 +38,13 @@ namespace BHAMCApp.Models
             "Je  mpaka sasa umeshashirikiana na  mtu yeyote kuhusu majibu yako ya kipimo cha ukimwi?")]
         public EFMK5 Q4 { get; set; }
 
+        [Display(Name = "Mwingine, mtaje")]
+        public string Q4_1 { get; set; }
+
         [Display(Name = "Q5.How long did you take to inform him/them?  " +
             " Je ulichukua muda gani tangu upimwe hadi ulipomueleza mwenzi au ndugu?")]
-             public string Q5 { get; set; }
+        [Range(1, 24, ErrorMessage = "How long did you take to inform?")]
+        public uint? Q5 { get; set; }
 
         [Display(Name = "Q6. First time to check for HIV  Je ulishawahi kupima ukimwi " +
             "au tulivyokupima ilikuwa ni mara ya kwanza?")]
@@ -54,18 +58,19 @@ namespace BHAMCApp.Models
 
         [Display(Name = "Q9. Je unadhani kuwapima wanaume kipimo cha UKIMWI inasaidia? Na kwa vipi?")]
         public string Q9 { get; set; }
+
         // Q10.Do you presently have the following symptoms? Je kwa sasa una dalili zifuatazo?
         [Display(Name = "1.Urethral discharge  Kutoka ute/usaha sehemu za siri")]
-        public EFMKM1 Q10_1 { get; set; }
+        public EFMKM1? Q10_1 { get; set; }
 
         [Display(Name = "2.Genital ulcers Vidonda sehemu za siri")]
-        public EFMKM1 Q10_2 { get; set; }
+        public EFMKM1? Q10_2 { get; set; }
 
         [Display(Name = "3.Dysuria Maumivu wakati wa kwenda kukujoa")]
-        public EFMKM1 Q10_3 { get; set; }
+        public EFMKM1? Q10_3 { get; set; }
 
         [Display(Name = "4.Scrotal swelling Kuvimba makende/kokwa")]
-        public EFMKM1 Q10_4 { get; set; }
+        public EFMKM1? Q10_4 { get; set; }
 
         [Display(Name = "Problems/ Diagnosis")]
         public string ProblemsDiagnosis { get; set; }
