@@ -174,13 +174,13 @@ namespace BHAMCApp.Models
         public uint? Q24 { get; set; }
 
         [Display(Name = "3.General appearance")]
-        public EFMT17 Q25 { get; set; }
+        public EFMT17? Q25 { get; set; }
 
         [Display(Name = "4.Mucosa/Conjuctiva")]
         public EFMT18? Q26 { get; set; }
 
         [Display(Name = "5.Lymphadenopathy (neck, axilla)")]
-        public EFMT1 Q27 { get; set; }
+        public EFMT1? Q27 { get; set; }
 
         [Display(Name = "7.Mouth")]
         public EFMT20? Q28 { get; set; }

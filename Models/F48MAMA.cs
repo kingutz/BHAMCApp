@@ -18,7 +18,7 @@ namespace BHAMCApp.Models
         public DateTime? Date { get; set; }
 
         [Display(Name = "Miaka aliyoishi Moshi")]
-        [Range(1, 100, ErrorMessage = "Miaka aliyoishi Moshi?")]
+        [Range(1, 70, ErrorMessage = "Miaka aliyoishi Moshi?")]
         public uint? MiakaMoshi { get; set; }
 
         [Display(Name = "Tarehe/Mwezi/Mwaka wa kuzaliwa")]
@@ -105,15 +105,15 @@ namespace BHAMCApp.Models
         public EFM48_13 Q13 { get; set; }
 
         [Display(Name = "Ni bwana au chuo cha ngapi?")]
-        [Range(1, 50, ErrorMessage = "Ni bwana au chuo cha ngapi??!!!!")]
+        [Range(1, 50, ErrorMessage = "Ni bwana au chuo cha ngapi?")]
         public uint? Q13_1 { get; set; }
 
         [Display(Name = "Ni bwana wa ngapi? ")]
-        [Range(1, 50, ErrorMessage = "Ni bwana wa ngapi?!!!!")]
+        [Range(1, 50, ErrorMessage = "Ni bwana wa ngapi?")]
         public uint? Q13_2 { get; set; }
 
         [Display(Name = "Tumetengana kwa miaka")]
-        [Range(1, 50, ErrorMessage = "kwa miaka ?!!!!")]
+        [Range(1, 50, ErrorMessage = "kwa miaka ?")]
         public uint? Q13_3 { get; set; }
 
         [Display(Name = "Q14. Je mmeishi pamoja kwa muda gani?")]
@@ -123,7 +123,7 @@ namespace BHAMCApp.Models
         [Display(Name = "Q15. Kama hujaolewa, mmetengana, au mjane je una mwenzi wa kila siku?")]
         public EFM48_1? Q15 { get; set; }
 
-        [Display(Name = "Q16. Je bado unaishi na baba wa mtoto huyu aliye kwenye utafiti ? ")]
+        [Display(Name = "Q16. Je bado unaishi na baba wa mtoto huyu aliye kwenye utafiti?")]
         public EFM48_16 Q16 { get; set; }
 
         [Display(Name = "Mwaka wa ngapi baada ya kujifungua")]
@@ -159,17 +159,17 @@ namespace BHAMCApp.Models
         public string Q20_1 { get; set; }
 
         [Display(Name = "(Je anasafiri mara kwa mara?")]
-        public EFM48_1 Q20_2 { get; set; }
+        public EFM48_1? Q20_2 { get; set; }
 
         [Display(Name = "mara ngapi kwa mwezi")]
         [Range(1, 31, ErrorMessage = "ngapi? !!!!")]
         public uint? Q20_2_1 { get; set; }
 
         [Display(Name = "(Je anakunywa pombe?")]
-        public EFM48_1 Q20_3 { get; set; }
+        public EFM48_1? Q20_3 { get; set; }
 
         [Display(Name = "(Kila siku/Mara moja kwa wiki/Mara moja moja")]
-        public EFM48_20 Q20_3_1 { get; set; }
+        public EFM48_20? Q20_3_1 { get; set; }
 
         [Display(Name = "Q21. Je kwa ujumla ukimuweka mume/mwenzi wako wa sasa," +
             " umeshakuwa na wenzi/wapenzi wangapi tangu ulipokutana kimwili kwa" +
@@ -204,15 +204,15 @@ namespace BHAMCApp.Models
         public EFM48_1 Q26 { get; set; }
 
         [Display(Name = "Q27. Je una jumla ya watoto wangapi walio hai? ")]
-        [Range(1, 30, ErrorMessage = "idadi ? !!!!")]
+        [Range(0, 30, ErrorMessage = " Je una jumla ya watoto wangapi walio hai?")]
         public uint? Q27 { get; set; }
 
         [Display(Name = "Umri wa mtoto wa kwanza:")]
-        [Range(1, 70, ErrorMessage = "idadi ? !!!!")]
+        [Range(1, 70, ErrorMessage = "Umri wa mtoto wa kwanza?")]
         public uint? Q27_1 { get; set; }
 
         [Display(Name = "Umri wa mtoto wa mwisho:")]
-        [Range(1, 70, ErrorMessage = "idadi ? !!!!")]
+        [Range(1, 70, ErrorMessage = "Umri wa mtoto wa mwisho?")]
         public uint? Q27_2 { get; set; }
 
         [Display(Name = "Je watoto wote wana baba mmoja?")]

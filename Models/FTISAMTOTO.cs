@@ -10,7 +10,7 @@ namespace BHAMCApp.Models
     {
 
         [Display(Name = "ID Number")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 1000, ErrorMessage = "ID Number maximum 1000?")]
         public uint? IDNumber { get; set; }
 
         [Display(Name = "Tarehe")]

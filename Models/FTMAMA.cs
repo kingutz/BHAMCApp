@@ -21,7 +21,7 @@ namespace BHAMCApp.Models
         public EFMT1 Q1 { get; set; }
 
         [Display(Name = "tangu mwezi wa baada ya kujifungua")]
-        [Range(10, 60, ErrorMessage = "Check Age?")]
+        [Range(1, 24, ErrorMessage = "Have you resumed your menses?")]
         public uint? Q1_1 { get; set; }
 
         [Display(Name = "Q2.Have you resumed sex Je umeshaanza kukutana kimwili na mume/mwenzi wako?")]
