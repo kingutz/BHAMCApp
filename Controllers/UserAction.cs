@@ -21,7 +21,8 @@ namespace BHAMCApp.Controllers
         private readonly ICurrentUserService _currentUserService;
 
         public UserAction(ApplicationDbContext context, RoleManager<IdentityRole> roleManager,
-           UserManager<ApplicationUser> userManager, ILogger<ApplicationDbContext> logger, ICurrentUserService currentUserService)
+           UserManager<ApplicationUser> userManager, ILogger<ApplicationDbContext> logger, 
+           ICurrentUserService currentUserService)
         {
             _context = context;
             _userManager = userManager;
