@@ -1472,13 +1472,13 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q24")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q25")
+                    b.Property<int?>("Q25")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("Q26")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q27")
+                    b.Property<int?>("Q27")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("Q28")
@@ -2040,16 +2040,16 @@ namespace BHAMCApp.Migrations
                     b.Property<string>("Q20_1")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Q20_2")
+                    b.Property<int?>("Q20_2")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q20_2_1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q20_3")
+                    b.Property<int?>("Q20_3")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q20_3_1")
+                    b.Property<int?>("Q20_3_1")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q21")
@@ -2085,7 +2085,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q27_2")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q27_3")
+                    b.Property<int?>("Q27_3")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q28")

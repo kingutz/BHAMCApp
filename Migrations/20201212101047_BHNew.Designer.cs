@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BHAMCApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201209125033_BH001")]
-    partial class BH001
+    [Migration("20201212101047_BHNew")]
+    partial class BHNew
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -1474,13 +1474,13 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q24")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q25")
+                    b.Property<int?>("Q25")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("Q26")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q27")
+                    b.Property<int?>("Q27")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("Q28")
@@ -2042,16 +2042,16 @@ namespace BHAMCApp.Migrations
                     b.Property<string>("Q20_1")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Q20_2")
+                    b.Property<int?>("Q20_2")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q20_2_1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q20_3")
+                    b.Property<int?>("Q20_3")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q20_3_1")
+                    b.Property<int?>("Q20_3_1")
                         .HasColumnType("INTEGER");
 
                     b.Property<uint?>("Q21")
@@ -2087,7 +2087,7 @@ namespace BHAMCApp.Migrations
                     b.Property<uint?>("Q27_2")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Q27_3")
+                    b.Property<int?>("Q27_3")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Q28")

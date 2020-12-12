@@ -49,7 +49,7 @@ namespace BHAMCApp.Models
         [Display(Name = "Q4. Kama huna, unamtegemea mwenzi kwa matumizi yote? (mfano kwa kodi na chakula)")]
         public EFM48_1 Q4 { get; set; }
 
-        [Display(Name = "(Taja Nini unategemea ")]
+        [Display(Name = "(Taja Nini unamtegemea mfano kwa kodi na chakula ")]
         public string Q4_1 { get; set; }
 
         [Display(Name = "Q5. Je nyumba mnayoishi ?")]
@@ -216,7 +216,7 @@ namespace BHAMCApp.Models
         public uint? Q27_2 { get; set; }
 
         [Display(Name = "Je watoto wote wana baba mmoja?")]
-        public EFM48_1 Q27_3 { get; set; }
+        public EFM48_1? Q27_3 { get; set; }
 
         [Display(Name = "Q28. Je ukifikiria, unajiona uko au hauko kwenye hatari ya kuambukizwa virusi vya ugonjwa wa UKIMWI ")]
         public EFM48_28 Q28 { get; set; }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BHAMCApp.Migrations
 {
-    public partial class BH001 : Migration
+    public partial class BHNew : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -547,9 +547,9 @@ namespace BHAMCApp.Migrations
                     Q22 = table.Column<string>(nullable: true),
                     Q23 = table.Column<uint>(nullable: true),
                     Q24 = table.Column<uint>(nullable: true),
-                    Q25 = table.Column<int>(nullable: false),
+                    Q25 = table.Column<int>(nullable: true),
                     Q26 = table.Column<int>(nullable: true),
-                    Q27 = table.Column<int>(nullable: false),
+                    Q27 = table.Column<int>(nullable: true),
                     Q28 = table.Column<int>(nullable: true),
                     Q29 = table.Column<uint>(nullable: true),
                     Q30 = table.Column<uint>(nullable: true),
@@ -757,10 +757,10 @@ namespace BHAMCApp.Migrations
                     Q19_2 = table.Column<uint>(nullable: true),
                     Q20 = table.Column<uint>(nullable: true),
                     Q20_1 = table.Column<string>(nullable: true),
-                    Q20_2 = table.Column<int>(nullable: false),
+                    Q20_2 = table.Column<int>(nullable: true),
                     Q20_2_1 = table.Column<uint>(nullable: true),
-                    Q20_3 = table.Column<int>(nullable: false),
-                    Q20_3_1 = table.Column<int>(nullable: false),
+                    Q20_3 = table.Column<int>(nullable: true),
+                    Q20_3_1 = table.Column<int>(nullable: true),
                     Q21 = table.Column<uint>(nullable: true),
                     Q22 = table.Column<int>(nullable: false),
                     Q22_1 = table.Column<uint>(nullable: true),
@@ -772,7 +772,7 @@ namespace BHAMCApp.Migrations
                     Q27 = table.Column<uint>(nullable: true),
                     Q27_1 = table.Column<uint>(nullable: true),
                     Q27_2 = table.Column<uint>(nullable: true),
-                    Q27_3 = table.Column<int>(nullable: false),
+                    Q27_3 = table.Column<int>(nullable: true),
                     Q28 = table.Column<int>(nullable: false),
                     Q28_1 = table.Column<string>(nullable: true),
                     Q29 = table.Column<string>(nullable: true),

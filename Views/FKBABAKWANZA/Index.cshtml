@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_BhBaba.cshtml";
 }
 
 @*<p>
@@ -28,72 +29,72 @@
             <th>
                 @Html.DisplayNameFor(model => model.Q1)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q1_1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q2)
-            </th>
             @*<th>
-                @Html.DisplayNameFor(model => model.Q2_1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q3)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q4)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q5)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q6)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q7)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q8)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q9)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q10_1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q10_2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q10_3)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Q10_4)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProblemsDiagnosis)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ManagementFT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateFollowup)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedByUser)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ModifiedByUser)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ModifiedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Edited)
-            </th>*@
+            @Html.DisplayNameFor(model => model.Q1_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q2_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q10_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q10_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q10_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Q10_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProblemsDiagnosis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ManagementFT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateFollowup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedByUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedByUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edited)
+        </th>*@
             <th></th>
         </tr>
     </thead>
@@ -110,13 +111,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Q1)
             </td>
-            <td>
+            @* <td>
                 @Html.DisplayFor(modelItem => item.Q1_1)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Q2)
             </td>
-            @*<td>
+           <td>
             @Html.DisplayFor(modelItem => item.Q2_1)
         </td>
         <td>
