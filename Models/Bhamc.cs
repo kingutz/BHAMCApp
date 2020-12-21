@@ -756,6 +756,20 @@ namespace BHAMCApp.Models
         Dontknow = 2
 
     }
+    public enum E7
+    {
+        [Display(Name = "1. Uniformed  job  (Mwanajeshi,   Polisi)")]
+        E1 = 1,
+        [Display(Name = "2. White  collar job  (Nesi,  Mwalimu,  Daktari)")]
+        E2 = 2,
+        [Display(Name = "3. Blue  collar job  (Mess anger,  Msafishaji.,  Security  guard,  Mgambo)")]
+        E3 = 3,
+        [Display(Name = "4. Technical  job  (Fundi))")]
+        E4 = 4,
+        [Display(Name = "5.0ther   Nyingine)")]
+        E5 = 5
+
+    }
     public enum E8
     {
         [Display(Name = "1. Not attended formal education")]
