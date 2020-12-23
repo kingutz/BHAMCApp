@@ -162,7 +162,7 @@ namespace BHAMCApp.Models
         //Q26.Have  youever   experienced   any of the following  forms of violence  from your partner?
         //Je umeshawahi   kufanyiwa  yafuatayo   na mumelmwenzi   wako?                  
 
-        [Display(Name = "l. Verbal use Kutukanwa,kusemwa  kwa kejeli")]
+        [Display(Name = "1. Verbal use Kutukanwa,kusemwa  kwa kejeli")]
         public EB20 Q26_1 { get; set; }
 
         [Display(Name = "No of times")]
@@ -1163,9 +1163,9 @@ namespace BHAMCApp.Models
         public bool PE21_2 { get; set; }
 
 
+    }
 
-
-        public enum EB6
+    public enum EB6
         {
             [Display(Name = "1. Farming   Mkulima")]
             E1 = 1,
@@ -1548,5 +1548,5 @@ namespace BHAMCApp.Models
             [Display(Name = "3. Ulcers")]
             E3 = 3
         }
-    }
+    
 }

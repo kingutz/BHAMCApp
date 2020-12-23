@@ -98,6 +98,8 @@ namespace BHAMCApp.Data
         public DbSet<BHAMCApp.Models.F28_44MTOTO> F28_44MTOTO { get; set; }
 
         public DbSet<BHAMCApp.Models.F48MTOTO> F48MTOTO { get; set; }
+
+        public DbSet<BHAMCApp.Models.BHAMCDATA> BHAMCDATA { get; set; }
     }
     public class ApplicationUser : IdentityUser
     {
