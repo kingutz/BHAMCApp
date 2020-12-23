@@ -847,6 +847,322 @@ namespace BHAMCApp.Models
 
         [Display(Name = "0thers")]
         public string Q109_6 { get; set; }
+        //Concerning    the  current    pregnancy       Katika  ujauzito  huu
+
+
+        [Display(Name = "Q110. Have  you received  haematenics   umeshawahi     kupewa    vidonge    vya  chuma   vya  kuongeza     damu")]
+        public EB20 Q110 { get; set; }
+
+        [Display(Name = "Q111. Have  you received  prophylactic   antimalarials    umeshawahi     kupewa    dawa  za  kukinga    malaria?_")]
+        public EB20 Q111 { get; set; }
+
+        [Display(Name = "Q112. Have  you been treated  for malaria?   Umeshatibiwa      kwa  ajili  ya  malaria?")]
+        public EB20 Q112 { get; set; }
+
+        [Display(Name = "113 .Are you abstaining  from sex now that you are pregnant?   Je  umeacha    kukutana    kimwili    na  mwenzi wako   kwa  sasa   kwa  ajili  ya  ujauzito ? ")]
+        public EB20 Q113 { get; set; }
+
+        [Display(Name = "(113b). If yes,   why?   Kama   ndiyo   kwa  nini?")]
+        public string Q113b { get; set; }
+
+        //COUPLE COMMUNICATION MAJADILIANO KATI YA WATU WANAOISHI PAMOJA
+
+        //114.Have you ever discussed  with your partner about matters relating[0 
+        //Je  umeshawahi     kujadiliano na  mume / mwenzi      wako   kuhusu    mambo   yafuatayo?
+
+        [Display(Name = "1. Condom use Kuhusu kutumia kondomu")]
+        public EB20 Q114_1 { get; set; }
+
+        [Display(Name = "2. Contraceptives/family    planning    Uzazi  wa  mpango")]
+        public EB20 Q114_2 { get; set; }
+
+        [Display(Name = "3. Sexual  satisfaction/sexuality Kukuridhisha  kimapenzi")]
+        public EB20 Q114_3 { get; set; }
+
+        [Display(Name = "4. About  HIV   Kuhusu    ukimwi")]
+        public EB20 Q114_4 { get; set; }
+
+        [Display(Name = "5. About  STDs Kuhusu  magonjwa ya  zinaa")]
+        public EB20 Q114_5 { get; set; }
+
+        //Q1I5. Currently,   can you discuss  the following  issues with your partner 
+        //Je kwa sasa  unaweza kujadiliana   na mwenzako  kuhusu  mada zifuatazo?
+
+
+        [Display(Name = "1. Condom   use   Kuhusu  kutumia  kondomu")]
+        public EB20 Q115_1{ get; set; }
+
+        [Display(Name = "2. Contraceptives/family    planning   Uzazi wa mpango")]
+        public EB20 Q115_2 { get; set; }
+
+        [Display(Name = "3. Desired  number  of children   N amba ya  watoto  unaowataka")]
+        public EB20 Q115_3 { get; set; }
+
+        [Display(Name = "4. Sexual  satisfaction!  sexuality   Kukuridhisha   kimapenzi")]
+        public EB20 Q115_4 { get; set; }
+
+        [Display(Name = "5. When  you feel/do  not feel like having  sex  wakati  unjisikia  au hujisikii  kufanya  mapenzi")]
+        public EB20 Q115_5 { get; set; }
+
+        [Display(Name = "6. About  STDs    Kuhusu  magonjwa  ya zinaa")]
+        public EB20 Q115_6 { get; set; }
+
+        [Display(Name = "7. About  HIV   Kuhusu  ukimwi")]
+        public EB20 Q115_7 { get; set; }
+
+        [Display(Name = "Q116. 1f STI(s)  is/are diagnosed  would you inform your partner     Tukikupima  na kukuta  una ugonjwa  wa zinaa  ambao  mwenza  lazima  atibiwe, je  unaweza  kumwambia   mwenzi  wako?")]
+        public EB20 Q116 { get; set; }
+
+        [Display(Name = "Q117. If not,  can you give reasons  why you would not inform him?   Kama  hapana,  unaweza  ukanieleza ni kwasababu gani")]
+        public EB20 Q117 { get; set; }
+
+        [Display(Name = "Q118. In  your opinion  what  is the best way of informing  your partner  to seek treatment  if you are diagnosed  as having  STD?    Kwa  ushauri  wako  unadhani  tutumie  njia gani kumjulisha   mwenzi wako  kuja  kupata  huduma  kama  tukikuta  na ugonjwa  wa zinaa?")]
+        public EB118 Q118{ get; set; }
+
+        [Display(Name = "Other/Nyinginezo")]
+        public string Q118_1 { get; set; }
+
+        [Display(Name = "Q119. If we   found you are HIV-1   positive,  who will you want to inform/discuss   the results  with?   Je tukikupima   na kukuta  na UKlMWI,  ungependa  kushirikiana   majibu yako  na nani? ")]
+        public EB119 Q119 { get; set; }
+
+        [Display(Name = "Q120. lf the   partner  is not among  them, will she be able to inform her partner?    Kama  mume/mwenzi hakutajwa,  je  tukikupima  na kukuta  na ukimwi  utaweza  kumwambia/   kumjulisha?")]
+        public EB20 Q120 { get; set; }
+
+        //Q120b).Ifno,   why would you not inform him?   (multiple  responses)    Kama  hapana,  kwanini?
+         
+
+        [Display(Name = "1. Fear  of being blamed  for bringing  the infection  home   Naogopa   atanilaumu   ni mimi nimeleta  ugonjwa  katika  ndoa")]
+        public bool Q120b_1 { get; set; }
+
+        [Display(Name = "2. Fear  of violence  (verbal/phyisical   abuse)   Naogopa  anaweza  akanipiga  au kunitukana")]
+        public bool Q120b_2 { get; set; }
+
+        [Display(Name = "3. Fear  of being  divorced    Naogopa   ataniaeha")]
+        public bool Q120b_3 { get; set; }
+
+        [Display(Name = "4. Fear  that he will tell his relatives   Naogopa  atawaambia   ndugu  zake")]
+        public bool Q120b_4 { get; set; }
+                
+        [Display(Name = "5. 0thers")]
+        public bool Q120b_5 { get; set; }
+
+        [Display(Name = "0thers")]
+        public string Q120b_6 { get; set; }
+
+        [Display(Name = "(Q120c. )Ifno,   how will you approach  the question  of sex with him?   Kama  hutamjulisha   itakuwaje  kuhusu suala  la kukutana  kimwili? ")]
+        public string Q120c { get; set; }
+
+        //END OF QUESTIONNAIRE MWISHO WA MASWALI
+
+        //THANK YOU FOR ANSWERING THESE QUESTIONS ASANTE KWA  KUJIBU MASWALI
+
+        //PHYSICAL EXAMINATION
+        [Display(Name = "1. Weight(kg)")]
+        [Range(10, 120, ErrorMessage = "Weight!")]
+        public uint? PE1 { get; set; }
+
+        [Display(Name = "2. Height(cm)")]
+        [Range(10, 60, ErrorMessage = "Height!")]
+        public uint? PE2 { get; set; }
+
+        [Display(Name = "3. BMI")]
+        [Range(10, 60, ErrorMessage = "BMI!")]
+        public uint? PE3 { get; set; }
+
+        [Display(Name = "4. Blood  pressure")]
+        public string PE4 { get; set; }
+
+        [Display(Name = "5. General  appearance")]
+        public EPE5 PE5 { get; set; }
+
+        [Display(Name = "6. Nutrition  status")]
+        public EPE6 PE6 { get; set; }
+
+        [Display(Name = "7 . Lymphadenopathy (neck, axilla)")]
+        public EB20 PE7 { get; set; }
+
+        [Display(Name = "8. Oedema")]
+        public EB20 PE8 { get; set; }
+
+        //9. Skin
+        [Display(Name = "1. Normal")]
+        public bool PE9_1 { get; set; }
+
+        [Display(Name = "2. Rashes")]
+        public bool PE9_2 { get; set; }
+
+        [Display(Name = "3. Ulcers")]
+        public bool PE9_3 { get; set; }
+
+        //10. Eyes/ ENT
+        [Display(Name = "1. Normal")]
+        public bool PE10_1 { get; set; }
+
+        [Display(Name = "2. Eye discharge")]
+        public bool PE10_2 { get; set; }
+
+        [Display(Name = "3. Ear discharge")]
+        public bool PE10_3 { get; set; }
+
+        //11. Throat    
+        [Display(Name = "1. Normal")]
+        public bool PE11_1 { get; set; }
+
+        [Display(Name = "2. Inflamed")]
+        public bool PE11_2 { get; set; }
+
+        [Display(Name = "3. Tonsilar enlargement")]
+        public bool PE11_3 { get; set; }
+
+        //12.Breasts
+        [Display(Name = "1. Normal")]
+        public bool PE12_1 { get; set; }
+
+        [Display(Name = "2. Abscess")]
+        public bool PE12_2 { get; set; }
+
+        [Display(Name = "3. Ulcers/cracks")]
+        public bool PE12_3 { get; set; }
+
+        [Display(Name = "4. Lumps")]
+        public bool PE12_4 { get; set; }
+
+        //13. Gastrointestinal
+        [Display(Name = "1. Normal")]
+        public bool PE13_1 { get; set; }
+
+        [Display(Name = "2. Oral thrush")]
+        public bool PE13_2 { get; set; }
+
+        [Display(Name = "3. Jaundice")]
+        public bool PE13_3 { get; set; }
+
+        [Display(Name = "4. Enlarged spleen")]
+        public bool PE13_4 { get; set; }
+
+        [Display(Name = "5. Enlarged liver")]
+        public bool PE13_5 { get; set; }
+
+        //14. Respiratory
+
+        [Display(Name = "1. Normal")]
+        public bool PE14_1 { get; set; }
+
+        [Display(Name = "2. Cyanosed")]
+        public bool PE14_2 { get; set; }
+
+        [Display(Name = "3. Respiratory wheeze")]
+        public bool PE14_3 { get; set; }
+
+        [Display(Name = "4. Air entry good")]
+        public bool PE14_4 { get; set; }
+
+        [Display(Name = "5. Air entry poor")]
+        public bool PE14_5 { get; set; }
+
+
+        //15. Genitalia
+
+        [Display(Name = "0. Not  circumcised")]
+        public bool PE15_0 { get; set; }
+
+        [Display(Name = "1. Partial clitoridectomy")]
+        public bool PE15_1 { get; set; }
+
+        [Display(Name = "2. Total clitoridectomy")]
+        public bool PE15_2 { get; set; }
+
+        [Display(Name = "3. Clitoridectomy+excised + labia minora")]
+        public bool PE15_3 { get; set; }
+
+        [Display(Name = "4. lnfibulation")]
+        public bool PE15_4 { get; set; }
+
+
+        //16. Vulva  
+        [Display(Name = "1. normal")]
+        public bool PE16_1 { get; set; }
+
+        [Display(Name = "2. Ulcers(single/multiple)")]
+        public bool PE16_2 { get; set; }
+
+        [Display(Name = "3. Warts")]
+        public bool PE16_3 { get; set; }
+
+        //17. Vagina             
+
+        [Display(Name = "0. normal")]
+        public bool PE17_0 { get; set; }
+
+        [Display(Name = "1. Yellow discharge")]
+        public bool PE17_1 { get; set; }
+
+        [Display(Name = "2. Thick white discharge")]
+        public bool PE17_2 { get; set; }
+
+        [Display(Name = "3. Greyish discharge")]
+        public bool PE17_3 { get; set; }
+
+        [Display(Name = "4. Warts")]
+        public bool PE17_4 { get; set; }
+
+
+
+        //18. Cervix             
+
+        [Display(Name = "1. Normal cervix")]
+        public bool PE18_1 { get; set; }
+
+        [Display(Name = "2. Cervical discharge (swab test)")]
+        public bool PE18_2 { get; set; }
+
+        [Display(Name = "3. Cervical ectopy")]
+        public bool PE18_3 { get; set; }
+
+        [Display(Name = "4. Ulcer")]
+        public bool PE18_4 { get; set; }
+
+        [Display(Name = "5. Easily induced bleeding")]
+        public bool PE18_5 { get; set; }
+
+        [Display(Name = "6. Cervical cancer")]
+        public bool PE18_6 { get; set; }
+
+
+
+
+        //19. Bi-manual  palpation
+        [Display(Name = "1. Normal")]
+        public bool PE19_1 { get; set; }
+
+        [Display(Name = "2. Adnexa.tenderness")]
+        public bool PE19_2 { get; set; }
+
+        [Display(Name = "3. Adnexa mass")]
+        public bool PE19_3 { get; set; }
+
+        [Display(Name = "4. Cervical excitation positive")]
+        public bool PE19_4 { get; set; }
+
+
+
+        //20. PH 
+        [Display(Name = "1. <= 4.5")]
+        public bool PE20_1 { get; set; }
+
+        [Display(Name = "2. >= 4.5")]
+        public bool PE20_2 { get; set; }
+
+
+
+        //21. Whiff test  
+        [Display(Name = "1. Negative")]
+        public bool PE21_1 { get; set; }
+
+        [Display(Name = "2. Positive")]
+        public bool PE21_2 { get; set; }
+
+
 
 
         public enum EB6
@@ -1179,5 +1495,58 @@ namespace BHAMCApp.Models
             E2 = 2
         }
 
+        public enum EB118
+        {
+            [Display(Name = "1. Infonning   him yourself    Kumjulisha  wewe  mwenyewe")]
+            E1 = 1,
+            [Display(Name = "2. Infonned   by a healthcare  worker   Ajulishwe  na mtaalamu  wa afya")]
+            E2 = 2,
+            [Display(Name = "3. Card  system     Upewe kadi yenye  namba  na aje nayo kituoni")]
+            E3 = 3,
+            [Display(Name = "4. Other  Nyinginezo")]
+            E4 = 4
+        }
+
+        public enum EB119
+        {
+            [Display(Name = "1. Mume")]
+            E1 = 1,
+            [Display(Name = "2. Mwenzi")]
+            E2 = 2,
+            [Display(Name = "3.Baba")]
+            E3 = 3,
+            [Display(Name = "4. Mama")]
+            E4 = 4,
+            [Display(Name = "5. Other")]
+            E5 = 5
+        }
+        
+             public enum EPE5
+        {
+            [Display(Name = "1. Looks  well")]
+            E1 = 1,
+            [Display(Name = "2. Looks sick")]
+            E2 = 2,
+            [Display(Name = "3. Pale conjuctiva/mucosa")]
+            E3 = 3
+        }
+
+        public enum EPE6
+        {
+            [Display(Name = "1. Good")]
+            E1 = 1,
+            [Display(Name = "2. Poor")]
+            E2 = 2
+        }
+
+        public enum EPE9
+        {
+            [Display(Name = "1.Normal")]
+            E1 = 1,
+            [Display(Name = "2. Rashes")]
+            E2 = 2,
+            [Display(Name = "3. Ulcers")]
+            E3 = 3
+        }
     }
 }
