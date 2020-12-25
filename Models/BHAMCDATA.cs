@@ -59,10 +59,10 @@ namespace BHAMCApp.Models
         public E9 Q4 { get; set; }
 
         [Display(Name = "Q5. What  is your job?  Je unafanya  kazi gani?")]
-        public E7 Q5 { get; set; }
+        public E7? Q5 { get; set; }
 
         [Display(Name = "Q6. How  do you generate  your cash? Je unafanya  shughuli  gani  inayokupatia    kipato?")]
-        public EB6 Q6 { get; set; }
+        public EB6? Q6 { get; set; }
 
         [Display(Name = "Q7. What  additional   activities  do you do to subsidise  your  income?  Je unayo  shughuli  zaidi ya  kaii yako ya sasa  inayokuongezea   kipato?")]
         public E9 Q7 { get; set; }
@@ -104,15 +104,15 @@ namespace BHAMCApp.Models
 
         [Display(Name = "1. Radio	Redio")]
         public bool Q16_1 { get; set; }
-        [Display(Name = "2.Television Televisheni")]
+        [Display(Name = "2. Television Televisheni")]
         public bool Q16_2 { get; set; }
-        [Display(Name = "3.Fridge Friji")]
+        [Display(Name = "3. Fridge Friji")]
         public bool Q16_3 { get; set; }
-        [Display(Name = "4.Bicycle Baisikeli")]
+        [Display(Name = "4. Bicycle Baisikeli")]
         public bool Q16_4 { get; set; }
-        [Display(Name = "5.Car  Gari")]
+        [Display(Name = "5. Car  Gari")]
         public bool Q16_5 { get; set; }
-        [Display(Name = "6.Telephone  Simu")]
+        [Display(Name = "6. Telephone  Simu")]
         public bool Q16_6 { get; set; }
 
         [Display(Name = "Q17. You often travel  away from your home? Je unasafiri  mara kwa mara  na kwenda  nje ya mjilmkoa    (unakaa  zaidi ya siku)?")]
@@ -126,20 +126,20 @@ namespace BHAMCApp.Models
         public uint Q19 { get; set; }
 
         [Display(Name = "Q20. If  single,  divorced,  widowed  or separated  do you have a steady  partner?  Kana  hujaolewa, mmetengana,   mtalaka,  au mjane je  una mwenzi  wa kila siku?")]
-        public EB20 Q20 { get; set; }
+        public EB20? Q20 { get; set; }
 
         [Display(Name = "Q21. lf  married/cohabiting    or have a steady  partner  are you in a polygamous  marriage  or relationship?Je umeolewa  au unaishi  na mume  mwenye  wake wengi ?")]
-        public EB20 Q21 { get; set; }
+        public EB20? Q21 { get; set; }
 
         [Display(Name = "Namba ya wake")]
         [Range(1, 20, ErrorMessage = "Namba ya wake?")]
         public uint Q21_1 { get; set; }
 
         [Display(Name = "Q22. Does	your partner  have other women  outside  marriage?    Ukiacha  wake, je  mumelmwenzi   wako  ana wanawake   wengine  nje ya ndoa?")]
-        public EB22 Q22 { get; set; }
+        public EB22? Q22 { get; set; }
 
-        [Display(Name = "Q23.lf married/cohabiting,	how do you and your spouse/partner live? Kama  umeolewa  kuishi pamojaje wewe  na mumelmwenzi   wako  mnaishije?")]
-        public EB23 Q23 { get; set; }
+        [Display(Name = "Q23. lf married/cohabiting,	how do you and your spouse/partner live? Kama  umeolewa  kuishi pamojaje wewe  na mumelmwenzi   wako  mnaishije?")]
+        public EB23? Q23 { get; set; }
 
         [Display(Name = "mara ngapi kwa wiki")]
         [Range(1, 20, ErrorMessage = "mara ngapi kwa wiki?")]
@@ -149,7 +149,7 @@ namespace BHAMCApp.Models
         public string Q23_2 { get; set; }
 
         [Display(Name = "Q24. Have  you had other partners  before  your current  spouse/partner?Je umeshakuwa   na mwenzi/ wapenzi  wengine  kabla ya huyu mume / mwenzi   wako wa sasa ?")]
-        public EB20 Q24 { get; set; }
+        public EB20? Q24 { get; set; }
 
         [Display(Name = "How many years")]
         [Range(1, 60, ErrorMessage = "How many years")]
@@ -159,25 +159,25 @@ namespace BHAMCApp.Models
         [Range(1, 60, ErrorMessage = "years")]
         public uint Q25 { get; set; }
 
-        //Q26.Have  youever   experienced   any of the following  forms of violence  from your partner?
+        //Q26.Have  you ever   experienced   any of the following  forms of violence  from your partner?
         //Je umeshawahi   kufanyiwa  yafuatayo   na mumelmwenzi   wako?                  
 
         [Display(Name = "1. Verbal use Kutukanwa,kusemwa  kwa kejeli")]
-        public EB20 Q26_1 { get; set; }
+        public EB20? Q26_1 { get; set; }
 
         [Display(Name = "No of times")]
         [Range(1, 30, ErrorMessage = "No of times")]
         public uint Q26_1_1 { get; set; }
 
         [Display(Name = "2. Physical  assault Kupigwa  au kutandikwa")]
-        public EB20 Q26_2 { get; set; }
+        public EB20? Q26_2 { get; set; }
 
         [Display(Name = "No of times")]
         [Range(1, 30, ErrorMessage = "No of times")]
         public uint Q26_2_1 { get; set; }
 
         [Display(Name = "3. Sexual  abuse   Kufazimishwa   kufanya  mapenzi  bila idhiniyako")]
-        public EB20 Q26_3 { get; set; }
+        public EB20? Q26_3 { get; set; }
 
         [Display(Name = "No of times")]
         [Range(1, 30, ErrorMessage = "No of times")]
@@ -191,7 +191,7 @@ namespace BHAMCApp.Models
         public uint Q26_4_1 { get; set; }
 
         [Display(Name = "Q27. Have  you ever  been forced  to have sex without  your consent?   Je umeshawahi  kulazimishawa kufanya  mapenzi  kwa nguvu  bila idhini yako  au kubakwa?")]
-        public EB20 Q27 { get; set; }
+        public EB20? Q27 { get; set; }
 
         [Display(Name = "na nani")]
         public string Q27_1 { get; set; }
@@ -232,10 +232,10 @@ namespace BHAMCApp.Models
         [Display(Name = "Q33. ls  he circumcised? Je ametahiriwa?")]
         public EB20 Q33 { get; set; }
 
-        [Display(Name = "Q33. ls  he circumcised? Je ametahiriwa?")]
+        [Display(Name = "Q34. Does  your partner  drink alcohol Je mumelmwenzi   wako  anakunywa  pombe ?")]
         public EB34 Q34 { get; set; }
 
-        [Display(Name = "(Q33b). Does your partner  smoke  or take any of the following   Je anavuta  au kutumia  vitu vifuatavyo?")]
+        [Display(Name = "(Q34b). Does your partner  smoke  or take any of the following   Je anavuta  au kutumia  vitu vifuatavyo?")]
         public EB28c Q34b { get; set; }
 
         //KNOWLEDGE	OF STIs lHIV    NITAKUULIZA   MASWALI MACHACHE   KUPATA  MAWAZO YAKO JINSI
@@ -245,22 +245,22 @@ namespace BHAMCApp.Models
         //responses but do not prompt  participant)  Je unaweza  ukaniambia ni magonjwa gani  unayoyajua ambayo 
         //hutokana na kukutana kimwili/  kujamiiana? (Usidodose, andika majibu yote  mama anayoyataja)
 
-        [Display(Name = "O. None  Sifahamu")]
+        [Display(Name = "0. None  Sifahamu")]
         public bool Q35_0 { get; set; }
 
-        [Display(Name = "1.Gonorrhoea Kisonono")]
+        [Display(Name = "1. Gonorrhoea Kisonono")]
         public bool Q35_1 { get; set; }
 
-        [Display(Name = "2.Syphilis Kaswende")]
+        [Display(Name = "2. Syphilis Kaswende")]
         public bool Q35_2 { get; set; }
 
-        [Display(Name = "3.Chancroid Pangusa")]
+        [Display(Name = "3. Chancroid Pangusa")]
         public bool Q35_3 { get; set; }
 
         [Display(Name = "4. HIV/AIDS UKIMWI")]
         public bool Q35_4 { get; set; }
 
-        [Display(Name = "5.Genital  herpes Herpes")]
+        [Display(Name = "5. Genital  herpes Herpes")]
         public bool Q35_5 { get; set; }
 
         [Display(Name = "6. Genital  ulcer Vidonda sehemu ya siri")]
@@ -274,11 +274,14 @@ namespace BHAMCApp.Models
         [Display(Name = "9. Pubic  lice!crabs chawa sehemu  Za siri")]
         public bool Q35_9 { get; set; }
 
-        [Display(Name = "1O. Genital  warts Kuota nyama sehemu za siri")]
+        [Display(Name = "10. Genital  warts Kuota nyama sehemu za siri")]
         public bool Q35_10 { get; set; }
 
         [Display(Name = "11. Others")]
-        public string Q35_11 { get; set; }
+        public bool Q35_11 { get; set; }
+
+        [Display(Name = "Others")]
+        public string Q35_12 { get; set; }
 
         //Q36.a) Do  you think  a woman  infected  with STOs   Je  unadhani    mwanamke    
         //akiwa   na  magonjwa    ya  zinaa
@@ -324,7 +327,10 @@ namespace BHAMCApp.Models
         public bool Q36b_7 { get; set; }
 
         [Display(Name = "8. Others  Nyinginezo")]
-        public string Q36b_8 { get; set; }
+        public bool Q36b_8 { get; set; }
+
+        [Display(Name = "Others  Nyinginezo")]
+        public string Q36b_9 { get; set; }
 
         //Q37 Do  you know any consequences   of untreated  STOs?  (Inteviewer  record  all the responses  
         //but do not prompt  participant) Je  unajua   ni  madhara    gani   mwanamke
