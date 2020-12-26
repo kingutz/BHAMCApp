@@ -355,7 +355,10 @@ namespace BHAMCApp.Models
         public bool Q37_5 { get; set; }
 
         [Display(Name = "6. Others  Nyinginezo")]
-        public string Q37_6 { get; set; }
+        public bool Q37_6 { get; set; }
+
+        [Display(Name = "Others  Nyinginezo")]
+        public string Q37_7 { get; set; }
 
         //Q38.Name ways you know of preventing  STOs.  (Record all the responses)   Unaweza kuniambia   ni njia
         //zipi utatumia  ili kuepuka/kujikinga kupata  magonjwa ya zinaa
@@ -376,7 +379,10 @@ namespace BHAMCApp.Models
         public bool Q38_4 { get; set; }
 
         [Display(Name = "5. Others  Nyinginezo")]
-        public string Q38_5 { get; set; }
+        public bool Q38_5 { get; set; }
+
+        [Display(Name = "Others  Nyinginezo")]
+        public string Q38_6 { get; set; }
 
         [Display(Name = "Q39. Would  a man infected  with an STOs have symptoms?   Je  kama   mwanaume akiwa na magonjwa ya zinaa, atakuwa    na  dalili   zozote ?")]
         public EB39 Q39 { get; set; }
@@ -398,7 +404,11 @@ namespace BHAMCApp.Models
         public bool Q40_4 { get; set; }
 
         [Display(Name = "5. Others  Nyingine")]
-        public string Q40_5 { get; set; }
+        public bool Q40_5 { get; set; }
+
+        [Display(Name = "Others/Nyingine")]
+        public string Q40_6 { get; set; }
+
 
         [Display(Name = "Q41. Have  you known  anyone  with HIV/ Al OS in this/your  community? yeyote aliyepatwa na  UKlMWI kwenye jumuiya yako ?")]
         public EB20 Q41 { get; set; }
@@ -416,7 +426,7 @@ namespace BHAMCApp.Models
         public EB22 Q44 { get; set; }
 
         [Display(Name = "(Q44b). If yes,when does this happen?  (Do not probe  record  all the responses)   Kama  ndiyo,  inawez a kutokea  wakati  gani?")]
-        public EB44b Q44b { get; set; }
+        public EB44b? Q44b { get; set; }
 
         [Display(Name = "Q45. How  do you rate your chances  of being  infected  by HIV  Je ukijikiria,  unajiona  upo kwenye  hatari ya  kuambukizwa   ugonjwa  wa UKlMWf?")]
         public EB45 Q45 { get; set; }
@@ -438,8 +448,11 @@ namespace BHAMCApp.Models
         [Display(Name = "5.[ always  use condom  during  sex Ninatumia  kondomu  kila ninapofanya   mapenzi")]
         public bool Q46_5 { get; set; }
 
-        [Display(Name = "6.0thers  Nyinginezo")]
-        public string Q46_6 { get; set; }
+        [Display(Name = "6. 0thers  Nyinginezo")]
+        public bool Q46_6 { get; set; }
+
+        [Display(Name = "0thers/Nyinginezo")]
+        public string Q46_7 { get; set; }
 
         //Q47. Why do you feel you are at risk? Kwa nini unajiona  uko kwenye  hatari ya  kuambukizwa?
 
@@ -458,8 +471,11 @@ namespace BHAMCApp.Models
         [Display(Name = "5. [ am in polygamous  marriage/relationship Niko kwenye  hali ya  uke wenza")]
         public bool Q47_5 { get; set; }
 
-        [Display(Name = "6.0thers  Nyinginezo")]
-        public string Q47_6 { get; set; }
+        [Display(Name = "6. 0thers  Nyinginezo")]
+        public bool Q47_6 { get; set; }
+
+        [Display(Name = "0thers  Nyinginezo")]
+        public string Q47_7 { get; set; }
 
         //Q48.Can  you discuss  issues regarding  HIV/ AIDS with Je unaweza  kuongelea kuhusu  UKlMW/  na?
 
@@ -471,6 +487,7 @@ namespace BHAMCApp.Models
 
         [Display(Name = "3. Friends  Marafiki")]
         public EB20 Q48_3 { get; set; }
+
 
         [Display(Name = "Q49. Should	persons  who know they are infected  with HIV be entitled  to keep this fact a secret  from the community	where  they live or should  this information  be revealed?    Je unadhanikuwa   watu wanaojijua   wameathirika   na Ukimwi wana  haki ya kutomwambia/kutowaambia     watu wengine juu ya  hali hiyo na iwe ni siriyao   au !111 adh ant' hali hiyo iwe wazi kwa watu wote wa jumuiya/jamii wanapoishi?")]
         public EB49 Q49 { get; set; }
@@ -509,16 +526,16 @@ namespace BHAMCApp.Models
         public EB20 Q53 { get; set; }
 
         [Display(Name = "Q54. Number  of times  per day Mara ngapi  kwa siku ?")]
-        public EB54 Q54 { get; set; }
+        public EB54? Q54 { get; set; }
 
         [Display(Name = "Q55. If yes, what do you use   Kama  ndiyo,je   unatumia  nini?")]
-        public EB55 Q55 { get; set; }
+        public EB55? Q55 { get; set; }
 
         [Display(Name = "Others Nyinginezo")]
         public string Q55_1 { get; set; }
 
         [Display(Name = "Q56. If yes, what do you use to wash withJe unatumia  nini kusafishia ?")]
-        public EB56 Q56 { get; set; }
+        public EB56? Q56 { get; set; }
 
         [Display(Name = "Others")]
         public string Q56_1 { get; set; }
@@ -647,7 +664,8 @@ namespace BHAMCApp.Models
         public EB20 Q82h { get; set; }
 
 
-        //Does your  husband/regular partner, presently   have the  following symptoms Je mwenzi/mume wako  ana  dalili zifuatazo?
+        //Does your  husband/regular partner, presently   have the  following symptoms Je mwenzi/mume 
+        //wako  ana  dalili zifuatazo?
 
         [Display(Name = "Q83. Discharge from his penis Kutoka  ute au usaha kwenye  uume?")]
         public EB22 Q83 { get; set; }
