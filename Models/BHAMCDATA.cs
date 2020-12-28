@@ -766,7 +766,8 @@ namespace BHAMCApp.Models
         [Display(Name = "Q96. Who normally  initiates  condom  use? mnapokutana kimwili ?")]
         public EB96 Q96 { get; set; }
 
-        //Q97.Reasons   for using condoms     Je  mara   nyingi   unapotumia     kondomu    ni  kwa  ajili  ya  ttiki   majibu    vote)  
+        //Q97.Reasons   for using condoms     Je  mara   nyingi   unapotumia  
+        //kondomu    ni  kwa  ajili  ya  ttiki   majibu    vote)  
         
         [Display(Name = "1. Prevention of pregnancy Kujikinga kutopata mimba")]
         public bool Q97_1 { get; set; }
@@ -778,13 +779,13 @@ namespace BHAMCApp.Models
         public bool Q97_3 { get; set; }
 
         [Display(Name = "4. When  I have casual  partners  Ninapokutana  na wanaume wengine")]
-        public bool Q97_4 { get; set; }
-                
-        [Display(Name = "6. 0thers")]
-        public bool Q97_6 { get; set; }
+        public bool Q97_4 { get; set; }               
 
-        [Display(Name = "0thers")]
-        public string Q97_7 { get; set; }
+        [Display(Name = "5. 0thers/Nyinginezo")]
+        public bool Q97_5 { get; set; }
+
+        [Display(Name = "0thers/Nyinginezo")]
+        public string Q97_6 { get; set; }
 
         [Display(Name = "Q98. Did  you use the condom  during your last sexual encounter? Je ulitumia kondomu mlipoktana kimwili mara  ya  mwisho na  mwenzi/mume  wako? ")]
         public EB20 Q98 { get; set; }
@@ -996,17 +997,47 @@ namespace BHAMCApp.Models
         [Display(Name = "4. Blood  pressure")]
         public string PE4 { get; set; }
 
-        [Display(Name = "5. General  appearance")]
-        public EPE5 PE5 { get; set; }
+        [Display(Name = "5.Temperature ")]
+        public uint? PE5 { get; set; }
 
-        [Display(Name = "6. Nutrition  status")]
-        public EPE6 PE6 { get; set; }
+        //6.General  appearance  
+        
+        [Display(Name = "1. Looks  well ")]
+        public bool PE6_1 { get; set; }
 
-        [Display(Name = "7 . Lymphadenopathy (neck, axilla)")]
-        public EB20 PE7 { get; set; }
+        [Display(Name = "2. Looks sick")]
+        public bool PE6_2 { get; set; }
 
-        [Display(Name = "8. Oedema")]
-        public EB20 PE8 { get; set; }
+        [Display(Name = "3. Pale eonjuctivalmucosa")]
+        public bool PE6_3 { get; set; }
+
+        //[Display(Name = "6. Nutrition  status")]
+        //public EPE6 PE6 { get; set; }
+
+        //[Display(Name = "7 . Lymphadenopathy (neck, axilla)")]
+
+        //public EB20 PE7 { get; set; }
+
+        //7.Lymphadenopathy (neck, axilla)  
+
+        [Display(Name = "0. No")]
+        public bool PE7_1 { get; set; }
+
+        [Display(Name = "1. Yes")]
+        public bool PE7_2 { get; set; }
+
+       
+
+        //[Display(Name = "8. Oedema")]
+        //public EB20 PE8 { get; set; }
+
+        //8. Oedema  
+
+        [Display(Name = "0. No")]
+        public bool PE8_1 { get; set; }
+
+        [Display(Name = "1. Yes")]
+        public bool PE8_2 { get; set; }
 
         //9. Skin
         [Display(Name = "1. Normal")]

@@ -146,7 +146,7 @@
         </div>
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <label asp-for="Q7" class="control-label"></label>
                     <select asp-for="Q7" class="form-control" id="nQ7"
                             asp-items="Html.GetEnumSelectList<E9>()">
@@ -1985,9 +1985,11 @@
             <br />
         </div>
         <div class="col-md-12">
-            <p>
-                NOW   I  AM  GOING   TO  ASK  YOU  A  FEW  QUESTIONS    RELATING   TO  YOUR   SEXUAL HISTORY
-                NITAKUULIZA   MASWALl   MACHACHE   KUHUSU  KUKUTANA   KlMWILl
+            <p class="text-info">
+                <cite>
+                    NOW   I  AM  GOING   TO  ASK  YOU  A  FEW  QUESTIONS    RELATING   TO  YOUR   SEXUAL HISTORY
+                    NITAKUULIZA   MASWALl   MACHACHE   KUHUSU  KUKUTANA   KlMWILl
+                </cite>
             </p>
         </div>
         <div class="col-md-12">
@@ -2029,6 +2031,7 @@
             <input asp-for="Q89_1" class="form-control" />
             <span asp-validation-for="Q89_1" class="text-danger"></span>
         </div>
+
         <div class="col-md-12">
             <label asp-for="Q90" class="control-label"></label>
             <select asp-for="Q90" class="form-control"
@@ -2043,54 +2046,115 @@
             <span asp-validation-for="Q90_1" class="text-danger"></span>
         </div>
         <div class="col-md-12">
+            <p class="text-info">
+                <cite>
+                    CONDOM   USE MASWALI  MACHACHE   KUHUSU  KONDOMU
+                </cite>
+            </p>
+        </div>
+        <div class="col-md-12">
             <label asp-for="Q91" class="control-label"></label>
-            <select asp-for="Q90" class="form-control"
+            <select asp-for="Q91" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
                 <option selected="selected" value=""></option>
             </select>
             <span asp-validation-for="Q91" class="text-danger"></span>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q92_1" /> @Html.DisplayNameFor(model => model.Q92_1)
-            </label>
+
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q92_2" /> @Html.DisplayNameFor(model => model.Q92_2)
-            </label>
+        <div class="col-md-12">
+            <p>
+                Q92. Where  can one get them-multiple   responses Je  utazipata    wapi   utakapozihitaji?
+            </p>
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q92_1)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q92_1" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q92_2)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q92_2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q92_3)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q92_3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q92_4)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q92_4" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q92_5)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q92_5" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q92_6)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q92_6" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q92_7)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q92_7" id="Q92_7" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 collapse" id="Q92_8">
+                            <label asp-for="Q92_8" class="control-label"></label>
+                            <textarea asp-for="Q92_8" class="form-control"></textarea>
+                            <span asp-validation-for="Q92_8" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q92_3" /> @Html.DisplayNameFor(model => model.Q92_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q92_4" /> @Html.DisplayNameFor(model => model.Q92_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q92_5" /> @Html.DisplayNameFor(model => model.Q92_5)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q92_6" /> @Html.DisplayNameFor(model => model.Q92_6)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q92_7" /> @Html.DisplayNameFor(model => model.Q92_7)
-            </label>
-        </div>
-        <div class="col-md-3">
-            <label asp-for="Q92_8" class="control-label"></label>
-            <input asp-for="Q92_8" class="form-control" />
-            <span asp-validation-for="Q92_8" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q93" class="control-label"></label>
             <select asp-for="Q93" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2098,42 +2162,94 @@
             </select>
             <span asp-validation-for="Q93" class="text-danger"></span>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q94_1" /> @Html.DisplayNameFor(model => model.Q94_1)
-            </label>
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q94_2" /> @Html.DisplayNameFor(model => model.Q94_2)
-            </label>
+        <div class="col-md-12">
+            <p>
+                Q94. Why  not (multiple  responses) Kwanini hujawahi kuutumia?
+            </p>
+
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q94_1)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q94_1" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q94_2)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q94_2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q94_3)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q94_3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q94_4)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q94_4" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q94_5)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q94_5" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q94_6)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q94_6" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 collapse" id="Q94_7">
+                            <label asp-for="Q94_7" class="control-label"></label>
+                            <textarea asp-for="Q94_7" class="form-control"></textarea>
+                            <span asp-validation-for="Q94_7" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q94_3" /> @Html.DisplayNameFor(model => model.Q94_3)
-            </label>
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q94_4" /> @Html.DisplayNameFor(model => model.Q94_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q94_5" /> @Html.DisplayNameFor(model => model.Q94_5)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q94_6" /> @Html.DisplayNameFor(model => model.Q94_6)
-            </label>
-        </div>
-        <div class="col-md-3">
-            <label asp-for="Q94_7" class="control-label"></label>
-            <input asp-for="Q94_7" class="form-control" />
-            <span asp-validation-for="Q94_7" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
+
+        <div class="col-md-6">
             <label asp-for="Q95" class="control-label"></label>
             <select asp-for="Q95" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB95>()">
@@ -2141,7 +2257,7 @@
             </select>
             <span asp-validation-for="Q95" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
             <label asp-for="Q96" class="control-label"></label>
             <select asp-for="Q96" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB96>()">
@@ -2149,37 +2265,79 @@
             </select>
             <span asp-validation-for="Q96" class="text-danger"></span>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q97_1" /> @Html.DisplayNameFor(model => model.Q97_1)
-            </label>
+
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q97_2" /> @Html.DisplayNameFor(model => model.Q97_2)
-            </label>
+        <div class="col-md-12">
+            <p>
+                Q97. Reasons for using condoms Je mara nyingi unapotumia kondomu ni kwa ajili ya (tiki majibu yote)
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q97_1)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q97_1" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q97_2)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q97_2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q97_3)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q97_3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q97_4)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q97_4" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q97_5)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q97_5" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 collapse" id="Q97_6">
+                            <label asp-for="Q97_6" class="control-label"></label>
+                            <textarea asp-for="Q97_6" class="form-control"></textarea>
+                            <span asp-validation-for="Q97_6" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q97_3" /> @Html.DisplayNameFor(model => model.Q97_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q97_4" /> @Html.DisplayNameFor(model => model.Q97_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q97_6" /> @Html.DisplayNameFor(model => model.Q97_6)
-            </label>
-        </div>
-        <div class="col-md-3">
-            <label asp-for="Q97_7" class="control-label"></label>
-            <input asp-for="Q97_7" class="form-control" />
-            <span asp-validation-for="Q97_7" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q98" class="control-label"></label>
             <select asp-for="Q98" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2187,7 +2345,7 @@
             </select>
             <span asp-validation-for="Q98" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q99" class="control-label"></label>
             <select asp-for="Q99" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2211,7 +2369,15 @@
             </select>
             <span asp-validation-for="Q100_1" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12">
+            <p>
+                QIOO. Have you ever practiced the following? Je umeshawahi kukutana kimwili
+            </p>
+        </div>
+        <div class="col-md-6">
             <label asp-for="Q100_2" class="control-label"></label>
             <select asp-for="Q100_2" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2219,56 +2385,82 @@
             </select>
             <span asp-validation-for="Q100_2" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q101" class="control-label"></label>
             <input asp-for="Q101" class="form-control" />
             <span asp-validation-for="Q101" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
             <label asp-for="Q102" class="control-label"></label>
             <input asp-for="Q102" class="form-control" />
             <span asp-validation-for="Q102" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
-            <label asp-for="Q103" class="control-label"></label>
-            <select asp-for="Q103" class="form-control"
-                    asp-items="Html.GetEnumSelectList<EB20>()">
-                <option selected="selected" value=""></option>
-            </select>
-            <span asp-validation-for="Q103" class="text-danger"></span>
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3">
-            <label asp-for="Q103_1" class="control-label"></label>
-            <input asp-for="Q103_1" class="form-control" />
-            <span asp-validation-for="Q103_1" class="text-danger"></span>
+        <div class="col-md-12">
+            <p>
+                Have  you  ever  had  pregnancy    that;    Umeshawahi   kupata  ujauzito  ambao
+            </p>
         </div>
-        <div class="col-md-3">
-            <label asp-for="Q104" class="control-label"></label>
-            <select asp-for="Q104" class="form-control"
-                    asp-items="Html.GetEnumSelectList<EB20>()">
-                <option selected="selected" value=""></option>
-            </select>
-            <span asp-validation-for="Q104" class="text-danger"></span>
+        <div class="col-md-12 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Q103" class="control-label"></label>
+                    <select asp-for="Q103" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EB20>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q103" class="text-danger"></span>
+                </div>
+                <div class="col-md-2">
+                    <label asp-for="Q103_1" class="control-label"></label>
+                    <input asp-for="Q103_1" class="form-control" />
+                    <span asp-validation-for="Q103_1" class="text-danger"></span>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-            <label asp-for="Q104_1" class="control-label"></label>
-            <input asp-for="Q104_1" class="form-control" />
-            <span asp-validation-for="Q104_1" class="text-danger"></span>
+        <div class="col-md-12 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Q104" class="control-label"></label>
+                    <select asp-for="Q104" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EB20>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q104" class="text-danger"></span>
+                </div>
+                <div class="col-md-2">
+                    <label asp-for="Q104_1" class="control-label"></label>
+                    <input asp-for="Q104_1" class="form-control" />
+                    <span asp-validation-for="Q104_1" class="text-danger"></span>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-            <label asp-for="Q105" class="control-label"></label>
-            <select asp-for="Q105" class="form-control"
-                    asp-items="Html.GetEnumSelectList<EB20>()">
-                <option selected="selected" value=""></option>
-            </select>
-            <span asp-validation-for="Q105" class="text-danger"></span>
+        <div class="col-md-12 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Q105" class="control-label"></label>
+                    <select asp-for="Q105" class="form-control"
+                            asp-items="Html.GetEnumSelectList<EB20>()">
+                        <option selected="selected" value=""></option>
+                    </select>
+                    <span asp-validation-for="Q105" class="text-danger"></span>
+                </div>
+                <div class="col-md-2">
+                    <label asp-for="Q105_1" class="control-label"></label>
+                    <input asp-for="Q105_1" class="form-control" />
+                    <span asp-validation-for="Q105_1" class="text-danger"></span>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-            <label asp-for="Q105_1" class="control-label"></label>
-            <input asp-for="Q105_1" class="form-control" />
-            <span asp-validation-for="Q105_1" class="text-danger"></span>
+
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3">
+
+
+        <div class="col-md-12">
             <label asp-for="Q106" class="control-label"></label>
             <select asp-for="Q106" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2276,7 +2468,7 @@
             </select>
             <span asp-validation-for="Q106" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q107" class="control-label"></label>
             <select asp-for="Q107" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB107>()">
@@ -2284,12 +2476,12 @@
             </select>
             <span asp-validation-for="Q107" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
             <label asp-for="Q107b" class="control-label"></label>
             <input asp-for="Q107b" class="form-control" />
             <span asp-validation-for="Q107b" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q108" class="control-label"></label>
             <select asp-for="Q108" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2297,42 +2489,91 @@
             </select>
             <span asp-validation-for="Q108" class="text-danger"></span>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q109_0" /> @Html.DisplayNameFor(model => model.Q109_0)
-            </label>
+
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q109_1" /> @Html.DisplayNameFor(model => model.Q109_1)
-            </label>
+        <div class="col-md-12">
+            <p>
+                Q109. Have  you ever practised  any family planning  method  in your lifetime?
+                Je  umeshawahi kutumia njia  yoyote ya uzazi wa majira/mpango?
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q109_0)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q109_0" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q109_1)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q109_1" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q109_2)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q109_2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q109_3)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q109_3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q109_4)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q109_4" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q109_5)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q109_5" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 collapse" id="Q109_6">
+                            <label asp-for="Q109_6" class="control-label"></label>
+                            <textarea asp-for="Q109_6" class="form-control"></textarea>
+                            <span asp-validation-for="Q109_6" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q109_2" /> @Html.DisplayNameFor(model => model.Q109_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q109_3" /> @Html.DisplayNameFor(model => model.Q109_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q109_4" /> @Html.DisplayNameFor(model => model.Q109_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q109_5" /> @Html.DisplayNameFor(model => model.Q109_5)
-            </label>
-        </div>
-        <div class="col-md-3">
-            <label asp-for="Q109_6" class="control-label"></label>
-            <input asp-for="Q109_6" class="form-control" />
-            <span asp-validation-for="Q109_6" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
+
+        <div class="col-md-12">
             <label asp-for="Q110" class="control-label"></label>
             <select asp-for="Q110" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2340,7 +2581,7 @@
             </select>
             <span asp-validation-for="Q110" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q111" class="control-label"></label>
             <select asp-for="Q111" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2348,7 +2589,7 @@
             </select>
             <span asp-validation-for="Q111" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q112" class="control-label"></label>
             <select asp-for="Q112" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2356,7 +2597,7 @@
             </select>
             <span asp-validation-for="Q112" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q113" class="control-label"></label>
             <select asp-for="Q113" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2369,7 +2610,16 @@
             <input asp-for="Q113b" class="form-control" />
             <span asp-validation-for="Q113b" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12">
+            <p>
+                Q114. Have you ever discussed  with your partner about matters relating
+                Je umeshawahi kujadiliano na mume/mwenzi wako kuhusu mambo yafuatayo?
+            </p>
+        </div>
+        <div class="col-md-12">
             <label asp-for="Q114_1" class="control-label"></label>
             <select asp-for="Q114_1" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2377,7 +2627,7 @@
             </select>
             <span asp-validation-for="Q114_1" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q114_2" class="control-label"></label>
             <select asp-for="Q114_2" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2385,7 +2635,7 @@
             </select>
             <span asp-validation-for="Q114_2" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q114_3" class="control-label"></label>
             <select asp-for="Q114_3" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2393,7 +2643,7 @@
             </select>
             <span asp-validation-for="Q114_3" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q114_4" class="control-label"></label>
             <select asp-for="Q114_4" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2401,7 +2651,7 @@
             </select>
             <span asp-validation-for="Q114_4" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q114_5" class="control-label"></label>
             <select asp-for="Q114_5" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2409,7 +2659,16 @@
             </select>
             <span asp-validation-for="Q114_5" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12">
+            <p>
+                Q1I5. Currently,can you discuss the following  issues with your partner
+                Je kwa sasa  unaweza kujadiliana na mwenzako kuhusu mada zifuatazo?
+            </p>
+        </div>
+        <div class="col-md-12">
             <label asp-for="Q115_1" class="control-label"></label>
             <select asp-for="Q115_1" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2417,7 +2676,7 @@
             </select>
             <span asp-validation-for="Q115_1" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q115_2" class="control-label"></label>
             <select asp-for="Q115_2" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2425,7 +2684,7 @@
             </select>
             <span asp-validation-for="Q115_2" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q115_3" class="control-label"></label>
             <select asp-for="Q115_3" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2433,7 +2692,7 @@
             </select>
             <span asp-validation-for="Q115_3" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q115_4" class="control-label"></label>
             <select asp-for="Q115_4" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2441,7 +2700,7 @@
             </select>
             <span asp-validation-for="Q115_4" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q115_5" class="control-label"></label>
             <select asp-for="Q115_5" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2449,7 +2708,7 @@
             </select>
             <span asp-validation-for="Q115_5" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q115_6" class="control-label"></label>
             <select asp-for="Q115_6" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2457,7 +2716,7 @@
             </select>
             <span asp-validation-for="Q115_6" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q115_7" class="control-label"></label>
             <select asp-for="Q115_7" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2465,7 +2724,7 @@
             </select>
             <span asp-validation-for="Q115_7" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q116" class="control-label"></label>
             <select asp-for="Q116" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2473,7 +2732,7 @@
             </select>
             <span asp-validation-for="Q116" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q117" class="control-label"></label>
             <select asp-for="Q117" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2481,7 +2740,7 @@
             </select>
             <span asp-validation-for="Q117" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q118" class="control-label"></label>
             <select asp-for="Q118" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB118>()">
@@ -2494,7 +2753,7 @@
             <input asp-for="Q118_1" class="form-control" />
             <span asp-validation-for="Q118_1" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q119" class="control-label"></label>
             <select asp-for="Q119" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB119>()">
@@ -2502,7 +2761,7 @@
             </select>
             <span asp-validation-for="Q119" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
             <label asp-for="Q120" class="control-label"></label>
             <select asp-for="Q120" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2510,41 +2769,103 @@
             </select>
             <span asp-validation-for="Q120" class="text-danger"></span>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q120b_1" /> @Html.DisplayNameFor(model => model.Q120b_1)
-            </label>
+
+        <div class="col-md-12">
+            <br />
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q120b_2" /> @Html.DisplayNameFor(model => model.Q120b_2)
-            </label>
+        <div class="col-md-12">
+            <p>
+                Q120b. If no, why would you not inform him? (multiple  responses) Kama hapana,kwanini?
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q120b_1)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q120b_1" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q120b_2)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q120b_2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q120b_3)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q120b_3" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q120b_4)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q120b_4" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    @Html.DisplayNameFor(model => model.Q120b_5)
+                                </div>
+                                <div class="col-md-1">
+                                    <input asp-for="Q120b_5" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 collapse" id="Q120b_6">
+                            <label asp-for="Q120b_6" class="control-label"></label>
+                            <textarea asp-for="Q120b_6" class="form-control"></textarea>
+                            <span asp-validation-for="Q120b_6" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q120b_3" /> @Html.DisplayNameFor(model => model.Q120b_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q120b_4" /> @Html.DisplayNameFor(model => model.Q120b_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="Q120b_5" /> @Html.DisplayNameFor(model => model.Q120b_5)
-            </label>
-        </div>
-        <div class="col-md-3">
-            <label asp-for="Q120b_6" class="control-label"></label>
-            <input asp-for="Q120b_6" class="form-control" />
-            <span asp-validation-for="Q120b_6" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
+
+        <div class="col-md-12">
             <label asp-for="Q120c" class="control-label"></label>
             <input asp-for="Q120c" class="form-control" />
             <span asp-validation-for="Q120c" class="text-danger"></span>
         </div>
+
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12">
+            <p class="text-info">
+                <cite>END OF QUESTIONNAIRE MWISHO WA MASWALI THANK YOU FOR ANSWERING THESE QUESTIONS ASANTE KWA  KUJIBU MASWALI</cite>
+            </p>
+        </div>
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12">
+            <p class="text-info text-left">
+                PHYSICAL EXAMINATION
+            </p>
+        </div>
+
         <div class="col-md-3">
             <label asp-for="PE1" class="control-label"></label>
             <input asp-for="PE1" class="form-control" />
@@ -2567,290 +2888,765 @@
         </div>
         <div class="col-md-3">
             <label asp-for="PE5" class="control-label"></label>
-            <select asp-for="PE5" class="form-control"
-                    asp-items="Html.GetEnumSelectList<EPE5>()">
-                <option selected="selected" value=""></option>
-            </select>
+            <input asp-for="PE5" class="form-control" />
             <span asp-validation-for="PE5" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
-            <label asp-for="PE6" class="control-label"></label>
-            <select asp-for="PE6" class="form-control"
-                    asp-items="Html.GetEnumSelectList<EPE6>()">
-                <option selected="selected" value=""></option>
-            </select>
-            <span asp-validation-for="PE6" class="text-danger"></span>
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-4">
+            <p>
+                6. General  appearance
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE6_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE6_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE6_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE6_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE6_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE6_3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <p>
+                7. Lymphadenopathy (neck, axilla)
+            </p>
+            <div class="row">
+
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE7_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE7_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE7_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE7_2" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p>
+                8. Oedema
+            </p>
+            <div class="row">
+
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE8_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE8_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE8_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE8_2" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col-md-12">
+            <br />
         </div>
         <div class="col-md-3">
-            <label asp-for="PE7" class="control-label"></label>
-            <select asp-for="PE7" class="form-control"
-                    asp-items="Html.GetEnumSelectList<EB20>()">
-                <option selected="selected" value=""></option>
-            </select>
-            <span asp-validation-for="PE7" class="text-danger"></span>
-        </div>
-        <div class="col-md-3">
-            <label asp-for="PE8" class="control-label"></label>
-            <select asp-for="PE8" class="form-control"
-                    asp-items="Html.GetEnumSelectList<EB20>()">
-                <option selected="selected" value=""></option>
-            </select>
-            <span asp-validation-for="PE8" class="text-danger"></span>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE9_1" /> @Html.DisplayNameFor(model => model.PE9_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE9_2" /> @Html.DisplayNameFor(model => model.PE9_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE9_3" /> @Html.DisplayNameFor(model => model.PE9_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE10_1" /> @Html.DisplayNameFor(model => model.PE10_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE10_2" /> @Html.DisplayNameFor(model => model.PE10_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE10_3" /> @Html.DisplayNameFor(model => model.PE10_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE11_1" /> @Html.DisplayNameFor(model => model.PE11_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE11_2" /> @Html.DisplayNameFor(model => model.PE11_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE11_3" /> @Html.DisplayNameFor(model => model.PE11_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE12_1" /> @Html.DisplayNameFor(model => model.PE12_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE12_2" /> @Html.DisplayNameFor(model => model.PE12_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE12_3" /> @Html.DisplayNameFor(model => model.PE12_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE12_4" /> @Html.DisplayNameFor(model => model.PE12_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE13_1" /> @Html.DisplayNameFor(model => model.PE13_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE13_2" /> @Html.DisplayNameFor(model => model.PE13_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE13_3" /> @Html.DisplayNameFor(model => model.PE13_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE13_4" /> @Html.DisplayNameFor(model => model.PE13_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE13_5" /> @Html.DisplayNameFor(model => model.PE13_5)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE14_1" /> @Html.DisplayNameFor(model => model.PE14_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE14_2" /> @Html.DisplayNameFor(model => model.PE14_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE14_3" /> @Html.DisplayNameFor(model => model.PE14_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE14_4" /> @Html.DisplayNameFor(model => model.PE14_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE14_5" /> @Html.DisplayNameFor(model => model.PE14_5)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE15_0" /> @Html.DisplayNameFor(model => model.PE15_0)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE15_1" /> @Html.DisplayNameFor(model => model.PE15_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE15_2" /> @Html.DisplayNameFor(model => model.PE15_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE15_3" /> @Html.DisplayNameFor(model => model.PE15_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE15_4" /> @Html.DisplayNameFor(model => model.PE15_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE16_1" /> @Html.DisplayNameFor(model => model.PE16_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE16_2" /> @Html.DisplayNameFor(model => model.PE16_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE16_3" /> @Html.DisplayNameFor(model => model.PE16_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE17_0" /> @Html.DisplayNameFor(model => model.PE17_0)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE17_1" /> @Html.DisplayNameFor(model => model.PE17_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE17_2" /> @Html.DisplayNameFor(model => model.PE17_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE17_3" /> @Html.DisplayNameFor(model => model.PE17_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE17_4" /> @Html.DisplayNameFor(model => model.PE17_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE18_1" /> @Html.DisplayNameFor(model => model.PE18_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE18_2" /> @Html.DisplayNameFor(model => model.PE18_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE18_3" /> @Html.DisplayNameFor(model => model.PE18_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE18_4" /> @Html.DisplayNameFor(model => model.PE18_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE18_5" /> @Html.DisplayNameFor(model => model.PE18_5)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE18_6" /> @Html.DisplayNameFor(model => model.PE18_6)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE19_1" /> @Html.DisplayNameFor(model => model.PE19_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE19_2" /> @Html.DisplayNameFor(model => model.PE19_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE19_3" /> @Html.DisplayNameFor(model => model.PE19_3)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE19_4" /> @Html.DisplayNameFor(model => model.PE19_4)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE20_1" /> @Html.DisplayNameFor(model => model.PE20_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE20_2" /> @Html.DisplayNameFor(model => model.PE20_2)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE21_1" /> @Html.DisplayNameFor(model => model.PE21_1)
-            </label>
-        </div>
-        <div class="col-md-3 form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="PE21_2" /> @Html.DisplayNameFor(model => model.PE21_2)
-            </label>
+            <p>
+                9. Skin
+            </p>
+            <div class="row">
+
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE9_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE9_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE9_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE9_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE9_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE9_3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="col-md-3">
-            <input type="submit" value="Create" class="btn btn-primary" />
+            <p>
+                10. Eyes/ ENT
+            </p>
+            <div class="row">
+
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE10_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE10_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE10_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE10_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE10_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE10_3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="col-md-3">
+            <p>
+                11. Throat
+            </p>
+            <div class="row">
+
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE11_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE11_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE11_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE11_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE11_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE11_3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <p>
+                12. Breasts
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE12_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE12_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE12_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE12_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE12_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE12_3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE12_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE12_4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-3">
+            <p>
+                13. Gastrointestinal
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE13_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE13_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE13_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE13_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE13_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE13_3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE13_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE13_4" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            @Html.DisplayNameFor(model => model.PE13_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE13_5" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <p>
+                14. Respiratory
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.DisplayNameFor(model => model.PE14_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE14_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.DisplayNameFor(model => model.PE14_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE14_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.DisplayNameFor(model => model.PE14_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE14_3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.DisplayNameFor(model => model.PE14_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE14_4" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-9">
+                            @Html.DisplayNameFor(model => model.PE14_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE14_5" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <p>
+                15. Genitalia
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE15_0)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE15_0" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE15_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE15_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE15_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE15_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE15_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE15_3" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE15_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE15_4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <p>
+                16. Vulva
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE16_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE16_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE16_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE16_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE16_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE16_3" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-3">
+            <p>
+                17. Vagina
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE17_0)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE17_0" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE17_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE17_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE17_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE17_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE17_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE17_3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE17_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE17_4" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <p>
+                18. Cervix
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE18_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE18_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE18_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE18_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE18_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE18_3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE18_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE18_4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE18_5)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE18_5" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE18_6)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE18_6" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-3">
+            <p>
+                19. Bi-manual  palpation
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE19_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE19_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE19_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE19_2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE19_3)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE19_3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            @Html.DisplayNameFor(model => model.PE19_4)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE19_4" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <p>
+                20. PH
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE20_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE20_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE20_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE20_2" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-3">
+            <p>
+                21. Whiff test
+            </p>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE21_1)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE21_1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.PE21_2)
+                        </div>
+                        <div class="col-md-1">
+                            <input asp-for="PE21_2" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-md-12">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Save" class="btn btn-bh" />
+                    </div>
+                    <div class="col-md-3">
+                        @*<input type="submit" value="Create" class="btn btn-bh" />*@
+                        <a asp-action="Create" class="btn btn-bh">Cancel</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
 </form>
