@@ -414,7 +414,7 @@ namespace BHAMCApp.Models
         public EB20 Q41 { get; set; }
 
         [Display(Name = "(Q41b). Have  you had a close relative  who has been infected  or died with HIV/AIDS? Je umeshawahi kupata    ndugu   wa  karibu   ambaye    ameathirika     au  kufa   kutokana    na  UKlMWI?")]
-        public EB20 Q41b { get; set; }
+        public EB20? Q41b { get; set; }
 
         [Display(Name = "Q42.  Do  you think  a person  infected  with HIV always shows signs or can such a person  look perfectly healthy?	Je mtu anaweza kuwa  na virusi vya UKIMWI bila kuonyesha dalili za ugonjwa?")]
         public EB42 Q42 { get; set; }
@@ -553,7 +553,7 @@ namespace BHAMCApp.Models
         public string Q60 { get; set; }
 
         [Display(Name = "Q61. Do you think  using  intravaginal  herbs/reagents is harmful  to your health? Je unadhani  tabia yo kuweka  madawa  ndani ya  uke ili kubana/kuufanya    mkavu  inaweza  ikadhuru  afya ya  mwanamke?")]
-        public EB22 Q61 { get; set; }
+        public EB22? Q61 { get; set; }
 
         //Q62 During   the  past  5 years  have  you  had    Je katika  kipindi  cha miaka  5 iliyopita
 
@@ -634,16 +634,16 @@ namespace BHAMCApp.Models
 
         [Display(Name = "Q82. If yes, to any of the above  (Q 76-81) Kama ni ndiyo  kati ya swali  namba  76-81a. For how long have you had the symptoms ? Je uligundua  una dalili hizo tangu  lini ? days / weeks / months   ago")]
         [Range(1, 20, ErrorMessage = "How many times")]
-        public uint? Q76_81 { get; set; }
+        public uint? Q82 { get; set; }
 
         [Display(Name = "Q82b.Have  you sought  care?   Je umesha tafuta msaada  kwa ajili ya  dalili hizo?")]
-        public EB20 Q81b { get; set; }
+        public EB20 Q82b { get; set; }
 
         [Display(Name = "Where  wapi?")]
-        public string Q81b_1 { get; set; }
+        public string Q82b_1 { get; set; }
 
         [Display(Name = "Matibabu  aliyopewa?")]
-        public string Q81b_2 { get; set; }
+        public string Q82b_2 { get; set; }
 
         [Display(Name = "Q82c. If you   sought  care, how long did you take after noticing  the symptoms? Kama  ulichukua  hatua, je  ulichukua  muda gani toka uone da/i/i hadi kutafuta  msaada? days/weeks/months")]
         [Range(1, 52, ErrorMessage = "how long?")]
@@ -761,7 +761,7 @@ namespace BHAMCApp.Models
         public string Q94_7 { get; set; }
 
         [Display(Name = "Q95.How  often  do you use a condom   Je  unatumia    kondomu?")]
-        public EB95 Q95 { get; set; }
+        public EB95? Q95 { get; set; }
 
         [Display(Name = "Q96. Who normally  initiates  condom  use? mnapokutana kimwili ?")]
         public EB96 Q96 { get; set; }
@@ -794,15 +794,15 @@ namespace BHAMCApp.Models
         public EB20 Q99 { get; set; }
 
         [Display(Name = "je  umeshawahi kuitumia")]
-        public EB20 Q99_1 { get; set; }
+        public EB20? Q99_1 { get; set; }
 
 
-        //IOO.Have you ever practiced  the following?       Je umeshawahi     kukutana kimwili
+        //I00.Have you ever practiced  the following?       Je umeshawahi     kukutana kimwili
         [Display(Name = "1. Having  sex during  menstruation Wakati ukiwa mwezini")]
-        public EB20 Q100_1 { get; set; }
+        public EB20? Q100_1 { get; set; }
 
         [Display(Name = "2. Anal  sex   Kwa  kutumia    njia  ya  haja   kubwa")]
-        public EB20 Q100_2 { get; set; }
+        public EB20? Q100_2 { get; set; }
 
         //I   AM    GOING     TO    ASK    YOU    SOME     QUESTIONS   
         //ABOUT    YOUR    REPRODUCTIVE HEALTH NITAKUULIZA MASWALI MACHACHE KUHUSU  MAMBO  YA UZAZI
