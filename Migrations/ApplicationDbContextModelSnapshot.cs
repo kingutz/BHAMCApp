@@ -83,6 +83,1079 @@ namespace BHAMCApp.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("BHAMCApp.Models.BHAMCDATA", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Clinic")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CreatedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Edited")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Gravida")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Jina_anayedodosa")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Kama_ndiyo")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Matatizo")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Miaka_Moshi")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ModifiedByUser")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("PE1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE10_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE10_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE10_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE11_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE11_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE11_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE12_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE12_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE12_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE12_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE13_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE13_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE13_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE13_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE13_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE14_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE14_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE14_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE14_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE14_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE15_0")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE15_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE15_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE15_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE15_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE16_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE16_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE16_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE17_0")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE17_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE17_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE17_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE17_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE18_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE18_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE18_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE18_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE18_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE18_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE19_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE19_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE19_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE19_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("PE2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE20_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE20_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE21_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE21_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("PE3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PE4")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("PE5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE6_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE6_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE6_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE7_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE7_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE8_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE8_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE9_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE9_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("PE9_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Parity")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q10")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q100_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q100_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q101")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q102")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q103")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q103_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q104")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q104_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q105")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q105_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q106")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q107")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q107b")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q108")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q109_0")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q109_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q109_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q109_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q109_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q109_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q109_6")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Q10_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q11")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q110")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q111")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q112")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q113")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q113b")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q114_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q114_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q114_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q114_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q114_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q115_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q115_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q115_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q115_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q115_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q115_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q115_7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q116")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q117")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q118")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q118_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q119")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q11_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q12")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q120")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q120b_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q120b_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q120b_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q120b_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q120b_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q120b_6")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Q120c")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q13")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q14")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q15")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q16_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q16_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q16_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q16_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q16_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q16_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q17")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q18")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q19")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q20")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q21")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q21_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q22")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q23")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q23_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q23_2")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q24")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q24_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q25")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q26_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q26_1_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q26_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q26_2_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q26_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q26_3_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q26_4")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("Q26_4_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q27")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q27_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q28a")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q28b")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q28c")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q29")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q2_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q30")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q31")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q31_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q32")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q32_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q33")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q34")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q34b")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_0")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_10")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_11")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q35_12")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Q35_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_8")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q35_9")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_0")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q36b_8")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q36b_9")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Q37_0")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q37_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q37_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q37_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q37_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q37_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q37_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q37_7")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Q38_0")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q38_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q38_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q38_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q38_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q38_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q38_6")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q39")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q3_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q40_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q40_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q40_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q40_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q40_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q40_6")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q41")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q41b")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q42")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q43")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q44")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q44b")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q45")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q46_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q46_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q46_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q46_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q46_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q46_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q46_7")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Q47_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q47_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q47_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q47_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q47_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q47_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q47_7")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q48_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q48_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q48_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q49")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q49b")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q50")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q50b")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q51")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q51_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q51b")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q52")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q52b")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q53")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q54")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q55")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q55_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q56")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q56_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Q57")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q58")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q59")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q60")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q61")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q62")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q62_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q63")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q63_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q64")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q64_68")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q64_68_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q65")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q66")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q67")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q68")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q69")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q70")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q71")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q72")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q73")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q74")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q75")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q76")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q77")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q78")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q79")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q7_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q8")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q80")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q81")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q82")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q82b")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q82b_1")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Q82b_2")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("Q82c")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q82d")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Q82e")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q82f")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q82h")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q83")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q84")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q85")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q86")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q87")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q88")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q89")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q89_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q9")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q90")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint?>("Q90_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q91")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q92_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q92_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q92_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q92_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q92_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q92_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q92_7")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q92_8")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q93")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q94_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q94_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q94_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q94_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q94_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q94_6")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q94_7")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q95")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q96")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q97_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q97_2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q97_3")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q97_4")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Q97_5")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Q97_6")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Q98")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q99")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Q99_1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Rid")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("Tarehe")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Tarehekuzalia")
+                        .HasColumnType("TEXT");
+
+                    b.Property<uint?>("Umri_wa_mimba")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("BHAMCDATA");
+                });
+
             modelBuilder.Entity("BHAMCApp.Models.Bhamc", b =>
                 {
                     b.Property<int>("ID")

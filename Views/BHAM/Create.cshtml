@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Create";
-    Layout = "~/Views/Shared/_BhMtoto.cshtml";
     Layout = "~/Views/Shared/_Bhm.cshtml";
 }
 
@@ -91,19 +90,29 @@
                 </div>
                 <div class="col-md-3">
                     <label asp-for="Q2" class="control-label"></label>
-                    <select asp-for="Q2" class="form-control"
+                    <select asp-for="Q2" class="form-control" id="nQ2"
                             asp-items="Html.GetEnumSelectList<E3>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q2" class="text-danger"></span>
                 </div>
+                <div class="col-md-5 collapse" id="nQ2_1">
+                    <label asp-for="Q2_1" class="control-label"></label>
+                    <textarea asp-for="Q2_1" class="form-control"></textarea>
+                    <span asp-validation-for="Q2_1" class="text-danger"></span>
+                </div>
                 <div class="col-md-4">
                     <label asp-for="Q3" class="control-label"></label>
-                    <select asp-for="Q3" class="form-control"
+                    <select asp-for="Q3" class="form-control" id="nQ3"
                             asp-items="Html.GetEnumSelectList<E4>()">
                         <option selected="selected" value=""></option>
                     </select>
                     <span asp-validation-for="Q3" class="text-danger"></span>
+                </div>
+                <div class="col-md-5 collapse" id="nQ3_1">
+                    <label asp-for="Q3_1" class="control-label"></label>
+                    <textarea asp-for="Q3_1" class="form-control"></textarea>
+                    <span asp-validation-for="Q3_1" class="text-danger"></span>
                 </div>
             </div>
         </div>
@@ -2751,14 +2760,20 @@
             <span asp-validation-for="Q115_7" class="text-danger"></span>
         </div>
         <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12">
             <label asp-for="Q116" class="control-label"></label>
-            <select asp-for="Q116" class="form-control"
+            <select asp-for="Q116" class="form-control" id="nQ116"
                     asp-items="Html.GetEnumSelectList<EB20>()">
                 <option selected="selected" value=""></option>
             </select>
             <span asp-validation-for="Q116" class="text-danger"></span>
         </div>
         <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12 collapse" id="nQ117">
             <label asp-for="Q117" class="control-label"></label>
             <select asp-for="Q117" class="form-control"
                     asp-items="Html.GetEnumSelectList<EB20>()">
@@ -2767,29 +2782,38 @@
             <span asp-validation-for="Q117" class="text-danger"></span>
         </div>
         <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12 collapse" id="nQ118">
             <label asp-for="Q118" class="control-label"></label>
-            <select asp-for="Q118" class="form-control"
+            <select asp-for="Q118" class="form-control" id="nQ118n"
                     asp-items="Html.GetEnumSelectList<EB118>()">
                 <option selected="selected" value=""></option>
             </select>
             <span asp-validation-for="Q118" class="text-danger"></span>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 collapse" id="nQ118_1">
             <label asp-for="Q118_1" class="control-label"></label>
-            <input asp-for="Q118_1" class="form-control" />
+            <textarea asp-for="Q118_1" class="form-control"></textarea>
             <span asp-validation-for="Q118_1" class="text-danger"></span>
         </div>
         <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12">
             <label asp-for="Q119" class="control-label"></label>
-            <select asp-for="Q119" class="form-control"
+            <select asp-for="Q119" class="form-control" id="nQ119"
                     asp-items="Html.GetEnumSelectList<EB119>()">
                 <option selected="selected" value=""></option>
             </select>
             <span asp-validation-for="Q119" class="text-danger"></span>
         </div>
         <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12 collapse" id="nQ120">
             <label asp-for="Q120" class="control-label"></label>
-            <select asp-for="Q120" class="form-control"
+            <select asp-for="Q120" class="form-control" id="nQ120n"
                     asp-items="Html.GetEnumSelectList<EB20>()">
                 <option selected="selected" value=""></option>
             </select>
@@ -2799,7 +2823,7 @@
         <div class="col-md-12">
             <br />
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 collapse" id="nQ120b">
             <p>
                 Q120b. If no, why would you not inform him? (multiple  responses) Kama hapana,kwanini?
             </p>
@@ -2852,7 +2876,7 @@
                                     @Html.DisplayNameFor(model => model.Q120b_5)
                                 </div>
                                 <div class="col-md-1">
-                                    <input asp-for="Q120b_5" />
+                                    <input asp-for="Q120b_5" id="nQ120b" />
                                 </div>
                             </div>
                         </div>
@@ -2868,10 +2892,12 @@
 
             </div>
         </div>
-
         <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-12 collapse" id="nQ120c">
             <label asp-for="Q120c" class="control-label"></label>
-            <input asp-for="Q120c" class="form-control" />
+            <textarea asp-for="Q120c" class="form-control"></textarea>
             <span asp-validation-for="Q120c" class="text-danger"></span>
         </div>
 
@@ -3017,13 +3043,10 @@
 
         </div>
 
-
-
-
         <div class="col-md-12">
             <br />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 9. Skin
             </p>
@@ -3063,7 +3086,7 @@
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 10. Eyes/ ENT
             </p>
@@ -3102,7 +3125,7 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 11. Throat
             </p>
@@ -3140,7 +3163,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-4">
             <p>
                 12. Breasts
             </p>
@@ -3188,10 +3214,8 @@
             </div>
         </div>
 
-        <div class="col-md-12">
-            <br />
-        </div>
-        <div class="col-md-3">
+
+        <div class="col-md-4">
             <p>
                 13. Gastrointestinal
             </p>
@@ -3250,7 +3274,7 @@
             </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 14. Respiratory
             </p>
@@ -3308,8 +3332,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-4">
             <p>
                 15. Genitalia
             </p>
@@ -3367,7 +3393,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 16. Vulva
             </p>
@@ -3406,10 +3432,8 @@
 
             </div>
         </div>
-        <div class="col-md-12">
-            <br />
-        </div>
-        <div class="col-md-3">
+
+        <div class="col-md-4">
             <p>
                 17. Vagina
             </p>
@@ -3468,7 +3492,10 @@
 
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-12">
+            <br />
+        </div>
+        <div class="col-md-4">
             <p>
                 18. Cervix
             </p>
@@ -3541,7 +3568,7 @@
 
 
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 19. Bi-manual  palpation
             </p>
@@ -3589,7 +3616,7 @@
 
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 20. PH
             </p>
@@ -3621,7 +3648,7 @@
         <div class="col-md-12">
             <br />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <p>
                 21. Whiff test
             </p>
@@ -3688,7 +3715,35 @@
 <script type="text/javascript">
 
     document.getElementById('nname').focus();
+    //Q2
+    $(document).on("change", "#nQ2", function () {
+        if ($(this).val() == '4') {
 
+            $("#nQ2_1").removeClass('collapse');
+            $("#nQ2_1").addClass('text-info');
+
+        }
+        else {
+
+
+            $("#nQ2_1").addClass('collapse');
+            $("#nQ2_1").removeClass('text-info');
+        }
+    });
+
+    //Q3
+    $(document).on("change", "#nQ3", function () {
+        if ($(this).val() == '4') {
+
+            $("#nQ3_1").removeClass('collapse');
+            $("#nQ3_1").addClass('text-info');
+                    }
+        else {
+
+            $("#nQ3_1").addClass('collapse');
+            $("#nQ3_1").removeClass('text-info');
+        }
+    });
     //Q4
     $(document).on("change", "#nQ4", function () {
         if ($(this).val() == '1') {
@@ -4381,6 +4436,88 @@
             $("#nQ113b").removeClass('text-info');
         }
     })
+
+    //Q116
+    $(document).on("change", "#nQ116", function () {
+        if ($(this).val() == '1') {
+            $("#nQ118").removeClass('collapse');
+            $("#nQ118").addClass('text-info');
+
+            $("#nQ117").addClass('collapse');
+            $("#nQ117").removeClass('text-info');
+
+        }
+        else {
+            $("#nQ117").removeClass('collapse');
+            $("#nQ117").addClass('text-info');
+
+            $("#nQ118").addClass('collapse');
+            $("#nQ118").removeClass('text-info');
+        }
+    })
+
+    //Q118
+    $(document).on("change", "#nQ118n", function () {
+        if ($(this).val() == '4') {
+
+            $("#nQ118_1").removeClass('collapse');
+            $("#nQ118_1").addClass('text-info');
+        }
+        else {
+            $("#nQ118_1").addClass('collapse');
+            $("#nQ118_1").removeClass('text-info');
+        }
+    })
+
+    //Q119
+    $(document).on("change", "#nQ119", function () {
+        if ($(this).val() == '1' || $(this).val() == '2') {
+
+            $("#nQ120").removeClass('collapse');
+            $("#nQ120").addClass('text-info');
+
+            $("#Q120b_6").addClass("collapse");
+            $("#Q120b_6").removeClass('text-info')
+        }
+        else {
+            $("#nQ120").addClass('collapse');
+            $("#nQ120").removeClass('text-info');
+        }
+    })
+
+    //Q120
+    $(document).on("change", "#nQ120n", function () {
+        if ($(this).val() == '0') {
+
+            $("#nQ120b").removeClass('collapse');
+            $("#nQ120b").addClass('text-info');
+
+            $("#nQ120c").removeClass('collapse');
+            $("#nQ120c").addClass('text-info');
+        }
+        else {
+            $("#nQ120b").addClass('collapse');
+            $("#nQ120b").removeClass('text-info');
+
+            $("#nQ120c").addClass('collapse');
+            $("#nQ120c").removeClass('text-info');
+        }
+    })
+
+    //Q120b_5
+    $(document).ready(function () {
+        $('#Q120b_5').click(function () {
+            if ($(this).prop("checked") == true) {
+                $("#Q120b_6").removeClass("collapse");
+                $("#Q120b_6").addClass('text-info');
+            }
+            else if ($(this).prop("checked") == false) {
+
+                $("#Q120b_6").addClass("collapse");
+                $("#Q120b_6").removeClass('text-info');
+            }
+        });
+    });
 </script>
     /**/
 }
